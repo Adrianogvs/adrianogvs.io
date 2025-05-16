@@ -1,0 +1,255 @@
+:root {
+    --bg-dark: #000;
+    --bg-light: #fff;
+    --text-dark: #000;
+    --text-light: #fff;
+    --accent: #f25c00;
+    --card-bg-dark: #111;
+    --card-bg-light: #f9f9f9;
+    --container-max: 1200px;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .light {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+  }
+  
+  /* Header */
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: var(--bg-dark);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    z-index: 100;
+  }
+  .light header { background-color: var(--bg-light); }
+  .nav-container {
+    max-width: var(--container-max);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 20px;
+  }
+  .logo { font-size: 1.2rem; font-weight: bold; cursor: pointer; }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+  }
+  nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: var(--accent); }
+  .theme-btn {
+    background: var(--accent);
+    border: none;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  /* Main */
+  main {
+    padding-top: 80px;
+  }
+  .container {
+    max-width: var(--container-max);
+    margin: auto;
+    padding: 80px 20px;
+  }
+  
+  /* Hero */
+  #inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  #inicio .text { flex: 1; min-width: 300px; }
+  #inicio h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  #inicio h1 span { color: var(--accent); }
+  #inicio p { font-size: 1.1rem; margin-bottom: 24px; }
+  .btn {
+    display: inline-block;
+    margin-right: 16px;
+    margin-bottom: 12px;
+    padding: 14px 24px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: opacity 0.2s;
+  }
+  .btn:hover { opacity: 0.8; }
+  #inicio img {
+    width: 280px;
+    max-width: 100%;
+    border-radius: 50%;
+    border: 4px solid var(--accent);
+  }
+  
+  /* Sections Titles */
+  h2 {
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: var(--accent);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 2px;
+  }
+  
+  /* ... (demais estilos para cards, timeline, formulários, footer) ... */
+
+  /* Texto de introdução */
+#contato .contact-intro {
+  font-size: 1rem;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+/* Layout flexível para contato */
+.contact-flex {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Lado esquerdo */
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+.info-item i {
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin-right: 12px;
+  margin-top: 4px;
+}
+.info-item h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.info-item a {
+  display: block;
+  font-size: 0.95rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Lado direito (formulário) */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+.form-card {
+  background: var(--card-bg-dark);
+  padding: 24px;
+  border-radius: 8px;
+}
+.light .form-card {
+  background: var(--card-bg-light);
+}
+.form-card form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.form-card form input,
+.form-card form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  transition: background 0.3s, color 0.3s;
+}
+.light .form-card form input,
+.light .form-card form textarea {
+  background: var(--bg-light);
+  color: var(--text-dark);
+  border: 1px solid #ccc;
+}
+.form-card form button {
+  width: 100%;
+  padding: 14px;
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-card form small {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+/* Garante que todos os inputs, textarea e o botão tenham a mesma largura */
+.form-card form input,
+.form-card form textarea,
+.form-card form button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box; /* inclui padding/borda no cálculo de largura */
+}
+
+.form-card form input,
+.form-card form textarea {
+  margin-bottom: 16px;
+}
+
+/* Hero maior e responsivo */
+#inicio .text h1 {
+  /* Você pode testar valores fixos como 3.5rem, 4rem... */
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+#inicio .text p {
+  /* Parágrafo um pouco maior também */
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  max-width: 600px; /* opcional, pra não ficar muito esticado em telas grandes */
+  margin-bottom: 1.5rem;
+}
