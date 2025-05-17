@@ -56,6 +56,7 @@ Exibição das certificações mais relevantes em Engenharia de Dados, Cloud e A
 
 * Azure Data Engineer Associate (DP-203)
 * Databricks Certified Data Engineer Associate
+* Engenheiro de IA do Azure (AI-102 )
 * PL-300 (Power BI)
 
 ### 🔹 Clientes
