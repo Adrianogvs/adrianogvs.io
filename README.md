@@ -126,9 +126,9 @@ Formulário de contato funcional (demonstração) com links diretos para:
 
 Caso queira conversar sobre dados, projetos, parcerias ou oportunidades:
 
-📧 **Email:** [dataengineer@adrianogvs.com.br](mailto:dataengineer@adrianogvs.com.br)
-📱 **WhatsApp:** [+55 (27) 98807-7337](https://wa.me/5527988077337)
-🔗 **LinkedIn:** [linkedin.com/in/adrianogvs](https://linkedin.com/in/adrianogvs)
+📧 **Email:** [dataengineer@adrianogvs.com.br](mailto:dataengineer@adrianogvs.com.br)<br>
+📱 **WhatsApp:** [+55 (27) 98807-7337](https://wa.me/5527988077337)<br>
+🔗 **LinkedIn:** [linkedin.com/in/adrianogvs](https://linkedin.com/in/adrianogvs)<br>
 
 ---
 
