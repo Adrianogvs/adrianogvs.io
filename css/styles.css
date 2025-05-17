@@ -154,6 +154,7 @@ main { padding-top: 80px; }
   transition: opacity 0.2s;
   margin-right: 16px;
   margin-bottom: 12px;
+  margin-right: 8px;
 }
 .btn:hover { opacity: 0.8; }
 
