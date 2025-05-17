@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const logo     = document.querySelector('.logo');
   const themeBtn = document.querySelector('.theme-btn');
 
-  // Scroll suave + fechar menu
   function scrollToSection(hash) {
     document.querySelector(hash).scrollIntoView({ behavior: 'smooth' });
     if (toggle.classList.contains('open')) {
@@ -15,17 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Logo volta ao topo
   logo.addEventListener('click', () => scrollToSection('#inicio'));
 
-  // Toggle menu + animação X
   toggle.addEventListener('click', () => {
     toggle.classList.toggle('open');
     nav.classList.toggle('open');
     menu.classList.toggle('open');
   });
 
-  // Links do menu fazem scroll e fecham
   menu.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', e => {
       e.preventDefault();
@@ -33,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Tema claro/escuro
   themeBtn.addEventListener('click', () => {
     document.body.classList.toggle('light');
   });
