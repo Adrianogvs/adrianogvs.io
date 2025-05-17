@@ -6,7 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeBtn = document.querySelector('.theme-btn');
 
   function scrollToSection(hash) {
-    document.querySelector(hash).scrollIntoView({ behavior: 'smooth' });
+    const target = document.querySelector(hash);
+    const headerHeight = document.querySelector('header').offsetHeight;
+    const targetPos = target.getBoundingClientRect().top + window.pageYOffset;
+    const scrollPos = targetPos - headerHeight;
+    window.scrollTo({ top: scrollPos, behavior: 'smooth' });
+
+    // fechar menu se estiver aberto
     if (toggle.classList.contains('open')) {
       toggle.classList.remove('open');
       nav.classList.remove('open');
