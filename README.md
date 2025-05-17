@@ -132,9 +132,12 @@ Caso queira conversar sobre dados, projetos, parcerias ou oportunidades:
 
 ---
 
-## ©️ Licença
+## 🛡️ Licença
 
-Este projeto é de uso pessoal e aberto para fins educacionais. Comercialização ou cópias não autorizadas não são permitidas sem consentimento prévio.
+Este projeto é de uso pessoal e **não possui licença de código aberto**.  
+**Todos os direitos reservados** © Adriano Vilela.  
+A reprodução, redistribuição, modificação ou uso comercial deste conteúdo é **proibida sem autorização prévia por escrito** do autor.
+
 
 ---
 
