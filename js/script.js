@@ -1,26 +1,41 @@
-// mobile.js
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle  = document.querySelector('.menu-toggle');
+  const nav     = document.querySelector('nav');
+  const menu    = document.querySelector('#menu');
+  const logo    = document.querySelector('.logo');
+  const themeBtn= document.querySelector('.theme-btn');
 
-(function() {
-  // Define breakpoint para mobile/tablet
-  const MOBILE_MAX_WIDTH = 768;
-
-  // Debounce para não disparar resize a todo instante
-  function debounce(fn, delay) {
-    let timeout;
-    return function(...args) {
-      clearTimeout(timeout);
-      timeout = setTimeout(() => fn.apply(this, args), delay);
-    };
+  // Função de scroll suave + fechar menu
+  function scrollToSection(hash) {
+    document.querySelector(hash).scrollIntoView({ behavior: 'smooth' });
+    if (toggle.classList.contains('open')) {
+      toggle.classList.remove('open');
+      nav.classList.remove('open');
+      menu.classList.remove('open');
+    }
   }
 
-  // Aplica ou remove a classe 'mobile-layout' no <body>
-  function applyMobileLayout() {
-    const isMobile = window.innerWidth <= MOBILE_MAX_WIDTH;
-    document.body.classList.toggle('mobile-layout', isMobile);
-  }
+  // Logo volta ao topo
+  logo.addEventListener('click', () => scrollToSection('#inicio'));
 
-  // Escuta evento de redimensionamento
-  window.addEventListener('resize', debounce(applyMobileLayout, 200));
-  // Aplica no carregamento inicial
-  document.addEventListener('DOMContentLoaded', applyMobileLayout);
-})();
+  // Toggle menu + animação X
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    nav.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+
+  // Links do menu fazem scroll e fecham
+  menu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      scrollToSection(a.getAttribute('href'));
+    });
+  });
+
+  // Tema claro/escuro
+  themeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('light');
+  });
+});

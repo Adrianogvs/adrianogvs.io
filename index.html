@@ -1,10 +1,10 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Adriano Vilela | Engenheiro de Dados</title>
-  <link rel="stylesheet" href="css/styles.css" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -12,39 +12,39 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header>
     <div class="nav-container">
-      <div class="logo" onclick="scrollToSection('#inicio')">Adriano Vilela</div>
-      <div class="menu-toggle" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
+      <div class="logo">Adriano Vilela</div>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
       <nav>
         <ul id="menu">
-          <li><a href="#sobre" onclick="closeMenu()">Sobre</a></li>
-          <li><a href="#habilidades" onclick="closeMenu()">Habilidades</a></li>
-          <li><a href="#experiencias" onclick="closeMenu()">Experiências</a></li>
-          <li><a href="#projetos" onclick="closeMenu()">Projetos</a></li>
-          <li><a href="#certificacoes" onclick="closeMenu()">Certificações</a></li>
-          <li><a href="#clientes" onclick="closeMenu()">Clientes</a></li>
-          <li><a href="#contato" onclick="closeMenu()">Contato</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#experiencias">Experiências</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#certificacoes">Certificações</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
-      <button class="theme-btn" onclick="document.body.classList.toggle('light')">
+      <button class="theme-btn">
         <i class="fas fa-sun"></i>
       </button>
     </div>
   </header>
+
   <main>
     <section id="inicio" class="container">
       <div class="text">
-        <h1>
-          Olá, eu sou <span>Adriano Vilela</span>
-        </h1>
-        <p>
-          Especialista em Engenharia de Dados com experiência em transformar dados complexos em soluções estratégicas.
-        </p>
+        <h1>Olá, eu sou <span>Adriano Vilela</span></h1>
+        <p>Especialista em Engenharia de Dados com experiência em transformar dados complexos em soluções estratégicas.</p>
         <a href="#contato" class="btn">Entre em contato</a>
         <a href="./assets/curriculo/Adriano Geraldo Vilela Da Silva.pdf" class="btn">Download Currículo</a>
       </div>
@@ -53,41 +53,44 @@
 
     <section id="sobre" class="container">
       <h2>Sobre Mim</h2>
-      <p>
-        Sou um profissional apaixonado por Engenharia de Dados com mais de 10
-        anos de experiência...
-      </p>
+      <p>Sou um profissional apaixonado por Engenharia de Dados com mais de 10 anos de experiência...</p>
     </section>
+
     <section id="habilidades" class="container">
       <h2>Habilidades</h2>
       <div class="cards">
-        <!-- Cards -->
+        <!-- Cards de habilidades -->
       </div>
     </section>
+
     <section id="experiencias" class="container">
       <h2>Experiências</h2>
       <div class="timeline">
-        <!-- Entries -->
+        <!-- Timeline de experiências -->
       </div>
     </section>
+
     <section id="projetos" class="container">
       <h2>Projetos</h2>
       <div class="cards">
         <!-- Seis projetos -->
       </div>
     </section>
+
     <section id="certificacoes" class="container">
       <h2>Certificações</h2>
       <div class="cards">
-        <!-- Certs -->
+        <!-- Certificações -->
       </div>
     </section>
+
     <section id="clientes" class="container clients">
       <h2>Clientes</h2>
       <div class="cards">
-        <!-- Icons -->
+        <!-- Ícones de clientes -->
       </div>
     </section>
+
     <section id="contato" class="container">
       <h2>Contato</h2>
       <p class="contact-intro">
@@ -95,7 +98,6 @@
         Entre em contato para discutirmos como posso ajudar a transformar seus dados em valor.
       </p>
       <div class="contact-flex">
-        <!-- Lado esquerdo: informações de contato -->
         <div class="contact-info">
           <div class="info-item">
             <i class="fas fa-envelope"></i>
@@ -119,32 +121,26 @@
             </div>
           </div>
         </div>
-    
-        <!-- Lado direito: formulário dentro de um cartão -->
         <div class="contact-form">
           <div class="form-card">
             <form>
               <label for="nome">Nome</label>
               <input id="nome" type="text" placeholder="Nome" />
-    
               <label for="email">Email</label>
               <input id="email" type="email" placeholder="Email" />
-    
               <label for="mensagem">Mensagem</label>
               <textarea id="mensagem" rows="5" placeholder="Mensagem"></textarea>
-    
               <button type="submit">
                 <i class="fas fa-paper-plane"></i> Enviar Mensagem
               </button>
-              <small>
-                Este é um formulário de demonstração. Para contato real, use os canais ao lado.
-              </small>
+              <small>Este é um formulário de demonstração. Para contato real, use os canais ao lado.</small>
             </form>
           </div>
         </div>
       </div>
-    </section>        
+    </section>
   </main>
+
   <footer>
     <div class="socials">
       <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -154,7 +150,7 @@
     </div>
     <p>&copy; 2025 Adriano Vilela</p>
   </footer>
+
   <script src="js/script.js"></script>
-  <script src="js/mobile.js"></script>
 </body>
 </html>
