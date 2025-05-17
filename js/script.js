@@ -1,12 +1,11 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
-  const toggle  = document.querySelector('.menu-toggle');
-  const nav     = document.querySelector('nav');
-  const menu    = document.querySelector('#menu');
-  const logo    = document.querySelector('.logo');
-  const themeBtn= document.querySelector('.theme-btn');
+  const toggle   = document.querySelector('.menu-toggle');
+  const nav      = document.querySelector('nav');
+  const menu     = document.querySelector('#menu');
+  const logo     = document.querySelector('.logo');
+  const themeBtn = document.querySelector('.theme-btn');
 
-  // Função de scroll suave + fechar menu
+  // Scroll suave + fechar menu
   function scrollToSection(hash) {
     document.querySelector(hash).scrollIntoView({ behavior: 'smooth' });
     if (toggle.classList.contains('open')) {

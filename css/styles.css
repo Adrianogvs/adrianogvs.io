@@ -1,4 +1,3 @@
-/* styles.css */
 :root {
   --bg-dark: #000;
   --bg-light: #fff;
@@ -43,55 +42,18 @@ body.light header { background-color: var(--bg-light); }
   margin: auto;
   display: flex;
   align-items: center;
-  padding: 0 20px;
   height: 60px;
+  padding: 0 20px;
 }
 
-.logo {
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 24px;
-  margin-left: 40px;
-}
-
-nav a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-nav a:hover { color: var(--accent); }
-
-.theme-btn {
-  margin-left: auto;
-  background: var(--accent);
-  border: none;
-  width: 32px; height: 32px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  transition: opacity 0.2s;
-}
-.theme-btn:hover { opacity: 0.8; }
-
-/* Hamburger (hidden no desktop) */
+/* Hamburger 💥 */
 .menu-toggle {
   display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 24px; height: 18px;
   cursor: pointer;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 .menu-toggle span {
   display: block;
@@ -101,11 +63,51 @@ nav a:hover { color: var(--accent); }
   border-radius: 2px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
+.menu-toggle.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.menu-toggle.open span:nth-child(2) { opacity: 0; }
+.menu-toggle.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Logo & Tema (desktop) */
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.theme-btn {
+  margin-left: auto;
+  background: var(--accent);
+  border: none;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; color: #fff;
+  transition: opacity 0.2s;
+}
+.theme-btn:hover { opacity: 0.8; }
+
+/* Nav (desktop) */
+nav {
+  margin-left: 40px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav a:hover { color: var(--accent); }
 
 /* Main & Sections */
-main {
-  padding-top: 80px;
-}
+main { padding-top: 80px; }
 .container {
   max-width: var(--container-max);
   margin: auto;
@@ -155,7 +157,7 @@ main {
   border: 4px solid var(--accent);
 }
 
-/* Section titles */
+/* Section Titles */
 h2 {
   font-size: 2rem;
   position: relative;
@@ -163,16 +165,14 @@ h2 {
 }
 h2::after {
   content: '';
-  width: 60px;
-  height: 4px;
+  width: 60px; height: 4px;
   background: var(--accent);
   position: absolute;
-  left: 0;
-  bottom: -10px;
+  left: 0; bottom: -10px;
   border-radius: 2px;
 }
 
-/* Contact */
+/* Contato */
 #contato .contact-intro {
   font-size: 1rem;
   margin-bottom: 24px;
@@ -261,20 +261,24 @@ body.light .form-card form textarea {
   color: #aaa;
 }
 
-/* ============================
-   RESPONSIVIDADE (<=768px)
-   ============================ */
+/* Responsividade: Tablet e Mobile */
 @media (max-width: 768px) {
-  /* Esconde nav e theme-btn, exibe hamburger */
+  /* Header mobile */
   nav, .theme-btn {
     display: none;
   }
   .menu-toggle {
     display: flex;
+    order: 1;
   }
-  /* Quando aberto */
+  .logo {
+    order: 2;
+    margin-left: auto;
+  }
+  /* Exibe nav ao abrir */
   nav.open {
     display: block;
+    width: 100%;
   }
   nav.open ul {
     display: flex;
@@ -292,10 +296,14 @@ body.light .form-card form textarea {
     font-size: 1.2rem;
   }
 
-  /* Hero em coluna */
+  /* Hero em coluna + foto primeiro */
   #inicio {
     flex-direction: column;
     text-align: center;
+  }
+  #inicio img {
+    order: -1;
+    margin-bottom: 20px;
   }
   #inicio .text,
   #inicio img {
@@ -304,7 +312,13 @@ body.light .form-card form textarea {
     margin: auto;
   }
 
-  /* Containers com menos padding */
+  /* Contact empilhado */
+  .contact-flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Containers com padding reduzido */
   .container {
     padding: 40px 10px;
   }
