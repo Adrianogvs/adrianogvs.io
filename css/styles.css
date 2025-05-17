@@ -253,3 +253,47 @@
   max-width: 600px; /* opcional, pra não ficar muito esticado em telas grandes */
   margin-bottom: 1.5rem;
 }
+
+/* Esconde menu desktop e mostra hambúrguer */
+.mobile-layout header nav ul {
+  display: none;
+}
+.mobile-layout header .menu-toggle {
+  display: flex;
+}
+
+/* Quando o menu estiver aberto */
+.mobile-layout nav ul.open {
+  position: absolute;
+  top: 60px; left: 0; right: 0;
+  background: var(--bg-dark);
+  flex-direction: column;
+  gap: 0;
+  padding: 20px;
+}
+.mobile-layout nav ul.open li {
+  margin-bottom: 16px;
+}
+
+/* Hero em coluna e centralizado */
+.mobile-layout #inicio {
+  flex-direction: column;
+  text-align: center;
+}
+.mobile-layout #inicio .text,
+.mobile-layout #inicio img {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
+/* Seções empilhadas em coluna */
+.mobile-layout .contact-flex {
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Ajustes gerais de padding para telas menores */
+.mobile-layout .container {
+  padding: 40px 10px;
+}
