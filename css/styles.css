@@ -59,8 +59,11 @@ body.light header { background-color: var(--bg-light); }
   border: none;
   width: 32px; height: 32px;
   border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer; color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
   transition: opacity 0.2s;
 }
 .theme-btn:hover { opacity: 0.8; }
@@ -133,18 +136,25 @@ main { padding-top: 80px; }
   max-width: 600px;
   margin-bottom: 1.5rem;
 }
+
+/* Ajuste: Botões iguais */
 .btn {
   display: inline-block;
-  margin-right: 16px; margin-bottom: 12px;
-  padding: 14px 24px;
+  width: 240px;
+  height: 48px;
+  line-height: 48px;
   background: var(--accent);
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+  text-align: center;
   border-radius: 4px;
   transition: opacity 0.2s;
+  margin-right: 16px;
+  margin-bottom: 12px;
 }
 .btn:hover { opacity: 0.8; }
+
 #inicio img {
   width: 280px; max-width: 100%;
   border-radius: 50%;
@@ -235,19 +245,14 @@ body.light .form-card form textarea {
   color: #aaa;
 }
 
-/* ========================
-   DESKTOP >=769px
-   centraliza menu
-   ======================== */
+/* DESKTOP >=769px: centraliza menu */
 @media (min-width: 769px) {
   .nav-container { justify-content: center; }
   .logo { position: absolute; left: 20px; }
   .theme-btn { position: absolute; right: 20px; }
 }
 
-/* ================================
-   MOBILE & TABLET <=768px
-   ================================ */
+/* MOBILE & TABLET <=768px */
 @media (max-width: 768px) {
   nav, .theme-btn { display: none; }
   .menu-toggle { display: flex; order: 1; }
@@ -259,20 +264,14 @@ body.light .form-card form textarea {
     display: flex; flex-direction: column;
     position: absolute; top: 60px; left: 0;
     background: var(--accent);
-    padding: 12px 24px;
-    gap: 12px;
-    border-radius: 4px;
-    white-space: nowrap;
+    padding: 12px 24px; gap: 12px;
+    border-radius: 4px; white-space: nowrap;
   }
-  nav.open ul a {
-    color: #fff; font-size: 1rem;
-  }
+  nav.open ul a { color: #fff; font-size: 1rem; }
 
   /* Hero em coluna + foto primeiro */
   #inicio { flex-direction: column; text-align: center; }
-  #inicio img {
-    order: -1; margin-bottom: 20px;
-  }
+  #inicio img { order: -1; margin-bottom: 20px; }
   #inicio .text, #inicio img {
     width: 100%; max-width: 300px; margin: auto;
   }

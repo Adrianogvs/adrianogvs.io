@@ -7,12 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function scrollToSection(hash) {
     const target = document.querySelector(hash);
-    const headerHeight = document.querySelector('header').offsetHeight;
-    const targetPos = target.getBoundingClientRect().top + window.pageYOffset;
-    const scrollPos = targetPos - headerHeight;
-    window.scrollTo({ top: scrollPos, behavior: 'smooth' });
-
-    // fechar menu se estiver aberto
+    const offset = document.querySelector('header').offsetHeight;
+    const topPos = target.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({ top: topPos, behavior: 'smooth' });
     if (toggle.classList.contains('open')) {
       toggle.classList.remove('open');
       nav.classList.remove('open');
