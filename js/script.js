@@ -36,3 +36,26 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.toggle('light');
   });
 });
+
+document.querySelector("form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const nome = document.getElementById("nome").value;
+  const email = document.getElementById("email").value;
+  const mensagem = document.getElementById("mensagem").value;
+
+  Email.send({
+    Host: "smtp.zoho.com",
+    Username: "contato@adrianogvs.com.br",
+    Password: "SUA_SENHA_AQUI", // Use uma senha de aplicativo do Zoho!
+    To: "contato@adrianogvs.com.br",
+    From: "contato@adrianogvs.com.br",
+    Subject: `Nova mensagem de ${nome}`,
+    Body: `Nome: ${nome}<br>Email: ${email}<br>Mensagem: ${mensagem}`
+  }).then((message) => {
+    alert("Mensagem enviada com sucesso!");
+  }).catch((err) => {
+    alert("Erro ao enviar. Tente novamente.");
+    console.error(err);
+  });
+});
