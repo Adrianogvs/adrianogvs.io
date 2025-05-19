@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function scrollToSection(hash) {
     const section     = document.querySelector(hash);
     const headerHeight = document.querySelector('header').offsetHeight;
+    const extraSpace   = 16;
     // a “target” agora é o H2 dentro da seção
     const targetHeading = section.querySelector('h2') || section;
     const topPos       = targetHeading.getBoundingClientRect().top
