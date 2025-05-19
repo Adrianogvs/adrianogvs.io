@@ -1,9 +1,10 @@
 # Portfólio Profissional | Adriano Vilela
 ### Engenheiro de Dados
 
-<img src="./assets/images/agvs.png" alt="Capa do Portfólio"
-     style="width: 280px; height: 280px; object-fit: cover; border-radius: 50%; border: 4px solid var(--accent);" />
-     
+<p align="left">
+  <img src="./assets/images/agvs.png" width="200" height="200" style="border-radius: 50%; object-fit: cover;" alt="Capa do Portfólio">
+</p>
+
 
 ## 🧠 Sobre o Projeto
 
