@@ -277,8 +277,6 @@ body.light .form-card form textarea {
   }
 }
 
-
-
 /* MOBILE & TABLET <=768px */
 @media (max-width: 768px) {
   /* esconde só o nav, mantém o theme-switcher visível */
@@ -420,7 +418,6 @@ html {
   margin-bottom: 0;
 }
 
-
 /* ====== THEME SWITCHER ====== */
 .theme-selector {
   position: relative;
@@ -472,3 +469,44 @@ body:not(.light) .theme-option:focus {
 .hidden { display: none; }
 /* ====== FIM THEME SWITCHER ====== */
 
+/* ====== NOVOS ESTILOS PARA OS CARDS DE HABILIDADES ====== */
+#habilidades .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+#habilidades .cards .card {
+  background: var(--card-bg-dark);
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: background 0.3s;
+}
+body.light #habilidades .cards .card {
+  background: var(--card-bg-light);
+}
+#habilidades .cards .card i {
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+#habilidades .cards .card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--text-light);
+}
+body.light #habilidades .cards .card h3 {
+  color: var(--text-dark);
+}
+#habilidades .cards .card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-light);
+}
+body.light #habilidades .cards .card p {
+  color: var(--text-dark);
+}
