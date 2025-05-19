@@ -2,8 +2,9 @@
 ### Engenheiro de Dados
 
 <p align="left">
-  <img src="./assets/images/agvs.png" width="200" height="200" style="border-radius: 50%; object-fit: cover;" alt="Capa do Portfólio">
+  <img src="./assets/images/agvs.png" width="200" alt="Capa do Portfólio">
 </p>
+
 
 
 ## 🧠 Sobre o Projeto
