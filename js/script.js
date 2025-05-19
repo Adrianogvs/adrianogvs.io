@@ -6,16 +6,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeBtn = document.querySelector('.theme-btn');
 
   function scrollToSection(hash) {
-    const target = document.querySelector(hash);
-    const offset = document.querySelector('header').offsetHeight;
-    const topPos = target.getBoundingClientRect().top + window.pageYOffset - offset;
+    const section     = document.querySelector(hash);
+    const headerHeight = document.querySelector('header').offsetHeight;
+    // a “target” agora é o H2 dentro da seção
+    const targetHeading = section.querySelector('h2') || section;
+    const topPos       = targetHeading.getBoundingClientRect().top
+                       + window.pageYOffset
+                       - headerHeight;
     window.scrollTo({ top: topPos, behavior: 'smooth' });
+  
+    // resto do seu código igual
     if (toggle.classList.contains('open')) {
       toggle.classList.remove('open');
       nav.classList.remove('open');
       menu.classList.remove('open');
     }
   }
+  
 
   logo.addEventListener('click', () => scrollToSection('#inicio'));
 
@@ -59,3 +66,4 @@ document.querySelector("form").addEventListener("submit", function (e) {
     console.error(err);
   });
 });
+
