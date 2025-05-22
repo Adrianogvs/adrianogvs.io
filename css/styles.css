@@ -510,3 +510,83 @@ body.light #habilidades .cards .card h3 {
 body.light #habilidades .cards .card p {
   color: var(--text-dark);
 }
+
+/* ================================
+        EXPERIÊNCIAS - TIMELINE
+================================ */
+#experiencias {
+  padding: 60px 20px;
+}
+
+#experiencias h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  border-bottom: none; /* sem risco laranja */
+}
+
+.timeline {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 3px solid var(--accent);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: var(--accent);
+  border-radius: 50%;
+}
+
+.timeline-content {
+  margin-left: 20px;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.timeline-content p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+/* nome da empresa e período SEMPRE laranja */
+.timeline-content .empresa {
+  color: var(--accent) !important;
+  font-weight: 500;
+}
+
+/* ================================
+            TEMA ESCURO
+================================ */
+body:not(.light) .timeline-content h3,
+body:not(.light) .timeline-content p {
+  color: var(--text-light) !important;  /* branco */
+}
+
+/* ================================
+            TEMA CLARO
+================================ */
+body.light .timeline-content h3,
+body.light .timeline-content p {
+  color: var(--text-dark) !important;   /* preto */
+}
+/* nome da empresa e período SEMPRE laranja e em negrito */
+body:not(.light) .timeline-content .empresa,
+body.light .timeline-content .empresa {
+  color: var(--accent) !important;
+  font-weight: bold !important;
+}
+
+
