@@ -1,7 +1,5 @@
-# .github/workflows/deploy-pages.yml
 name: CI/CD → GitHub Pages
 
-# Dispara sempre que houver push na branch main
 on:
   push:
     branches:
@@ -13,37 +11,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1) Faz checkout de todo o repositório (branch main)
+      # 1. Faz checkout do repo
       - name: Checkout do código
         uses: actions/checkout@v3
 
-      # 2) (Opcional) Aqui você pode rodar validadores, linters ou testes.
-      #    Como seu site é um HTML/CSS/JS estático, não há build step,
-      #    então essa etapa fica comentada.  
-      # - name: Rodar Linter de HTML/CSS/JS
-      #   run: |
-      #     echo "Se quiser, adicione comandos de lint aqui."
+      # 2. (Opcional) Insira validadores ou linters, se quiser
+      # - name: Rodar Linter
+      #   run: echo "adicione seus comandos de lint aqui, se necessário"
 
-      # 3) Inicia o “modo Pages” do Actions (configure-pages)
+      # 3. Inicializa o Pages Action
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v4
 
-      # 4) Copia **tudo que vai para deploy** para dentro de public/
-      #    (inclui CNAME, index.html, css/, js/, assets/, images/, README.md etc.)
-      - name: Empacotar artefato (cria pasta public/)
+      # 4. Copia todos os arquivos que serão publicados
+      - name: Empacotar artefato (criar pasta public/)
         run: |
           mkdir -p public
           cp -R ./* public/
-          # Nota: “cp -R ./* public/” copia todos os arquivos e pastas visíveis na raiz.
-          #       Ele não copia pastas que comecem com ponto (por exemplo, .git/*), mas
-          #       isso é OK pois você não quer que o .github/ seja publicado.
-          
-      # 5) Envia o conteúdo de public/ como “artifact” para o Pages
+
+      # 5. Carrega o conteúdo de public/ para o Pages
       - name: Fazer upload do artefato para GitHub Pages
         uses: actions/upload-pages-artifact@v1
         with:
           path: public
 
-      # 6) Executa o deploy propriamente dito
+      # 6. Finalmente, faz o deploy no GitHub Pages
       - name: Deploy para GitHub Pages
         uses: actions/deploy-pages@v1
