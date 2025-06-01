@@ -812,6 +812,9 @@ body.light #projetos .card-bottom p {
   color: var(--text-dark);
 }
 
+body.light #projetos h2 {
+  color: var(--text-dark);
+}
 /* Tags (pílulas) do projeto */
 #projetos .tags {
   display: flex;
@@ -837,6 +840,7 @@ body.light #projetos .tags span {
 /* ============================
    RESPONSIVIDADE - PROJETOS
    ============================ */
+
 @media (max-width: 768px) {
   #projetos {
     padding: 60px 10px;
