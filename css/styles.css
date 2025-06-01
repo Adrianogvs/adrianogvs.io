@@ -1,4 +1,8 @@
 /* styles.css */
+
+/* ================================
+   VARIÁVEIS DE TEMA (:root)
+   ================================ */
 :root {
   --bg-dark: #1c1c1c;          /* Preto fosco conforme imagem */
   --bg-light: #ffffff;
@@ -11,33 +15,50 @@
   scroll-behavior: smooth;
 }
 
+/* ============================
+   RESET E BOX-SIZING
+   ============================ */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* ================================
+   ESTILOS GLOBAIS DO BODY E TEMA
+   ================================ */
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background-color: var(--bg-dark);
   color: var(--text-light);
   transition: background-color 0.3s, color 0.3s;
 }
+
 body.light {
   background-color: var(--bg-light);
   color: var(--text-dark);
 }
 
-/* Header */
+/* ============================
+   HEADER FIXO
+   ============================ */
 header {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: var(--bg-dark);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
-body.light header { background-color: var(--bg-light); }
 
+body.light header {
+  background-color: var(--bg-light);
+}
+
+/* ================================
+   CONTAINER DE NAVEGAÇÃO (NAV-CONTAINER)
+   ================================ */
 .nav-container {
   max-width: var(--container-max);
   margin: auto;
@@ -49,7 +70,9 @@ body.light header { background-color: var(--bg-light); }
   justify-content: space-between;
 }
 
-/* Logo & Tema */
+/* ============================
+   LOGO E BOTÃO DE TEMA (THEME-BTN)
+   ============================ */
 .logo {
   font-size: 1.2rem;
   font-weight: bold;
@@ -57,11 +80,15 @@ body.light header { background-color: var(--bg-light); }
   color: var(--accent); /* Aplica laranja em ambos os temas */
 }
 
-/* Botão de tema (herdado para o switcher) */
+body.light .logo {
+  color: var(--accent);
+}
+
 .theme-btn {
   background: var(--accent);
   border: none;
-  width: 32px; height: 32px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -70,30 +97,43 @@ body.light header { background-color: var(--bg-light); }
   color: #fff;
   transition: opacity 0.2s;
 }
-.theme-btn:hover { opacity: 0.8; }
 
-/* Nav padrão (desktop) */
+.theme-btn:hover {
+  opacity: 0.8;
+}
+
+/* ================================
+   MENU DE NAVEGAÇÃO (NAV UL E NAV A)
+   ================================ */
 nav ul {
   list-style: none;
   display: flex;
   gap: 24px;
 }
+
 nav a {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
   transition: color 0.2s;
 }
-nav a:hover { color: var(--accent); }
 
-/* Hamburger */
+nav a:hover {
+  color: var(--accent);
+}
+
+/* ============================
+   HAMBURGER (MENU TOGGLE)
+   ============================ */
 .menu-toggle {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 24px; height: 18px;
+  width: 24px;
+  height: 18px;
   cursor: pointer;
 }
+
 .menu-toggle span {
   display: block;
   width: 100%;
@@ -102,27 +142,35 @@ nav a:hover { color: var(--accent); }
   border-radius: 2px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
 .menu-toggle.open span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
-.menu-toggle.open span:nth-child(2) { opacity: 0; }
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
 .menu-toggle.open span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-body.light .logo {
-  color: var(--accent);
+/* ================================
+   MAIN E CONTAINER
+   ================================ */
+main {
+  padding-top: 80px;
 }
 
-/* Main & Container */
-main { padding-top: 80px; }
 .container {
   max-width: var(--container-max);
   margin: auto;
   padding: 80px 20px;
 }
 
-/* Hero */
+/* ================================
+   HERO (SEÇÃO #INICIO)
+   ================================ */
 #inicio {
   display: flex;
   align-items: center;
@@ -130,21 +178,31 @@ main { padding-top: 80px; }
   gap: 40px;
   flex-wrap: wrap;
 }
+
 #inicio .text {
-  flex: 1; min-width: 300px;
+  flex: 1;
+  min-width: 300px;
 }
+
 #inicio h1 {
   font-size: clamp(2.5rem, 6vw, 4rem);
   line-height: 1.2;
   margin-bottom: 1rem;
 }
-#inicio h1 span { color: var(--accent); }
+
+#inicio h1 span {
+  color: var(--accent);
+}
+
 #inicio p {
   font-size: clamp(1rem, 2.5vw, 1.3rem);
   max-width: 600px;
   margin-bottom: 1.5rem;
 }
-/* Ajuste: Botões iguais */
+
+/* ============================
+   BOTÕES (CLASS .BTN)
+   ============================ */
 .btn {
   display: inline-block;
   width: 240px;
@@ -160,7 +218,14 @@ main { padding-top: 80px; }
   margin-right: 16px;
   margin-bottom: 12px;
 }
-.btn:hover { opacity: 0.8; }
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* ================================
+   IMAGEM DO HERO (#INICIO IMG)
+   ================================ */
 #inicio img {
   width: 280px;
   height: 280px;
@@ -169,66 +234,97 @@ main { padding-top: 80px; }
   border: 4px solid var(--accent);
 }
 
-/* Section Titles */
+/* ============================
+   TÍTULOS DE SEÇÃO (H2)
+   ============================ */
 h2 {
   font-size: 2rem;
   position: relative;
   margin-bottom: 40px;
 }
+
 h2::after {
   content: '';
-  width: 60px; height: 4px;
+  width: 60px;
+  height: 4px;
   background: var(--accent);
   position: absolute;
-  left: 0; bottom: -10px;
+  left: 0;
+  bottom: -10px;
   border-radius: 2px;
 }
 
-/* Contato styling restaurado */
+/* ================================
+   ESTILOS DA SEÇÃO DE CONTATO (#CONTATO)
+   ================================ */
 #contato .contact-intro {
   font-size: 1rem;
   margin-bottom: 24px;
   line-height: 1.5;
 }
+
 .contact-flex {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
 }
+
 .contact-info {
-  flex: 1; min-width: 280px;
+  flex: 1;
+  min-width: 280px;
 }
+
 .info-item {
-  display: flex; align-items: flex-start; margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
 }
+
 .info-item i {
-  font-size: 1.2rem; color: var(--accent);
-  margin-right: 12px; margin-top: 4px;
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin-right: 12px;
+  margin-top: 4px;
 }
+
 .info-item h4 {
-  margin: 0; font-size: 1rem; font-weight: 600;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
 }
+
 .info-item a {
-  display: block; font-size: 0.95rem;
-  color: inherit; text-decoration: none;
+  display: block;
+  font-size: 0.95rem;
+  color: inherit;
+  text-decoration: none;
 }
+
 .contact-form {
-  flex: 1; min-width: 300px;
+  flex: 1;
+  min-width: 300px;
 }
+
 .form-card {
   background: var(--card-bg-dark);
   padding: 24px;
   border-radius: 8px;
 }
+
 body.light .form-card {
   background: var(--card-bg-light);
 }
+
 .form-card form label {
-  display: block; font-weight: 600; margin-bottom: 6px;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
 }
+
 .form-card form input,
 .form-card form textarea {
-  width: 100%; padding: 12px;
+  width: 100%;
+  padding: 12px;
   margin-bottom: 16px;
   border: 1px solid #333;
   border-radius: 4px;
@@ -236,77 +332,90 @@ body.light .form-card {
   color: var(--text-light);
   transition: background 0.3s, color 0.3s;
 }
+
 body.light .form-card form input,
 body.light .form-card form textarea {
   background: var(--bg-light);
   color: var(--text-dark);
   border: 1px solid #ccc;
 }
+
 .form-card form button {
-  width: 100%; padding: 14px;
-  background: var(--accent); border: none;
-  color: #fff; font-size: 1rem; font-weight: 600;
-  border-radius: 4px; cursor: pointer;
+  width: 100%;
+  padding: 14px;
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
 }
+
 .form-card form small {
-  display: block; margin-top: 12px; font-size: 0.8rem;
+  display: block;
+  margin-top: 12px;
+  font-size: 0.8rem;
   color: #aaa;
 }
 
-/* DESKTOP >=769px: logo à esquerda, ícones ao centro e tema à direita */
+/* ============================
+   MEDIA QUERY: DESKTOP (>=769px)
+   ============================ */
 @media (min-width: 769px) {
   .nav-container {
     max-width: var(--container-max);
     margin: 0 auto;               /* centraliza o conjunto na página */
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
   }
 
-  /* faz o <nav> crescer e centraliza os itens internos */
   nav {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: center;      /* centraliza itens internos do <nav> */
   }
 
-  /* remove posicionamentos absolutos */
   .logo,
   .theme-selector {
-    position: static;
+    position: static;             /* remove posicionamentos absolutos */
   }
 }
 
-/* MOBILE & TABLET <=768px */
+/* ============================
+   MEDIA QUERY: MOBILE & TABLET (<=768px)
+   ============================ */
 @media (max-width: 768px) {
-  /* esconde só o nav, mantém o theme-switcher visível */
   nav {
-    display: none;
-  }
-  .theme-selector {
-    display: flex;     /* ou inline-flex */
-    order: 3;          /* depois do menu-toggle e da logo */
+    display: none;                /* esconde menu padrão */
   }
 
-  /* header: hamburguer, logo e tema com espaço entre */
+  .theme-selector {
+    display: flex;                /* mantém theme-switcher visível */
+    order: 3;                     /* depois do menu-toggle e da logo */
+  }
+
   .nav-container {
     justify-content: space-between;
     align-items: center;
   }
+
   .menu-toggle {
     display: flex;
     order: 1;
   }
+
   .logo {
     order: 2;
-    margin-left: 0;    /* remove o auto para que siga o fluxo */
+    margin-left: 0;               /* remove auto para que siga fluxo */
   }
 
-  /* menu aberto */
   nav.open {
     display: block;
     width: auto;
   }
+
   nav.open ul {
     display: flex;
     flex-direction: column;
@@ -319,6 +428,7 @@ body.light .form-card form textarea {
     border-radius: 4px;
     white-space: nowrap;
   }
+
   nav.open ul a {
     color: #fff;
     font-size: 1rem;
@@ -329,10 +439,12 @@ body.light .form-card form textarea {
     flex-direction: column;
     text-align: center;
   }
+
   #inicio img {
     order: -1;
     margin-bottom: 20px;
   }
+
   #inicio .text,
   #inicio img {
     width: 100%;
@@ -352,7 +464,9 @@ body.light .form-card form textarea {
   }
 }
 
-/* Grid de cards na seção “Sobre Mim” */
+/* ================================
+   GRID DE CARDS NA SEÇÃO “SOBRE MIM” (INFO-CARDS)
+   ================================ */
 .info-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -392,54 +506,60 @@ body.light .info-cards .card p {
   color: var(--text-dark);
 }
 
-/* Justificação de parágrafos */
+/* ============================
+   JUSTIFICAÇÃO DE PARÁGRAFOS
+   ============================ */
 .justificado {
   text-align: justify;
 }
 
-/* Ajuste de rolagem para âncoras abaixo do header fixo */
+/* ================================
+   AJUSTE DE ROLAGEM PARA ANCORAS (SCROLL-MARGIN)
+   ================================ */
 section {
   scroll-margin-top: 60px;
 }
 
-/* Rolar suavemente ao clicar em âncoras */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Ajuste complementar na seção "Sobre Mim" */
+/* ============================
+   AJUSTES NA SEÇÃO “SOBRE” (#SOBRE)
+   ============================ */
 #sobre {
   margin-bottom: 10px; /* Reduz espaço abaixo do texto */
   padding-bottom: 0;
 }
 
-/* Remoção de margem extra no último parágrafo */
 #sobre p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0;    /* Remove margem extra no último parágrafo */
 }
 
-/* ====== THEME SWITCHER ====== */
+/* ================================
+   THEME SWITCHER
+   ================================ */
 .theme-selector {
   position: relative;
   display: inline-block;
   margin-left: 16px;
 }
+
 .theme-options {
   position: absolute;
-  top: 110%; right: 0;
+  top: 110%;
+  right: 0;
   background: var(--card-bg-light);
   list-style: none;
   padding: 8px 0;
   margin: 0;
   border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 50;
   min-width: 140px;
-  transition: opacity .2s;
+  transition: opacity 0.2s;
 }
+
 body:not(.light) .theme-options {
   background: var(--card-bg-dark);
 }
+
 .theme-option {
   display: flex;
   align-items: center;
@@ -452,24 +572,32 @@ body:not(.light) .theme-options {
   color: var(--text-dark);
   cursor: pointer;
 }
+
 body:not(.light) .theme-option {
   color: var(--text-light);
 }
+
 .theme-option i {
   margin-right: 8px;
 }
+
 .theme-option:hover,
 .theme-option:focus {
-  background: rgba(0,0,0,0.05);
+  background: rgba(0, 0, 0, 0.05);
 }
+
 body:not(.light) .theme-option:hover,
 body:not(.light) .theme-option:focus {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
-.hidden { display: none; }
-/* ====== FIM THEME SWITCHER ====== */
 
-/* ====== NOVOS ESTILOS PARA OS CARDS DE HABILIDADES ====== */
+.hidden {
+  display: none;
+}
+
+/* ================================
+   ESTILOS PARA CARDS DE HABILIDADES (#HABILIDADES .CARDS)
+   ================================ */
 #habilidades .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -477,6 +605,7 @@ body:not(.light) .theme-option:focus {
   max-width: var(--container-max);
   margin: 0 auto;
 }
+
 #habilidades .cards .card {
   background: var(--card-bg-dark);
   padding: 20px;
@@ -486,34 +615,40 @@ body:not(.light) .theme-option:focus {
   gap: 12px;
   transition: background 0.3s;
 }
+
 body.light #habilidades .cards .card {
   background: var(--card-bg-light);
 }
+
 #habilidades .cards .card i {
   font-size: 1.8rem;
   color: var(--accent);
 }
+
 #habilidades .cards .card h3 {
   margin: 0;
   font-size: 1.2rem;
   color: var(--text-light);
 }
+
 body.light #habilidades .cards .card h3 {
   color: var(--text-dark);
 }
+
 #habilidades .cards .card p {
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.5;
   color: var(--text-light);
 }
+
 body.light #habilidades .cards .card p {
   color: var(--text-dark);
 }
 
 /* ================================
-        EXPERIÊNCIAS - TIMELINE
-================================ */
+   ESTILOS DA SEÇÃO EXPERIÊNCIAS (TIMELINE)
+   ================================ */
 #experiencias {
   padding: 60px 20px;
 }
@@ -561,41 +696,38 @@ body.light #habilidades .cards .card p {
   line-height: 1.5;
 }
 
-/* nome da empresa e período SEMPRE laranja */
+/* Nome da empresa e período sempre em laranja */
 .timeline-content .empresa {
   color: var(--accent) !important;
   font-weight: 500;
 }
 
 /* ================================
-            TEMA ESCURO
-================================ */
+   AJUSTES DE TEMA PARA TIMELINE
+   ================================ */
 body:not(.light) .timeline-content h3,
 body:not(.light) .timeline-content p {
-  color: var(--text-light) !important;  /* branco */
+  color: var(--text-light) !important;  /* Título e texto brancos no tema escuro */
 }
 
-/* ================================
-            TEMA CLARO
-================================ */
 body.light .timeline-content h3,
 body.light .timeline-content p {
-  color: var(--text-dark) !important;   /* preto */
+  color: var(--text-dark) !important;   /* Título e texto pretos no tema claro */
 }
-/* nome da empresa e período SEMPRE laranja e em negrito */
+
+/* Empresa/período sempre laranja e negrito */
 body:not(.light) .timeline-content .empresa,
 body.light .timeline-content .empresa {
   color: var(--accent) !important;
   font-weight: bold !important;
 }
 
-
-/* ==========================
-   SEÇÃO DE PROJETOS
-   ========================== */
+/* ================================
+   ESTILOS DA SEÇÃO PROJETOS
+   ================================ */
 #projetos {
-  padding: 80px 20px; /* Já existe .container, mas garantimos espaçamento vertical */
-  scroll-margin-top: 60px; /* Para âncoras não ficarem sob o header fixo */
+  padding: 80px 20px;            /* Já existe .container, mas garantimos espaçamento vertical */
+  scroll-margin-top: 60px;       /* Para âncoras não ficarem sob o header fixo */
 }
 
 #projetos h2 {
@@ -613,7 +745,7 @@ body.light .timeline-content .empresa {
   margin: 0 auto;
 }
 
-/* Cada card */
+/* Cada card de projeto */
 #projetos .card {
   display: flex;
   flex-direction: column;
@@ -667,7 +799,7 @@ body.light #projetos .card-bottom h3 {
   color: var(--text-dark);
 }
 
-/* Descrição */
+/* Descrição do projeto */
 #projetos .card-bottom p {
   font-size: 0.9rem;
   color: var(--text-light);
@@ -680,7 +812,7 @@ body.light #projetos .card-bottom p {
   color: var(--text-dark);
 }
 
-/* Tags (pílulas) */
+/* Tags (pílulas) do projeto */
 #projetos .tags {
   display: flex;
   flex-wrap: wrap;
@@ -702,9 +834,9 @@ body.light #projetos .tags span {
   /* mantém o texto laranja em ambos os temas */
 }
 
-/* ==========================
-   RESPONSIVIDADE
-   ========================== */
+/* ============================
+   RESPONSIVIDADE - PROJETOS
+   ============================ */
 @media (max-width: 768px) {
   #projetos {
     padding: 60px 10px;
@@ -735,12 +867,12 @@ body.light #projetos .tags span {
   }
 }
 
-/* ==========================
-   SEÇÃO DE CERTIFICAÇÕES
-   ========================== */
+/* ================================
+   ESTILOS DA SEÇÃO CERTIFICAÇÕES
+   ================================ */
 #certificacoes {
-  padding: 80px 20px;               /* Espaçamento vertical */
-  scroll-margin-top: 60px;          /* Ajuste para âncora abaixo do header fixo */
+  padding: 80px 20px;            /* Espaçamento vertical */
+  scroll-margin-top: 60px;       /* Ajuste para âncora abaixo do header fixo */
 }
 
 #certificacoes h2 {
@@ -757,7 +889,7 @@ body.light #projetos .tags span {
   margin: 0 auto;
 }
 
-/* Cada card individual */
+/* Cada card de certificação */
 #certificacoes .card {
   background: var(--card-bg-dark);
   border-radius: 8px;
@@ -775,7 +907,7 @@ body.light #certificacoes .card {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Ícone no canto superior-left */
+/* Ícone no canto superior-left do card de certificação */
 #certificacoes .card-icon i {
   color: var(--accent);
   font-size: 1.5rem;
@@ -811,17 +943,19 @@ body.light #certificacoes .card .issuer {
   font-weight: 500;
 }
 
-/* ==========================
-   RESPONSIVIDADE
-   ========================== */
+/* ============================
+   RESPONSIVIDADE - CERTIFICAÇÕES
+   ============================ */
 @media (max-width: 768px) {
   #certificacoes {
     padding: 60px 10px;
   }
+
   #certificacoes h2 {
     font-size: 1.75rem;
     margin-bottom: 30px;
   }
+
   #certificacoes .card-icon i {
     font-size: 1.3rem;
   }
@@ -831,13 +965,16 @@ body.light #certificacoes .card .issuer {
   #certificacoes .cards {
     grid-template-columns: 1fr;
   }
+
   #certificacoes h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
   }
 }
 
-
+/* ================================
+   ESTILOS DA SEÇÃO CLIENTES
+   ================================ */
 #clientes .card-icon img {
   width: 60%;
   height: auto;

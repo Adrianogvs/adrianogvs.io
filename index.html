@@ -1,548 +1,672 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adriano Vilela | Data Engineer</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-..."
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-  <header>
-    <div class="nav-container">
-      <div class="menu-toggle"><span></span><span></span><span></span></div>
-      <div class="logo">Adriano</div>
-      <nav>
-        <ul id="menu">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#experiencias">Experiências</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#certificacoes">Certificações</a></li>
-          <li><a href="#clientes">Clientes</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-
-      <!-- THEME SWITCHER -->
-      <div class="theme-selector">
-        <button
-          id="theme-toggle-button"
-          class="theme-btn"
-          aria-haspopup="true"
-          aria-expanded="false"
-          title="Mudar Tema"
-        >
-          <i id="theme-toggle-icon" class="fas fa-sun"></i>
-        </button>
-        <ul id="theme-options" class="theme-options hidden" role="listbox" aria-label="Opções de tema">
-          <li role="none">
-            <button type="button" class="theme-option" data-theme="light" role="option">
-              <i class="fas fa-sun"></i> Claro
-            </button>
-          </li>
-          <li role="none">
-            <button type="button" class="theme-option" data-theme="dark" role="option">
-              <i class="fas fa-moon"></i> Escuro
-            </button>
-          </li>
-          <li role="none">
-            <button type="button" class="theme-option" data-theme="system" role="option">
-              <i class="fas fa-adjust"></i> Automático
-            </button>
-          </li>
-        </ul>
-      </div>
-      <!-- /THEME SWITCHER -->
-
-    </div>
-  </header>
-
-  <main>
-    <section id="inicio" class="container">
-      <div class="text">
-        <h1>Olá, eu sou <span>Adriano Vilela</span></h1>
-        <p>
-          Especialista em Engenharia de Dados com experiência em transformar dados complexos em soluções estratégicas.
-        </p>
-        <a href="#contato" class="btn"><i class="fas fa-envelope"></i> Entre em contato</a>
-        <a href="./assets/curriculo/Adriano Geraldo Vilela Da Silva.pdf" class="btn"><i class="fas fa-download"></i> Download Currículo</a>
-      </div>
-      <img src="./assets/images/agvs.png" alt="Adriano Vilela" />
-    </section>
-
-    <section id="sobre" class="container">
-      <h2>Sobre Mim</h2>
-      <p class="justificado">
-        Sou mineiro de coração e raízes simples, nascido e criado na zona rural do município de Itaguara-MG, onde aprendi desde cedo o valor do trabalho árduo e da persistência. Tive a honra de servir no <strong>12º Batalhão de Infantaria</strong>, experiência que me ensinou lições valiosas sobre disciplina, liderança e trabalho em equipe.
-      </p>
-      <p class="justificado">
-        Há cerca de dez anos estabeleci-me no Espírito Santo, onde construí minha família, sou casado e pai orgulhoso de um jovem de 20 anos. Minha trajetória acadêmica começou um pouco tarde em 2017, quando ingressei na faculdade, e culminou em 2021 com a graduação em Engenharia de Software, fruto de muita dedicação e esforço.
-      </p>
-      <p class="justificado">
-        Atualmente, atuo na <strong>Petrobras</strong> como especialista em engenharia de dados, com mais de cinco anos de experiência transformando informações em soluções escaláveis, seguras e inovadoras. Minha abordagem combina profundo conhecimento técnico à prática de resolver desafios reais, sempre focando em eficiência operacional, governança de dados e resultados mensuráveis. Lidero projetos end-to-end que abrangem desde a arquitetura e engenharia de dados até a implementação de soluções em nuvem, DataOps e Inteligência Artificial.
-      </p>
-    </section>
-
-    <!-- INÍCIO DOS CARDS DE INFORMAÇÃO -->
-    <div class="cards info-cards">
-      <div class="card">
-        <h3>Formação</h3>
-        <p>
-          • Pós-Graduação em Engenharia de Dados<br>
-          PUC Minas | 2023 – 2024<br><br>
-          • MBA em Tecnologia para Negócios<br>
-          (IA, Big Data, Data Science)<br>
-          Faculdade Única | 2021 – 2022<br><br>
-          • Bacharel em Engenharia de Software<br>
-          Unicesumar | 2017 – 2021<br><br>
-        </p>
-        <h3>Formação Complementar</h3>
-        <p>
-          • Formação Apache Spark e Databricks <strong>reconhecida pelo MEC</strong> (Engenharia de Dados Academy):<br>
-          Databricks, Apache Spark, Kubernetes, Docker, Git, GitHub, Azure, AWS, GCP, <b>[Em Andamento]</b><br><br>
-          • Engenharia de Dados (Jornada de Dados):<br>
-          Azure, AWS, GCP, Databricks, Spark, Python, DBT, Airflow, Docker, Kafka, Terraform, Kubernetes.<br><br>
-          • BI Academy Pro (Rafael Piton):<br>
-          Power BI, Oracle SQL, OBIEE, ODI, Linux, Metodologias Ágeis.<br><br>
-        </p>
-      </div>
-         
-      <div class="card">
-        <h3>Habilidades Comportamentais</h3>
-        <p>
-          • Comunicação eficaz<br>
-          • Trabalho em equipe<br>
-          • Empatia<br>
-          • Resiliência<br>
-          • Pensamento crítico<br>
-          • Proatividade<br>
-          • Gestão eficiente do tempo<br>
-          • Flexibilidade<br>
-          • Inteligência emocional<br>
-          • Liderança<br>
-          • Adaptabilidade 
-        </p>
-        <br>
-      
-        <h3>Localização</h3>
-        <p>
-          • Serra – ES, Brasil<br>
-          • Disponível para remoto
-        </p>
-        <br>
-      
-        <h3>Idiomas</h3>
-        <p>
-          • Português: Nativo<br>
-          • Inglês: Técnico
-        </p>
-        <br>
-      </div>
-
-      <div class="card">
-        <h3>Interesses</h3>
-        <p>
-          Tenho interesse em aprofundar minha atuação em <strong>Engenharia de Dados e Inteligência Artificial</strong>, com foco em soluções modernas (<strong>Data Lake</strong> e <strong>Lakehouse</strong>) e arquiteturas Cloud (AWS, Azure, Databricks).<br><br>
-          Busco liderar projetos envolvendo criação e orquestração de pipelines robustos e escaláveis (<strong>Airflow</strong>, <strong>Databricks Workflows</strong>), processamento distribuído (batch/streaming) usando <strong>PySpark</strong>, <strong>Spark SQL</strong>, <strong>Kafka</strong>, <strong>Kinesis</strong>, <strong>Azure Event Hubs</strong> e <strong>Glue</strong>, além de aplicar práticas sólidas de <strong>DataOps</strong> (CI/CD, testes automatizados, monitoramento, IaC com <strong>Terraform</strong>).<br><br>
-          Também pretendo ampliar minhas competências em <strong>MLOps</strong> (<strong>MLflow</strong>) e explorar práticas avançadas em <strong>LLMOps</strong> (LLMs, versionamento de prompts, arquiteturas <strong>RAG</strong>).<br><br>
-          Busco continuamente desafios que permitam aplicar e evoluir essas habilidades, entregando soluções inovadoras de alto valor estratégico.
-        </p>
-      </div>
-           
-      
-    </div>
-    <!-- FIM DOS CARDS DE INFORMAÇÃO -->
-
-    <!-- SEÇÃO HABILIDADES COM OS 6 CARDS -->
-    <section id="habilidades" class="container">
-      <h2>Habilidades Técnicas</h2>
-      <div class="cards">
-        <div class="card">
-          <i class="fas fa-database"></i>
-          <h3>Engenharia de Dados</h3>
-          <p>Desenvolvimento de pipelines robustos e escaláveis, ETL/ELT, modelagem dimensional (Star/Snowflake), qualidade e governança de dados.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adriano Vilela | Data Engineer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- SEÇÃO: HEADER E NAVEGAÇÃO -->
+    <header>
+      <div class="nav-container">
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="card">
-          <i class="fas fa-cloud"></i>
-          <h3>Cloud Computing</h3>
-          <p>AWS, Azure, Databricks, Infraestrutura como Código (IaC com Terraform), arquitetura Serverless.</p>
-        </div>
-        <div class="card">
-          <i class="fas fa-code"></i>
-          <h3>Programação</h3>
-          <p>Python, SQL, Apache Spark (PySpark/Spark SQL), Shell Script, automação e processamento de dados.</p>
-        </div>
-        <div class="card">
-          <i class="fas fa-server"></i>
-          <h3>Big Data</h3>
-          <p> Spark, Databricks, Kafka, Hadoop, processamento distribuído, análise e tratamento de grandes volumes de dados.</p>
-        </div>
-        <div class="card">
-          <i class="fas fa-chart-line"></i>
-          <h3>Data Warehousing</h3>
-          <p>Databricks, Redshift, Azure Synapse, modelagem dimensional, otimização e performance de consultas.</p>
-        </div>
-        <div class="card">
-          <i class="fas fa-project-diagram"></i>
-          <h3>Orquestração</h3>
-          <p>Airflow, DBT, Docker, Kubernetes, CI/CD.</p>
-        </div>
-        <div class="card">
-          <i class="fas fa-cogs"></i>
-          <h3>DataOps/MLOps</h3>
-          <p>Azure DevOps, Jenkins, GitHub Actions, GitLab CI/CD, automação de pipelines, versionamento e entrega contínua.</p>
-        </div>        
-        <div class="card">
-          <i class="fas fa-tachometer-alt"></i>
-          <h3>Dashboards</h3>
-          <p>Power BI, Streamlit, storytelling com dados.</p>
-        </div>
-        
-      </div>
-    </section>
+        <div class="logo">Adriano</div>
+        <nav>
+          <ul id="menu">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#experiencias">Experiências</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#certificacoes">Certificações</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
 
-<!-- EXPERIÊNCIAS -->
-<section id="experiencias" class="container">
-  <h2>Experiências</h2>
-
-  <div class="timeline">
-    
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>Analytics Engineer</h3>
-        <p class="empresa">Compass UOL | jun 2024 - Atualmente</p>
-        <p>Atuo como Engenheiro Analítico de Dados via outsourcing no setor de Óleo & Gás. Desenvolvimento de pipelines ETL/ELT (ADF, Databricks), dashboards interativos (Power BI, Streamlit), arquitetura Medallion, governança de dados e automação com Python.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>Analista de Dados</h3>
-        <p class="empresa">Compass UOL | jan 2023 - jun 2024</p>
-        <p>Modelagem dimensional (Star, Snowflake), pipelines ETL em SQL/M/Python, visualização no Power BI, automação de processos com Power Automate e VBA Excel.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>Administrador de Dados</h3>
-        <p class="empresa">Compass UOL | mai 2022 - jan 2023</p>
-        <p>Modelagem dimensional, gerenciamento avançado de bancos Oracle, criação de Data Marts, liderança em projetos estratégicos com squads AS-005, AS-015 e AS-021.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>Analista de Dados</h3>
-        <p class="empresa">Grupo Águia Branca | jan 2022 - abr 2022</p>
-        <p>Requisitos detalhados, automação em BI (Jenkins), ETL e Data Warehouses com SQL Server e T-SQL, desenvolvimento de KPIs com Power BI.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>Analista de Business Intelligence</h3>
-        <p class="empresa">Globalsys | mai 2021 - out 2021</p>
-        <p>Implementação de Data Warehouse e Data Mart (Oracle/PL-SQL/ODI/OBIEE), relatórios interativos web/mobile, pipelines automatizados AWS Glue, Lambda, Redshift e QuickSight.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>Coordenador de Sistemas Embarcados</h3>
-        <p class="empresa">TACOM | ago 2018 - ago 2021</p>
-        <p>Coordenação de projeto Bilhetagem Eletrônica, gestão Agile, DevOps e interação com órgãos governamentais.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>Analista de Negócios Sênior</h3>
-        <p class="empresa">Expresso Santa Paula Ltda | nov 2018 - mai 2021</p>
-        <p>Gestão infraestrutura TI, implementação relatórios BI (Power BI), coordenação Sistema Bilhetagem Eletrônica, gestão orçamentária e contratos.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-<!-- ========== SEÇÃO DE PROJETOS ========== -->
-<section id="projetos" class="container">
-  <h2>Projetos</h2>
-  <div class="cards">
-    <!-- Card 1 -->
-    <div class="card">
-      <div class="card-top">
-        <i class="fas fa-code"></i>
-      </div>
-      <div class="card-bottom">
-        <h3>Pipeline de Dados em Tempo Real</h3>
-        <p>
-          Desenvolvimento de sistema de processamento de dados em tempo real
-          usando Kafka e Spark Streaming.
-        </p>
-        <div class="tags">
-          <span>Kafka</span>
-          <span>Spark</span>
-          <span>AWS</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="card">
-      <div class="card-top">
-        <i class="fas fa-database"></i>
-      </div>
-      <div class="card-bottom">
-        <h3>Data Warehouse na Nuvem</h3>
-        <p>
-          Implementação de data warehouse moderno usando Snowflake com
-          integração automatizada de múltiplas fontes.
-        </p>
-        <div class="tags">
-          <span>Snowflake</span>
-          <span>dbt</span>
-          <span>Airflow</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="card">
-      <div class="card-top">
-        <i class="fas fa-cloud-arrow-up"></i>
-      </div>
-      <div class="card-bottom">
-        <h3>Data Lake Corporativo</h3>
-        <p>
-          Arquitetura e implementação de data lake em camadas usando
-          tecnologias open source e cloud.
-        </p>
-        <div class="tags">
-          <span>S3</span>
-          <span>Delta Lake</span>
-          <span>Glue</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="card">
-      <div class="card-top">
-        <i class="fas fa-chart-line"></i>
-      </div>
-      <div class="card-bottom">
-        <h3>Plataforma de Analytics</h3>
-        <p>
-          Desenvolvimento de plataforma self-service para análise de dados com
-          visualizações interativas.
-        </p>
-        <div class="tags">
-          <span>Looker</span>
-          <span>BigQuery</span>
-          <span>Python</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="card">
-      <div class="card-top">
-        <i class="fas fa-briefcase"></i>
-      </div>
-      <div class="card-bottom">
-        <h3>Migração para a Nuvem</h3>
-        <p>
-          Migração de infraestrutura de dados on‐premise para a nuvem com zero
-          downtime.
-        </p>
-        <div class="tags">
-          <span>Azure</span>
-          <span>Terraform</span>
-          <span>Databricks</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 6 -->
-    <div class="card">
-      <div class="card-top">
-        <i class="fas fa-code"></i>
-      </div>
-      <div class="card-bottom">
-        <h3>Automação de Qualidade de Dados</h3>
-        <p>
-          Sistema de monitoramento e validação automática de qualidade de
-          dados com alertas.
-        </p>
-        <div class="tags">
-          <span>Great Expectations</span>
-          <span>Airflow</span>
-          <span>Grafana</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ========== FIM SEÇÃO DE PROJETOS ========== -->
-
-
-<!-- ========== SEÇÃO DE CERTIFICAÇÕES ========== -->
-<section id="certificacoes" class="container">
-  <h2>Certificações</h2>
-  <div class="cards">
-    <!-- Card 1 -->
-    <div class="card">
-      <div class="card-icon">
-        <i class="fas fa-award"></i>
-      </div>
-      <h3>AWS Certified Data Analytics</h3>
-      <p class="issuer">Amazon Web Services</p>
-      <p class="year">2022</p>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="card">
-      <div class="card-icon">
-        <i class="fas fa-award"></i>
-      </div>
-      <h3>Google Professional Data Engineer</h3>
-      <p class="issuer">Google Cloud</p>
-      <p class="year">2021</p>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="card">
-      <div class="card-icon">
-        <i class="fas fa-award"></i>
-      </div>
-      <h3>Azure Data Engineer Associate</h3>
-      <p class="issuer">Microsoft</p>
-      <p class="year">2020</p>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="card">
-      <div class="card-icon">
-        <i class="fas fa-award"></i>
-      </div>
-      <h3>Databricks Certified Developer</h3>
-      <p class="issuer">Databricks</p>
-      <p class="year">2019</p>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="card">
-      <div class="card-icon">
-        <i class="fas fa-award"></i>
-      </div>
-      <h3>Confluent Kafka Certification</h3>
-      <p class="issuer">Confluent</p>
-      <p class="year">2018</p>
-    </div>
-
-    <!-- Card 6 -->
-    <div class="card">
-      <div class="card-icon">
-        <i class="fas fa-award"></i>
-      </div>
-      <h3>Snowflake SnowPro Core</h3>
-      <p class="issuer">Snowflake</p>
-      <p class="year">2021</p>
-    </div>
-  </div>
-</section>
-<!-- ========== FIM SEÇÃO DE CERTIFICAÇÕES ========== -->
-
-
-    <section id="clientes" class="container clients">
-      <h2>Clientes</h2>
-      <div class="cards">
-        <!-- Ícones de clientes -->
-      </div>
-    </section>
-
-    <section id="contato" class="container">
-      <h2>Contato</h2>
-      <p class="contact-intro">
-        Estou disponível para novos projetos, consultorias e oportunidades. 
-        Entre em contato para discutirmos como posso ajudar a transformar seus dados em valor.
-      </p>
-      <div class="contact-flex">
-        <div class="contact-info">
-          <div class="info-item">
-            <i class="fas fa-envelope"></i>
-            <div>
-              <h4>Email</h4>
-              <a href="mailto:dataengineer@adrianogvs.com.br">dataengineer@adrianogvs.com.br</a>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fab fa-whatsapp"></i>
-            <div>
-              <h4>WhatsApp</h4>
-              <a href="https://wa.me/5527988077337" target="_blank">+55 (27) 98807-7337</a>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fab fa-linkedin"></i>
-            <div>
-              <h4>LinkedIn</h4>
-              <a href="https://linkedin.com/in/adrianogvs" target="_blank">linkedin.com/in/adrianogvs</a>
-            </div>
-          </div>
-        </div>
-        <div class="contact-form">
-          <div class="form-card">
-            <form>
-              <label for="nome">Nome</label>
-              <input id="nome" type="text" placeholder="Nome" />
-              <label for="email">Email</label>
-              <input id="email" type="email" placeholder="Email" />
-              <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" rows="5" placeholder="Mensagem"></textarea>
-              <button type="submit">
-                <i class="fas fa-paper-plane"></i> Enviar Mensagem
+        <!-- SEÇÃO: THEME SWITCHER -->
+        <div class="theme-selector">
+          <button
+            id="theme-toggle-button"
+            class="theme-btn"
+            aria-haspopup="true"
+            aria-expanded="false"
+            title="Mudar Tema"
+          >
+            <i id="theme-toggle-icon" class="fas fa-sun"></i>
+          </button>
+          <ul
+            id="theme-options"
+            class="theme-options hidden"
+            role="listbox"
+            aria-label="Opções de tema"
+          >
+            <li role="none">
+              <button
+                type="button"
+                class="theme-option"
+                data-theme="light"
+                role="option"
+              >
+                <i class="fas fa-sun"></i> Claro
               </button>
-              <small>
-                Este é um formulário de demonstração. Para contato real, use os canais ao lado.
-              </small>
-            </form>
-          </div>
+            </li>
+            <li role="none">
+              <button
+                type="button"
+                class="theme-option"
+                data-theme="dark"
+                role="option"
+              >
+                <i class="fas fa-moon"></i> Escuro
+              </button>
+            </li>
+            <li role="none">
+              <button
+                type="button"
+                class="theme-option"
+                data-theme="system"
+                role="option"
+              >
+                <i class="fas fa-adjust"></i> Automático
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- /THEME SWITCHER -->
+      </div>
+    </header>
+
+    <main>
+      <!-- SEÇÃO: INÍCIO -->
+      <section id="inicio" class="container">
+        <div class="text">
+          <h1>Olá, eu sou <span>Adriano Vilela</span></h1>
+          <p>
+            Especialista em Engenharia de Dados com experiência em transformar
+            dados complexos em soluções estratégicas.
+          </p>
+          <a href="#contato" class="btn">
+            <i class="fas fa-envelope"></i> Entre em contato
+          </a>
+          <a
+            href="./assets/curriculo/Adriano Geraldo Vilela Da Silva.pdf"
+            class="btn"
+          >
+            <i class="fas fa-download"></i> Download Currículo
+          </a>
+        </div>
+        <img src="./assets/images/agvs.png" alt="Adriano Vilela" />
+      </section>
+
+      <!-- SEÇÃO: SOBRE MIM -->
+      <section id="sobre" class="container">
+        <h2>Sobre Mim</h2>
+        <p class="justificado">
+          Sou mineiro de coração e raízes simples, nascido e criado na zona
+          rural do município de Itaguara-MG, onde aprendi desde cedo o valor do
+          trabalho árduo e da persistência. Tive a honra de servir no
+          <strong>12º Batalhão de Infantaria</strong>, experiência que me
+          ensinou lições valiosas sobre disciplina, liderança e trabalho em
+          equipe.
+        </p>
+        <p class="justificado">
+          Há cerca de dez anos estabeleci-me no Espírito Santo, onde construí
+          minha família, sou casado e pai orgulhoso de um jovem de 20 anos. Minha
+          trajetória acadêmica começou um pouco tarde em 2017, quando ingressei
+          na faculdade, e culminou em 2021 com a graduação em Engenharia de
+          Software, fruto de muita dedicação e esforço.
+        </p>
+        <p class="justificado">
+          Atualmente, atuo na <strong>Petrobras</strong> como especialista em
+          engenharia de dados, com mais de cinco anos de experiência
+          transformando informações em soluções escaláveis, seguras e
+          inovadoras. Minha abordagem combina profundo conhecimento técnico à
+          prática de resolver desafios reais, sempre focando em eficiência
+          operacional, governança de dados e resultados mensuráveis. Lidero
+          projetos end-to-end que abrangem desde a arquitetura e engenharia de
+          dados até a implementação de soluções em nuvem, DataOps e
+          Inteligência Artificial.
+        </p>
+      </section>
+
+      <!-- SEÇÃO: CARDS DE INFORMAÇÃO -->
+      <div class="cards info-cards">
+        <div class="card">
+          <h3>Formação</h3>
+          <p>
+            • Pós-Graduação em Engenharia de Dados<br />
+            PUC Minas | 2023 – 2024<br /><br />
+            • MBA em Tecnologia para Negócios<br />
+            (IA, Big Data, Data Science)<br />
+            Faculdade Única | 2021 – 2022<br /><br />
+            • Bacharel em Engenharia de Software<br />
+            Unicesumar | 2017 – 2021<br /><br />
+          </p>
+          <h3>Formação Complementar</h3>
+          <p>
+            • Formação Apache Spark e Databricks <strong>reconhecida pelo MEC</strong><br />
+            (Engenharia de Dados Academy):<br />
+            Databricks, Apache Spark, Kubernetes, Docker, Git, GitHub, Azure,
+            AWS, GCP, <b>[Em Andamento]</b><br /><br />
+            • Engenharia de Dados (Jornada de Dados):<br />
+            Azure, AWS, GCP, Databricks, Spark, Python, DBT, Airflow, Docker,
+            Kafka, Terraform, Kubernetes.<br /><br />
+            • BI Academy Pro (Rafael Piton):<br />
+            Power BI, Oracle SQL, OBIEE, ODI, Linux, Metodologias Ágeis.<br /><br />
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Habilidades Comportamentais</h3>
+          <p>
+            • Comunicação eficaz<br />
+            • Trabalho em equipe<br />
+            • Empatia<br />
+            • Resiliência<br />
+            • Pensamento crítico<br />
+            • Proatividade<br />
+            • Gestão eficiente do tempo<br />
+            • Flexibilidade<br />
+            • Inteligência emocional<br />
+            • Liderança<br />
+            • Adaptabilidade
+          </p>
+          <br />
+
+          <h3>Localização</h3>
+          <p>
+            • Serra – ES, Brasil<br />
+            • Disponível para remoto
+          </p>
+          <br />
+
+          <h3>Idiomas</h3>
+          <p>
+            • Português: Nativo<br />
+            • Inglês: Técnico
+          </p>
+          <br />
+        </div>
+
+        <div class="card">
+          <h3>Interesses</h3>
+          <p>
+            Tenho interesse em aprofundar minha atuação em
+            <strong>Engenharia de Dados e Inteligência Artificial</strong>, com
+            foco em soluções modernas (<strong>Data Lake</strong> e
+            <strong>Lakehouse</strong>) e arquiteturas Cloud (AWS, Azure,
+            Databricks).<br /><br />
+            Busco liderar projetos envolvendo criação e orquestração de
+            pipelines robustos e escaláveis (<strong>Airflow</strong>,
+            <strong>Databricks Workflows</strong>), processamento distribuído
+            (batch/streaming) usando <strong>PySpark</strong>,
+            <strong>Spark SQL</strong>, <strong>Kafka</strong>,
+            <strong>Kinesis</strong>, <strong>Azure Event Hubs</strong> e
+            <strong>Glue</strong>, além de aplicar práticas sólidas de
+            <strong>DataOps</strong> (CI/CD, testes automatizados,
+            monitoramento, IaC com <strong>Terraform</strong>).<br /><br />
+            Também pretendo ampliar minhas competências em <strong>MLOps</strong>
+            (<strong>MLflow</strong>) e explorar práticas avançadas em
+            <strong>LLMOps</strong> (LLMs, versionamento de prompts,
+            arquiteturas <strong>RAG</strong>).<br /><br />
+            Busco continuamente desafios que permitam aplicar e evoluir essas
+            habilidades, entregando soluções inovadoras de alto valor
+            estratégico.
+          </p>
         </div>
       </div>
-    </section>
-  </main>
+      <!-- /CARDS DE INFORMAÇÃO -->
 
-  <footer>
-    <div class="socials">
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-gitlab"></i></a>
-      <a href="#"><i class="fab fa-blogger"></i></a>
-    </div>
-    <p>&copy; 2025 Adriano Vilela</p>
-  </footer>
+      <!-- SEÇÃO: HABILIDADES TÉCNICAS -->
+      <section id="habilidades" class="container">
+        <h2>Habilidades Técnicas</h2>
+        <div class="cards">
+          <div class="card">
+            <i class="fas fa-database"></i>
+            <h3>Engenharia de Dados</h3>
+            <p>
+              Desenvolvimento de pipelines robustos e escaláveis, ETL/ELT,
+              modelagem dimensional (Star/Snowflake), qualidade e governança de
+              dados.
+            </p>
+          </div>
+          <div class="card">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud Computing</h3>
+            <p>
+              AWS, Azure, Databricks, Infraestrutura como Código (IaC com
+              Terraform), arquitetura Serverless.
+            </p>
+          </div>
+          <div class="card">
+            <i class="fas fa-code"></i>
+            <h3>Programação</h3>
+            <p>
+              Python, SQL, Apache Spark (PySpark/Spark SQL), Shell Script,
+              automação e processamento de dados.
+            </p>
+          </div>
+          <div class="card">
+            <i class="fas fa-server"></i>
+            <h3>Big Data</h3>
+            <p>
+              Spark, Databricks, Kafka, Hadoop, processamento distribuído,
+              análise e tratamento de grandes volumes de dados.
+            </p>
+          </div>
+          <div class="card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Data Warehousing</h3>
+            <p>
+              Databricks, Redshift, Azure Synapse, modelagem dimensional,
+              otimização e performance de consultas.
+            </p>
+          </div>
+          <div class="card">
+            <i class="fas fa-project-diagram"></i>
+            <h3>Orquestração</h3>
+            <p>Airflow, DBT, Docker, Kubernetes, CI/CD.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-cogs"></i>
+            <h3>DataOps/MLOps</h3>
+            <p>
+              Azure DevOps, Jenkins, GitHub Actions, GitLab CI/CD, automação de
+              pipelines, versionamento e entrega contínua.
+            </p>
+          </div>
+          <div class="card">
+            <i class="fas fa-tachometer-alt"></i>
+            <h3>Dashboards</h3>
+            <p>Power BI, Streamlit, storytelling com dados.</p>
+          </div>
+        </div>
+      </section>
+      <!-- /HABILIDADES TÉCNICAS -->
 
-  <script src="js/script.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-</body>
+      <!-- SEÇÃO: EXPERIÊNCIAS -->
+      <section id="experiencias" class="container">
+        <h2>Experiências</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Analytics Engineer</h3>
+              <p class="empresa">Compass UOL | jun 2024 - Atualmente</p>
+              <p>
+                Atuo como Engenheiro Analítico de Dados via outsourcing no setor
+                de Óleo & Gás. Desenvolvimento de pipelines ETL/ELT (ADF,
+                Databricks), dashboards interativos (Power BI, Streamlit),
+                arquitetura Medallion, governança de dados e automação com
+                Python.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Analista de Dados</h3>
+              <p class="empresa">Compass UOL | jan 2023 - jun 2024</p>
+              <p>
+                Modelagem dimensional (Star, Snowflake), pipelines ETL em
+                SQL/M/Python, visualização no Power BI, automação de processos
+                com Power Automate e VBA Excel.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Administrador de Dados</h3>
+              <p class="empresa">Compass UOL | mai 2022 - jan 2023</p>
+              <p>
+                Modelagem dimensional, gerenciamento avançado de bancos Oracle,
+                criação de Data Marts, liderança em projetos estratégicos com
+                squads AS-005, AS-015 e AS-021.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Analista de Dados</h3>
+              <p class="empresa">Grupo Águia Branca | jan 2022 - abr 2022</p>
+              <p>
+                Requisitos detalhados, automação em BI (Jenkins), ETL e Data
+                Warehouses com SQL Server e T-SQL, desenvolvimento de KPIs com
+                Power BI.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Analista de Business Intelligence</h3>
+              <p class="empresa">Globalsys | mai 2021 - out 2021</p>
+              <p>
+                Implementação de Data Warehouse e Data Mart (Oracle/PL-SQL/ODI/OBIEE),
+                relatórios interativos web/mobile, pipelines automatizados AWS Glue,
+                Lambda, Redshift e QuickSight.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Coordenador de Sistemas Embarcados</h3>
+              <p class="empresa">TACOM | ago 2018 - ago 2021</p>
+              <p>
+                Coordenação de projeto Bilhetagem Eletrônica, gestão Agile,
+                DevOps e interação com órgãos governamentais.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Analista de Negócios Sênior</h3>
+              <p class="empresa">Expresso Santa Paula Ltda | nov 2018 - mai 2021</p>
+              <p>
+                Gestão infraestrutura TI, implementação relatórios BI (Power BI),
+                coordenação Sistema Bilhetagem Eletrônica, gestão orçamentária e
+                contratos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /EXPERIÊNCIAS -->
+
+      <!-- SEÇÃO: PROJETOS -->
+      <section id="projetos" class="container">
+        <h2>Projetos</h2>
+        <div class="cards">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="card-top">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="card-bottom">
+              <h3>Pipeline de Dados em Tempo Real</h3>
+              <p>
+                Desenvolvimento de sistema de processamento de dados em tempo
+                real usando Kafka e Spark Streaming.
+              </p>
+              <div class="tags">
+                <span>Kafka</span>
+                <span>Spark</span>
+                <span>AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-top">
+              <i class="fas fa-database"></i>
+            </div>
+            <div class="card-bottom">
+              <h3>Data Warehouse na Nuvem</h3>
+              <p>
+                Implementação de data warehouse moderno usando Snowflake com
+                integração automatizada de múltiplas fontes.
+              </p>
+              <div class="tags">
+                <span>Snowflake</span>
+                <span>dbt</span>
+                <span>Airflow</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-top">
+              <i class="fas fa-cloud-arrow-up"></i>
+            </div>
+            <div class="card-bottom">
+              <h3>Data Lake Corporativo</h3>
+              <p>
+                Arquitetura e implementação de data lake em camadas usando
+                tecnologias open source e cloud.
+              </p>
+              <div class="tags">
+                <span>S3</span>
+                <span>Delta Lake</span>
+                <span>Glue</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card">
+            <div class="card-top">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="card-bottom">
+              <h3>Plataforma de Analytics</h3>
+              <p>
+                Desenvolvimento de plataforma self-service para análise de dados
+                com visualizações interativas.
+              </p>
+              <div class="tags">
+                <span>Looker</span>
+                <span>BigQuery</span>
+                <span>Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="card">
+            <div class="card-top">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="card-bottom">
+              <h3>Migração para a Nuvem</h3>
+              <p>
+                Migração de infraestrutura de dados on‐premise para a nuvem com
+                zero downtime.
+              </p>
+              <div class="tags">
+                <span>Azure</span>
+                <span>Terraform</span>
+                <span>Databricks</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="card">
+            <div class="card-top">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="card-bottom">
+              <h3>Automação de Qualidade de Dados</h3>
+              <p>
+                Sistema de monitoramento e validação automática de qualidade de
+                dados com alertas.
+              </p>
+              <div class="tags">
+                <span>Great Expectations</span>
+                <span>Airflow</span>
+                <span>Grafana</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /PROJETOS -->
+
+      <!-- SEÇÃO: CERTIFICAÇÕES -->
+      <section id="certificacoes" class="container">
+        <h2>Certificações</h2>
+        <div class="cards">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>AWS Certified Data Analytics</h3>
+            <p class="issuer">Amazon Web Services</p>
+            <p class="year">2022</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>Google Professional Data Engineer</h3>
+            <p class="issuer">Google Cloud</p>
+            <p class="year">2021</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>Azure Data Engineer Associate</h3>
+            <p class="issuer">Microsoft</p>
+            <p class="year">2020</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>Databricks Certified Developer</h3>
+            <p class="issuer">Databricks</p>
+            <p class="year">2019</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>Confluent Kafka Certification</h3>
+            <p class="issuer">Confluent</p>
+            <p class="year">2018</p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>Snowflake SnowPro Core</h3>
+            <p class="issuer">Snowflake</p>
+            <p class="year">2021</p>
+          </div>
+        </div>
+      </section>
+      <!-- /CERTIFICAÇÕES -->
+
+      <!-- SEÇÃO: CLIENTES -->
+      <section id="clientes" class="container clients">
+        <h2>Clientes</h2>
+        <div class="cards">
+          <!-- Ícones de clientes -->
+        </div>
+      </section>
+      <!-- /CLIENTES -->
+
+      <!-- SEÇÃO: CONTATO -->
+      <section id="contato" class="container">
+        <h2>Contato</h2>
+        <p class="contact-intro">
+          Estou disponível para novos projetos, consultorias e oportunidades.
+          Entre em contato para discutirmos como posso ajudar a transformar
+          seus dados em valor.
+        </p>
+        <div class="contact-flex">
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:dataengineer@adrianogvs.com.br"
+                  >dataengineer@adrianogvs.com.br</a
+                >
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fab fa-whatsapp"></i>
+              <div>
+                <h4>WhatsApp</h4>
+                <a href="https://wa.me/5527988077337" target="_blank"
+                  >+55 (27) 98807-7337</a
+                >
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fab fa-linkedin"></i>
+              <div>
+                <h4>LinkedIn</h4>
+                <a href="https://linkedin.com/in/adrianogvs" target="_blank"
+                  >linkedin.com/in/adrianogvs</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <div class="form-card">
+              <form>
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" placeholder="Nome" />
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email" />
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="5" placeholder="Mensagem"></textarea>
+                <button type="submit">
+                  <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                </button>
+                <small>
+                  Este é um formulário de demonstração. Para contato real, use os
+                  canais ao lado.
+                </small>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /CONTATO -->
+    </main>
+
+    <!-- SEÇÃO: FOOTER -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-gitlab"></i></a>
+        <a href="#"><i class="fab fa-blogger"></i></a>
+      </div>
+      <p>&copy; 2025 Adriano Vilela</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
 </html>
