@@ -987,3 +987,133 @@ body.light #certificacoes .card .issuer {
   height: auto;
   object-fit: contain;
 }
+
+/* =============================
+        STYLE DO RODAPÉ
+================================ */
+.site-footer {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 40px 20px 20px; /* espaçamento interno */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body.light .site-footer {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+/* Container principal: alinha itens horizontalmente */
+.footer-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* === LADO ESQUERDO: nome e cargo === */
+.footer-info h4 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--accent); /* mantêm o nome em laranja */
+}
+
+body.light .footer-info h4 {
+  color: var(--accent);
+}
+
+.footer-info span {
+  display: block;
+  font-size: 0.95rem;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+/* === LADO DIREITO: ícones sociais === */
+.footer-socials a {
+  margin-left: 16px;
+  font-size: 1.4rem;
+  color: var(--text-light);
+  transition: color 0.2s;
+}
+
+.footer-socials a:first-child {
+  margin-left: 0; /* remove margem do primeiro ícone */
+}
+
+.footer-socials a:hover {
+  color: var(--accent);
+}
+
+body.light .footer-socials a {
+  color: var(--text-dark);
+}
+
+body.light .footer-socials a:hover {
+  color: var(--accent);
+}
+
+/* === COPYRIGHT ABAIXO === */
+.footer-copy {
+  text-align: center;
+  margin-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 16px;
+}
+
+.footer-copy small {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+body.light .footer-copy small {
+  color: var(--text-dark);
+}
+
+/* === RESPONSIVIDADE MÍNIMA === */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-socials a {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+
+/* ===== ÍCONES SOCIAIS NO RODAPÉ ===== */
+
+/* Cor padrão (laranja) e sem sublinhado */
+.footer-socials a {
+  margin-left: 16px;
+  font-size: 1.4rem;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+/* Remove margem do primeiro ícone */
+.footer-socials a:first-child {
+  margin-left: 0;
+}
+
+/* Hover no tema escuro: ícone fica branco */
+.footer-socials a:hover {
+  color: var(--text-light);
+}
+
+/* No tema claro, mantém laranja por padrão */
+body.light .footer-socials a {
+  color: var(--accent);
+}
+
+/* Hover no tema claro: ícone fica preto */
+body.light .footer-socials a:hover {
+  color: var(--text-dark);
+}
