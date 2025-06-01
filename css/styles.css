@@ -590,3 +590,263 @@ body.light .timeline-content .empresa {
 }
 
 
+/* ==========================
+   SEÇÃO DE PROJETOS
+   ========================== */
+#projetos {
+  padding: 80px 20px; /* Já existe .container, mas garantimos espaçamento vertical */
+  scroll-margin-top: 60px; /* Para âncoras não ficarem sob o header fixo */
+}
+
+#projetos h2 {
+  color: var(--text-light);
+  margin-bottom: 40px;
+  /* O ::after já vem do seu h2 genérico */
+}
+
+/* Grid de cards específicos de Projetos */
+#projetos .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+/* Cada card */
+#projetos .card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: default;
+}
+
+#projetos .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Topo do card: ícone sobre fundo claro */
+#projetos .card-top {
+  background-color: var(--card-bg-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+#projetos .card-top i {
+  font-size: 2.5rem;
+  color: var(--accent);
+}
+
+/* Corpo do card: fundo escuro / claro conforme tema */
+#projetos .card-bottom {
+  background-color: var(--card-bg-dark);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+body.light #projetos .card-bottom {
+  background-color: var(--card-bg-light);
+}
+
+/* Título do projeto */
+#projetos .card-bottom h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+}
+
+body.light #projetos .card-bottom h3 {
+  color: var(--text-dark);
+}
+
+/* Descrição */
+#projetos .card-bottom p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  flex-grow: 1;
+  line-height: 1.4;
+}
+
+body.light #projetos .card-bottom p {
+  color: var(--text-dark);
+}
+
+/* Tags (pílulas) */
+#projetos .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#projetos .tags span {
+  display: inline-block;
+  background-color: var(--card-bg-light);
+  color: var(--accent);
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+body.light #projetos .tags span {
+  background-color: var(--card-bg-dark);
+  /* mantém o texto laranja em ambos os temas */
+}
+
+/* ==========================
+   RESPONSIVIDADE
+   ========================== */
+@media (max-width: 768px) {
+  #projetos {
+    padding: 60px 10px;
+  }
+
+  #projetos h2 {
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+  }
+
+  #projetos .card-top {
+    height: 100px;
+  }
+
+  #projetos .card-top i {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #projetos .cards {
+    grid-template-columns: 1fr;
+  }
+
+  #projetos h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
+
+/* ==========================
+   SEÇÃO DE CERTIFICAÇÕES
+   ========================== */
+#certificacoes {
+  padding: 80px 20px;               /* Espaçamento vertical */
+  scroll-margin-top: 60px;          /* Ajuste para âncora abaixo do header fixo */
+}
+
+#certificacoes h2 {
+  /* O estilo de h2 (underline laranja etc.) já está definido globalmente */
+  margin-bottom: 40px;
+}
+
+/* Grid de cards de certificações */
+#certificacoes .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+/* Cada card individual */
+#certificacoes .card {
+  background: var(--card-bg-dark);
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: default;
+}
+
+body.light #certificacoes .card {
+  background: var(--card-bg-light);
+}
+
+#certificacoes .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Ícone no canto superior-left */
+#certificacoes .card-icon i {
+  color: var(--accent);
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+/* Título da certificação */
+#certificacoes .card h3 {
+  font-size: 1.125rem;
+  margin-bottom: 8px;
+  color: var(--text-light);
+}
+
+body.light #certificacoes .card h3 {
+  color: var(--text-dark);
+}
+
+/* Nome do emissor */
+#certificacoes .card .issuer {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  color: var(--text-light);
+}
+
+body.light #certificacoes .card .issuer {
+  color: var(--text-dark);
+}
+
+/* Ano da certificação */
+#certificacoes .card .year {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* ==========================
+   RESPONSIVIDADE
+   ========================== */
+@media (max-width: 768px) {
+  #certificacoes {
+    padding: 60px 10px;
+  }
+  #certificacoes h2 {
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+  }
+  #certificacoes .card-icon i {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #certificacoes .cards {
+    grid-template-columns: 1fr;
+  }
+  #certificacoes h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
+
+
+#clientes .card-icon img {
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Ajuste para que o logo ocupe até 60% do círculo e mantenha proporção */
+#clientes .card-icon img {
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+}
