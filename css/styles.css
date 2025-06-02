@@ -815,6 +815,7 @@ body.light #projetos .card-bottom p {
 body.light #projetos h2 {
   color: var(--text-dark);
 }
+
 /* Tags (pílulas) do projeto */
 #projetos .tags {
   display: flex;
@@ -840,7 +841,6 @@ body.light #projetos .tags span {
 /* ============================
    RESPONSIVIDADE - PROJETOS
    ============================ */
-
 @media (max-width: 768px) {
   #projetos {
     padding: 60px 10px;
@@ -976,9 +976,9 @@ body.light #certificacoes .card .issuer {
   }
 }
 
-/* =============================
-        STYLE DO RODAPÉ
-================================ */
+/* ==============================
+   STYLE DO RODAPÉ
+   ============================== */
 .site-footer {
   background-color: var(--bg-dark);
   color: var(--text-light);
@@ -1076,7 +1076,6 @@ body.light .footer-copy small {
 }
 
 /* ===== ÍCONES SOCIAIS NO RODAPÉ ===== */
-
 /* Cor padrão (laranja) e sem sublinhado */
 .footer-socials a {
   margin-left: 16px;
@@ -1104,4 +1103,24 @@ body.light .footer-socials a {
 /* Hover no tema claro: ícone fica preto */
 body.light .footer-socials a:hover {
   color: var(--text-dark);
+}
+
+/* ================================
+   LINKS DENTRO DA CARD (FORMAÇÃO)
+   ================================ */
+
+/* 1) Deixa todo link sublinhado para ficar evidente que é clicável */
+.card p a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* 2) No tema escuro (quando NÃO há a classe .light no <body>), força o link em branco */
+body:not(.light) .card p a {
+  color: var(--text-light) !important;  /* var(--text-light) já é #f5f5f5 por padrão */
+}
+
+/* 3) No tema claro (quando existe a classe .light no <body>), força o link em preto */
+body.light .card p a {
+  color: var(--text-dark) !important;   /* var(--text-dark) já é #1c1c1c por padrão */
 }
