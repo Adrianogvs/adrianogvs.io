@@ -613,11 +613,19 @@ body:not(.light) .theme-option:focus {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  transition: background 0.3s;
+
+  /* transições para background, movimento e sombra */
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  cursor: default;
 }
 
 body.light #habilidades .cards .card {
   background: var(--card-bg-light);
+}
+
+#habilidades .cards .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 #habilidades .cards .card i {
@@ -645,6 +653,7 @@ body.light #habilidades .cards .card h3 {
 body.light #habilidades .cards .card p {
   color: var(--text-dark);
 }
+
 
 /* ================================
    ESTILOS DA SEÇÃO EXPERIÊNCIAS (TIMELINE)
