@@ -138,9 +138,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// ===== CURSOR GLOW (efeito luminoso que segue o mouse) =====
+// ==================================================
+// CURSOR GLOW (efeito luminoso que segue o mouse)
+// ==================================================
+
 (function() {
   const canvas = document.getElementById('cursor-glow');
+  if (!canvas) return; // segurança!
+
   const ctx = canvas.getContext('2d');
   let w = window.innerWidth, h = window.innerHeight;
   let mouse = { x: w/2, y: h/2, alpha: 0 };
@@ -172,11 +177,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function draw() {
     ctx.clearRect(0, 0, w, h);
 
-    // Desenha o glow dourado (você pode trocar as cores/força do gradiente aqui)
+    // Desenha o glow dourado
     if (mouse.alpha > 0.01) {
       const gradient = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, 90);
-      gradient.addColorStop(0, "rgba(255, 215, 0, 0.55)");    // dourado vivo (amarelo-ouro)
-      gradient.addColorStop(0.2, "rgba(255, 165, 0, 0.18)");  // laranja-ouro bem suave
+      gradient.addColorStop(0, "rgba(255, 215, 0, 0.55)");
+      gradient.addColorStop(0.2, "rgba(255, 165, 0, 0.18)");
       gradient.addColorStop(1, "rgba(0,0,0,0)");
       ctx.globalAlpha = mouse.alpha;
       ctx.beginPath();
@@ -191,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   draw();
 
-  // Canvas fixo, cobrindo tudo, ignorável pro mouse (não atrapalha clicar/rolar!)
+  // Canvas fixo cobrindo tudo, sem atrapalhar cliques
   Object.assign(canvas.style, {
     position: 'fixed',
     top: 0, left: 0,
@@ -199,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
     height: '100vh',
     pointerEvents: 'none',
     zIndex: 9999,
-    mixBlendMode: 'lighter', // mistura brilho (não cobre o conteúdo)
+    mixBlendMode: 'lighter',
   });
 })();
 // ===== FIM DO SCRIPT =====
