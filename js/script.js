@@ -111,101 +111,71 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ================================
-  // EVENTO: SUBMISSÃO DO FORMULÁRIO DE CONTATO
-  // ================================
-  document.querySelector("form").addEventListener("submit", function (e) {
-    e.preventDefault();
+  // ==================================================
+  // CURSOR GLOW (efeito luminoso que segue o mouse)
+  // ==================================================
+  (function() {
+    const canvas = document.getElementById('cursor-glow');
+    if (!canvas) return; // se não existir, sai
 
-    const nome     = document.getElementById("nome").value;
-    const email    = document.getElementById("email").value;
-    const mensagem = document.getElementById("mensagem").value;
+    const ctx = canvas.getContext('2d');
+    let w = window.innerWidth, h = window.innerHeight;
+    let mouse = { x: w/2, y: h/2, alpha: 0 };
 
-    Email.send({
-      Host:     "smtp.zoho.com",
-      Username: "contato@adrianogvs.com.br",
-      Password: "SUA_SENHA_AQUI", 
-      To:       "contato@adrianogvs.com.br",
-      From:     "contato@adrianogvs.com.br",
-      Subject:  `Nova mensagem de ${nome}`,
-      Body:     `Nome: ${nome}<br>Email: ${email}<br>Mensagem: ${mensagem}`
-    }).then(() => {
-      alert("Mensagem enviada com sucesso!");
-    }).catch(err => {
-      alert("Erro ao enviar. Tente novamente.");
-      console.error(err);
-    });
-  });
-});
-
-// ==================================================
-// CURSOR GLOW (efeito luminoso que segue o mouse)
-// ==================================================
-
-(function() {
-  const canvas = document.getElementById('cursor-glow');
-  if (!canvas) return; // segurança!
-
-  const ctx = canvas.getContext('2d');
-  let w = window.innerWidth, h = window.innerHeight;
-  let mouse = { x: w/2, y: h/2, alpha: 0 };
-
-  // Ajusta canvas sempre que redimensiona
-  function resize() {
-    w = window.innerWidth;
-    h = window.innerHeight;
-    canvas.width = w;
-    canvas.height = h;
-  }
-  window.addEventListener('resize', resize);
-  resize();
-
-  // Atualiza posição do mouse
-  window.addEventListener('mousemove', e => {
-    mouse.x = e.clientX;
-    mouse.y = e.clientY;
-    mouse.alpha = 1; // aparece
-  });
-
-  // Para suavizar desaparecimento do glow
-  function fadeGlow() {
-    if (mouse.alpha > 0) mouse.alpha -= 0.015;
-    if (mouse.alpha < 0) mouse.alpha = 0;
-  }
-
-  // Loop de animação
-  function draw() {
-    ctx.clearRect(0, 0, w, h);
-
-    // Desenha o glow dourado
-    if (mouse.alpha > 0.01) {
-      const gradient = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, 90);
-      gradient.addColorStop(0, "rgba(255, 215, 0, 0.55)");
-      gradient.addColorStop(0.2, "rgba(255, 165, 0, 0.18)");
-      gradient.addColorStop(1, "rgba(0,0,0,0)");
-      ctx.globalAlpha = mouse.alpha;
-      ctx.beginPath();
-      ctx.arc(mouse.x, mouse.y, 90, 0, Math.PI * 2, false);
-      ctx.closePath();
-      ctx.fillStyle = gradient;
-      ctx.fill();
-      ctx.globalAlpha = 1;
+    // Ajusta tamanho do canvas
+    function resize() {
+      w = window.innerWidth;
+      h = window.innerHeight;
+      canvas.width = w;
+      canvas.height = h;
     }
-    fadeGlow();
-    requestAnimationFrame(draw);
-  }
-  draw();
+    window.addEventListener('resize', resize);
+    resize();
 
-  // Canvas fixo cobrindo tudo, sem atrapalhar cliques
-  Object.assign(canvas.style, {
-    position: 'fixed',
-    top: 0, left: 0,
-    width: '100vw',
-    height: '100vh',
-    pointerEvents: 'none',
-    zIndex: 9999,
-    mixBlendMode: 'lighter',
-  });
-})();
-// ===== FIM DO SCRIPT =====
-// FIM DO SCRIPT
+    // Atualiza posição do mouse
+    window.addEventListener('mousemove', e => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+      mouse.alpha = 1;
+    });
+
+    // Gradual fade
+    function fadeGlow() {
+      if (mouse.alpha > 0) mouse.alpha -= 0.015;
+      if (mouse.alpha < 0) mouse.alpha = 0;
+    }
+
+    // Desenha o glow
+    function draw() {
+      ctx.clearRect(0, 0, w, h);
+      if (mouse.alpha > 0.01) {
+        const gradient = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, 180);
+        gradient.addColorStop(0, "rgba(255, 215, 0, 0.55)");
+        gradient.addColorStop(0.2, "rgba(255, 165, 0, 0.18)");
+        gradient.addColorStop(1, "rgba(0,0,0,0)");
+        ctx.globalAlpha = mouse.alpha;
+        ctx.beginPath();
+        ctx.arc(mouse.x, mouse.y, 180, 0, Math.PI * 2, false);
+        ctx.closePath();
+        ctx.fillStyle = gradient;
+        ctx.fill();
+        ctx.globalAlpha = 1;
+      }
+      fadeGlow();
+      requestAnimationFrame(draw);
+    }
+    draw();
+
+    // Deixa o canvas cobrir toda a tela sem interferir em cliques
+    Object.assign(canvas.style, {
+      position: 'fixed',
+      top: 0, left: 0,
+      width: '100vw',
+      height: '100vh',
+      pointerEvents: 'none',
+      zIndex: 9999,
+      mixBlendMode: 'lighter',
+    });
+  })();
+
+}); // fim do DOMContentLoaded
