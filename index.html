@@ -38,6 +38,7 @@
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#experiencias">Experiências</a></li>
+            <li><a href="#empresas">Empresas</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#certificacoes">Certificações</a></li>
             <li><a href="#contato">Contato</a></li>
@@ -117,6 +118,33 @@
         </div>
         <img src="./assets/images/agvs.png" alt="Adriano Vilela" />
       </section>
+
+      <!-- SEÇÃO: STATS BAR -->
+      <div class="stats-bar">
+        <div class="stats-grid">
+          <div>
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Anos de Experiência</span>
+          </div>
+          <div>
+            <span class="stat-number">4</span>
+            <span class="stat-label">Certificações Azure & Databricks</span>
+          </div>
+          <div>
+            <span class="stat-number">3</span>
+            <span class="stat-label">Grandes Empresas Atendidas</span>
+          </div>
+          <div>
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Projetos Entregues</span>
+          </div>
+          <div>
+            <span class="stat-number">3</span>
+            <span class="stat-label">Plataformas Cloud (Azure · AWS · GCP)</span>
+          </div>
+        </div>
+      </div>
+      <!-- /STATS BAR -->
 
       <!-- SEÇÃO: SOBRE MIM -->
       <section id="sobre" class="container">
@@ -204,6 +232,23 @@
       <!-- SEÇÃO: HABILIDADES TÉCNICAS -->
       <section id="habilidades" class="container">
         <h2>Habilidades Técnicas</h2>
+
+        <!-- Tech badges visuais -->
+        <div class="tech-stack">
+          <img src="https://skillicons.dev/icons?i=azure,python,docker,kubernetes,terraform,linux,github,git,kafka,postgres,mongodb,fastapi&theme=dark" alt="Stack principal" />
+          <div class="tech-stack-extra">
+            <img src="https://img.shields.io/badge/Azure_Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white" alt="Azure Databricks" />
+            <img src="https://img.shields.io/badge/Microsoft_Fabric-742774?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft Fabric" />
+            <img src="https://img.shields.io/badge/Delta_Lake-00ADD8?style=flat-square&logo=delta&logoColor=white" alt="Delta Lake" />
+            <img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat-square&logo=apache-spark&logoColor=white" alt="PySpark" />
+            <img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=flat-square&logo=apache-airflow&logoColor=white" alt="Airflow" />
+            <img src="https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white" alt="dbt" />
+            <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=power-bi&logoColor=black" alt="Power BI" />
+            <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit" />
+            <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white" alt="MLflow" />
+          </div>
+        </div>
+
         <div class="cards">
           <div class="card">
             <i class="fas fa-database"></i>
@@ -275,13 +320,10 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Engenheiro de Dados</h3>
+              <h3>Engenheiro de Dados — Petrobras</h3>
               <p class="empresa">Compass UOL | jun 2024 - Atualmente</p>
               <p>
-                Atuo como Engenheiro de Dados via outsourcing na Petrobrás, empresa do setor de Óleo e Gás. 
-                Minha experiência envolve o desenvolvimento de pipelines ETL/ELT (ADF, Databricks), 
-                construção de dashboards interativos (Power BI, Streamlit), aplicação da arquitetura Medallion, 
-                iniciativas de governança de dados e automação de processos com Python.
+                Alocado na <strong>Petrobras</strong> (Óleo & Gás), projeto e opero plataformas de dados de missão crítica com <strong>Azure Databricks</strong>, <strong>Medallion Architecture</strong> (Bronze→Silver→Gold) e <strong>Delta Lake</strong>. Desenvolvo pipelines ETL/ELT com <strong>Azure Data Factory</strong>, implemento governança com <strong>Unity Catalog</strong>, entrego dashboards com <strong>Power BI</strong> e <strong>Streamlit</strong>, e aplico práticas de <strong>DataOps</strong> com CI/CD e monitoramento contínuo. SLA de 99,5% nos pipelines críticos.
               </p>
             </div>
           </div>
@@ -289,12 +331,10 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Analista de Dados</h3>
+              <h3>Engenheiro de Dados — Renner & Apex Brasil</h3>
               <p class="empresa">Compass UOL | jan 2023 - jun 2024</p>
               <p>
-                Modelagem dimensional (Star, Snowflake), pipelines ETL em
-                SQL/M/Python, visualização no Power BI, automação de processos
-                com Power Automate e VBA Excel.
+                Alocado em projetos para <strong>Renner</strong> (varejo) e <strong>Apex Brasil</strong> (inteligência de comércio exterior). Na Renner: implementação de <strong>Data Governance</strong> com <strong>Unity Catalog</strong> e <strong>Delta Lake</strong>. Na Apex Brasil: arquitetura de <strong>Data Lakehouse</strong> com Azure Databricks e ADLS Gen2 integrando dados do <strong>ComexStat</strong> e <strong>UN Comtrade</strong>. Modelagem dimensional, pipelines ETL com Python/SQL e visualizações no Power BI.
               </p>
             </div>
           </div>
@@ -305,9 +345,7 @@
               <h3>Administrador de Dados</h3>
               <p class="empresa">Compass UOL | mai 2022 - jan 2023</p>
               <p>
-                Modelagem dimensional, gerenciamento avançado de bancos Oracle,
-                criação de Data Marts, liderança em projetos estratégicos com
-                squads AS-005, AS-015 e AS-021.
+                Gerenciamento avançado de bancos <strong>Oracle</strong>, criação de <strong>Data Marts</strong>, modelagem dimensional e liderança técnica de squads de dados. Performance tuning com redução de 70% no tempo de resposta das queries críticas.
               </p>
             </div>
           </div>
@@ -366,130 +404,167 @@
       </section>
       <!-- /EXPERIÊNCIAS -->
 
+      <!-- SEÇÃO: EMPRESAS -->
+      <section id="empresas" class="container">
+        <h2>Onde Já Entreguei</h2>
+        <div class="empresas-grid">
+          <div class="empresa-card">
+            <span class="empresa-nome">Petrobras</span>
+            <span class="empresa-setor">Óleo & Gás · Data Lakehouse · Medallion</span>
+          </div>
+          <div class="empresa-card">
+            <span class="empresa-nome">Renner</span>
+            <span class="empresa-setor">Varejo · Data Governance · Unity Catalog</span>
+          </div>
+          <div class="empresa-card">
+            <span class="empresa-nome">Apex Brasil</span>
+            <span class="empresa-setor">Comércio Exterior · Azure Databricks · Lakehouse</span>
+          </div>
+          <div class="empresa-card">
+            <span class="empresa-nome">Globalsys</span>
+            <span class="empresa-setor">AWS Glue · Redshift · Data Warehouse</span>
+          </div>
+          <div class="empresa-card">
+            <span class="empresa-nome">Grupo Águia Branca</span>
+            <span class="empresa-setor">Transporte · SQL Server · Power BI</span>
+          </div>
+        </div>
+      </section>
+      <!-- /EMPRESAS -->
+
       <!-- SEÇÃO: PROJETOS -->
       <section id="projetos" class="container">
         <h2>Projetos</h2>
         <div class="cards">
-          <!-- Card 1 -->
+          <!-- Card 1 — airflow-databricks-orchestration (3 stars) -->
           <div class="card">
             <div class="card-top">
-              <i class="fas fa-industry"></i>
+              <i class="fas fa-project-diagram"></i>
             </div>
             <div class="card-bottom">
-              <h3>Pipeline IoT — Óleo & Gás</h3>
+              <h3>Orquestração Airflow + Databricks</h3>
               <p>
-                Simulação de pipeline ponta a ponta para coleta, tratamento e análise de dados de sensores IoT em ambiente crítico, com ingestão em tempo real e detecção de anomalias.
+                Guia completo e implementação prática de DAGs no Apache Airflow para orquestrar jobs no Databricks — tokens, conexões, Docker, agendamento avançado e execução parametrizada.
               </p>
               <div class="tags">
-                <span>Kafka</span>
-                <span>PySpark</span>
-                <span>NoSQL</span>
+                <span>Apache Airflow</span>
+                <span>Databricks</span>
                 <span>Python</span>
+                <span>Docker</span>
               </div>
-              <a href="https://github.com/Adrianogvs/projeto-nosql-iot" target="_blank" class="btn btn-sm" style="margin-top:12px;display:inline-block;">
+              <a href="https://github.com/Adrianogvs/airflow-databricks-orchestration" target="_blank" class="btn btn-sm">
                 <i class="fab fa-github"></i> Ver no GitHub
               </a>
             </div>
           </div>
 
-          <!-- Card 2 -->
+          <!-- Card 2 — aws-weather-realtime-etl -->
           <div class="card">
             <div class="card-top">
-              <i class="fas fa-cloud"></i>
+              <i class="fas fa-cloud-bolt"></i>
             </div>
             <div class="card-bottom">
-              <h3>ETL em Tempo Real — AWS</h3>
+              <h3>Pipeline Real-time na AWS — Dados Climáticos</h3>
               <p>
-                Pipeline de ingestão, tratamento e análise de dados climáticos em tempo real com batch processing e notificações automáticas via AWS.
+                Ingere dados da API Tomorrow.io via <strong>Kinesis</strong> → <strong>Lambda</strong> → <strong>S3</strong> → <strong>Glue</strong> → <strong>Athena</strong>, com alertas automáticos por SMS/email via SNS quando condições críticas são detectadas. Data lake em 3 camadas (raw, gold, analysis).
               </p>
               <div class="tags">
-                <span>AWS</span>
-                <span>Python</span>
-                <span>ETL</span>
-                <span>Real-time</span>
+                <span>AWS Lambda</span>
+                <span>Kinesis</span>
+                <span>Glue</span>
+                <span>Athena</span>
+                <span>SNS</span>
               </div>
-              <a href="https://github.com/Adrianogvs/aws-weather-realtime-etl" target="_blank" class="btn btn-sm" style="margin-top:12px;display:inline-block;">
+              <a href="https://github.com/Adrianogvs/aws-weather-realtime-etl" target="_blank" class="btn btn-sm">
                 <i class="fab fa-github"></i> Ver no GitHub
               </a>
             </div>
           </div>
 
-          <!-- Card 3 -->
+          <!-- Card 3 — 002_Engenharia_de_Dados_Azure (2 stars) -->
           <div class="card">
             <div class="card-top">
               <i class="fas fa-layer-group"></i>
             </div>
             <div class="card-bottom">
-              <h3>Data Lakehouse — Azure Databricks</h3>
+              <h3>Engenharia de Dados no Azure — 3 Casos Reais</h3>
               <p>
-                Projetos práticos de Engenharia de Dados no Azure com Databricks, ADF e ADLS Gen2 — Medallion Architecture (Bronze → Silver → Gold).
+                Três projetos práticos: IoT de temperatura para logística frigorífica (Event Hub + Stream Analytics + Power BI), gestão de receitas para plataforma de cursos (ADF + Data Lake) e infraestrutura para banco digital (Synapse + Databricks).
               </p>
               <div class="tags">
-                <span>Azure Databricks</span>
+                <span>Azure Event Hub</span>
                 <span>ADF</span>
-                <span>Medallion</span>
+                <span>Synapse</span>
+                <span>Databricks</span>
+                <span>Power BI</span>
               </div>
-              <a href="https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure" target="_blank" class="btn btn-sm" style="margin-top:12px;display:inline-block;">
+              <a href="https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure" target="_blank" class="btn btn-sm">
                 <i class="fab fa-github"></i> Ver no GitHub
               </a>
             </div>
           </div>
 
-          <!-- Card 4 -->
+          <!-- Card 4 — projeto-nosql-iot-azure -->
           <div class="card">
             <div class="card-top">
-              <i class="fas fa-file-invoice-dollar"></i>
+              <i class="fas fa-industry"></i>
             </div>
             <div class="card-bottom">
-              <h3>Análise de Dados Financeiros — Python</h3>
+              <h3>Pipeline IoT + Azure + Airflow — Óleo & Gás</h3>
               <p>
-                Pipeline de extração de dados de PDFs de relatórios de mercado financeiro e análise com Python e Jupyter Notebooks.
+                Simulação de pipeline de dados de sensores IoT em ambiente crítico de óleo e gás no Azure, com orquestração via Apache Airflow, armazenamento NoSQL e containerização Docker.
               </p>
               <div class="tags">
+                <span>Azure</span>
+                <span>Apache Airflow</span>
+                <span>NoSQL</span>
+                <span>Docker</span>
                 <span>Python</span>
-                <span>PDF</span>
-                <span>Jupyter</span>
-                <span>Finance</span>
               </div>
-              <a href="https://github.com/Adrianogvs/007_CM_Capital" target="_blank" class="btn btn-sm" style="margin-top:12px;display:inline-block;">
+              <a href="https://github.com/Adrianogvs/projeto-nosql-iot-azure" target="_blank" class="btn btn-sm">
                 <i class="fab fa-github"></i> Ver no GitHub
               </a>
             </div>
           </div>
 
-          <!-- Card 5 -->
+          <!-- Card 5 — Petrobras (projeto empresa) -->
           <div class="card">
             <div class="card-top">
               <i class="fas fa-briefcase"></i>
             </div>
             <div class="card-bottom">
-              <h3>Migração On-premise → Cloud — Petrobras</h3>
+              <h3>Data Lakehouse Medalion — Petrobras</h3>
               <p>
-                Migração de infraestrutura de dados on-premise para Azure com Databricks e Medallion Architecture, com zero downtime em ambiente de produção crítico.
+                Redesenho de plataforma de dados para Medallion Architecture (Bronze→Silver→Gold) com <strong>Azure Databricks</strong>, <strong>Delta Lake</strong> e <strong>Unity Catalog</strong>. SLA de 99,5% e redução de 60% no tempo de ingestão em ambiente enterprise.
               </p>
               <div class="tags">
-                <span>Azure</span>
-                <span>Terraform</span>
-                <span>Databricks</span>
+                <span>Azure Databricks</span>
+                <span>Delta Lake</span>
+                <span>Unity Catalog</span>
+                <span>ADF</span>
               </div>
             </div>
           </div>
 
-          <!-- Card 6 -->
+          <!-- Card 6 — 007_CM_Capital -->
           <div class="card">
             <div class="card-top">
-              <i class="fas fa-shield-alt"></i>
+              <i class="fas fa-chart-line"></i>
             </div>
             <div class="card-bottom">
-              <h3>DataOps & Qualidade de Dados — Petrobras</h3>
+              <h3>Extração e Análise de Dados Financeiros</h3>
               <p>
-                Framework de monitoramento e validação automática de qualidade de dados com alertas em tempo real e integração CI/CD em ambiente enterprise.
+                Pipeline Python para extração de dados estruturados de PDFs de relatórios de mercado financeiro, com análise e visualização via Jupyter Notebooks.
               </p>
               <div class="tags">
-                <span>Great Expectations</span>
-                <span>Airflow</span>
-                <span>DataOps</span>
+                <span>Python</span>
+                <span>PDF Extraction</span>
+                <span>Jupyter</span>
+                <span>Pandas</span>
               </div>
+              <a href="https://github.com/Adrianogvs/007_CM_Capital" target="_blank" class="btn btn-sm">
+                <i class="fab fa-github"></i> Ver no GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -500,60 +575,54 @@
       <section id="certificacoes" class="container">
         <h2>Certificações</h2>
         <div class="cards">
-          <!-- Card 1 -->
           <div class="card">
             <div class="card-icon">
-              <i class="fas fa-award"></i>
+              <i class="fas fa-award" style="color:#FF3621"></i>
             </div>
             <h3>Databricks Data Engineer Associate</h3>
-            <p class="issuer">Databricks</p>
-            <p class="year">2025</p>
+            <p class="issuer">Databricks Academy</p>
+            <p class="year">2025 · Verificado via Credly</p>
           </div>
 
-          <!-- Card 2 -->
           <div class="card">
             <div class="card-icon">
-              <i class="fas fa-award"></i>
+              <i class="fas fa-award" style="color:#0078D4"></i>
             </div>
             <h3>DP-203: Azure Data Engineer Associate</h3>
             <p class="issuer">Microsoft</p>
-            <p class="year">2025</p>
+            <p class="year">2025 · Verificado via Credly</p>
           </div>
 
-          <!-- Card 3 -->
           <div class="card">
             <div class="card-icon">
-              <i class="fas fa-award"></i>
+              <i class="fas fa-award" style="color:#0078D4"></i>
             </div>
             <h3>AI-102: Azure AI Engineer Associate</h3>
             <p class="issuer">Microsoft</p>
-            <p class="year">2025</p>
+            <p class="year">2025 · Verificado via Credly</p>
           </div>
 
-          <!-- Card 4 -->
           <div class="card">
             <div class="card-icon">
-              <i class="fas fa-award"></i>
+              <i class="fas fa-award" style="color:#F2C811"></i>
             </div>
             <h3>PL-300: Power BI Data Analyst Associate</h3>
             <p class="issuer">Microsoft</p>
-            <p class="year">2025</p>
+            <p class="year">2025 · Verificado via Credly</p>
           </div>
 
-          <!-- Card 5 -->
           <div class="card">
             <div class="card-icon">
-              <i class="fas fa-award"></i>
+              <i class="fas fa-award" style="color:#FF694B"></i>
             </div>
             <h3>dbt Fundamentals</h3>
             <p class="issuer">dbt Labs</p>
             <p class="year">2024</p>
           </div>
 
-          <!-- Card 6 -->
           <div class="card">
             <div class="card-icon">
-              <i class="fas fa-award"></i>
+              <i class="fas fa-award" style="color:#017CEE"></i>
             </div>
             <h3>Apache Airflow Fundamentals</h3>
             <p class="issuer">Astronomer</p>

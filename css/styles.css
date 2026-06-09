@@ -1115,6 +1115,147 @@ body.light .footer-socials a:hover {
 }
 
 /* ================================
+   STATS BAR
+   ================================ */
+.stats-bar {
+  background: var(--card-bg-dark);
+  padding: 40px 20px;
+  border-top: 3px solid var(--accent);
+}
+
+body.light .stats-bar {
+  background: var(--card-bg-light);
+}
+
+.stats-grid {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-top: 6px;
+  line-height: 1.3;
+}
+
+/* ================================
+   TECH STACK BADGES
+   ================================ */
+.tech-stack {
+  text-align: center;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+
+.tech-stack img {
+  max-width: 100%;
+}
+
+.tech-stack-extra {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.tech-stack-extra img {
+  height: 28px;
+}
+
+/* ================================
+   SEÇÃO EMPRESAS
+   ================================ */
+#empresas {
+  padding: 80px 20px;
+  scroll-margin-top: 60px;
+}
+
+.empresas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.empresa-card {
+  background: var(--card-bg-dark);
+  border-radius: 8px;
+  padding: 24px 32px;
+  min-width: 200px;
+  text-align: center;
+  border-top: 4px solid var(--accent);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+body.light .empresa-card {
+  background: var(--card-bg-light);
+}
+
+.empresa-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.empresa-card .empresa-nome {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: var(--text-light);
+}
+
+body.light .empresa-card .empresa-nome {
+  color: var(--text-dark);
+}
+
+.empresa-card .empresa-setor {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+/* ================================
+   BOTÃO PEQUENO (.BTN-SM)
+   ================================ */
+.btn-sm {
+  display: inline-block;
+  width: auto !important;
+  height: auto !important;
+  line-height: normal !important;
+  padding: 8px 14px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.82rem;
+  border-radius: 4px;
+  transition: opacity 0.2s;
+  margin-top: 12px;
+}
+
+.btn-sm:hover {
+  opacity: 0.8;
+}
+
+/* ================================
    LINKS DENTRO DA CARD (FORMAÇÃO)
    ================================ */
 
