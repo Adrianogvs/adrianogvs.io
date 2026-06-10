@@ -1254,12 +1254,9 @@ body.light .empresa-logo-wrap {
   background: #f2f2f2;
 }
 
-.empresa-logo-wrap--dark {
-  background: #1a1a2e;
-}
-
+.empresa-logo-wrap--dark,
 body.light .empresa-logo-wrap--dark {
-  background: #1a1a2e;
+  background: #1a1a2e !important;
 }
 
 .empresa-logo {
