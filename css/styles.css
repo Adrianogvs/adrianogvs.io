@@ -225,6 +225,14 @@ main {
   }
 }
 
+body.light #inicio .hero-tagline {
+  color: #444444;
+}
+
+body.light #inicio .hero-stack {
+  opacity: 1;
+}
+
 /* ============================
    BOTÕES (CLASS .BTN)
    ============================ */
