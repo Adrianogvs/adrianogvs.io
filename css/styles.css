@@ -201,18 +201,28 @@ main {
 }
 
 #inicio .hero-tagline {
-  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+  font-size: clamp(1rem, 2.2vw, 1.15rem);
   color: #e0e0e0;
-  margin-bottom: 0.75rem;
-  line-height: 1.6;
+  margin-bottom: 0.4rem;
+  line-height: 1.55;
+  max-width: 640px;
 }
 
 #inicio .hero-stack {
-  font-size: clamp(0.82rem, 1.8vw, 0.95rem);
+  font-size: clamp(0.75rem, 1.5vw, 0.85rem);
   color: var(--accent);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   margin-bottom: 1.5rem;
   opacity: 0.9;
+  max-width: 640px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  #inicio .hero-stack {
+    white-space: normal;
+    font-size: 0.78rem;
+  }
 }
 
 /* ============================
