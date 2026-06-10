@@ -200,6 +200,21 @@ main {
   margin-bottom: 1.5rem;
 }
 
+#inicio .hero-tagline {
+  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+  color: #e0e0e0;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+#inicio .hero-stack {
+  font-size: clamp(0.82rem, 1.8vw, 0.95rem);
+  color: var(--accent);
+  letter-spacing: 0.02em;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
 /* ============================
    BOTÕES (CLASS .BTN)
    ============================ */
