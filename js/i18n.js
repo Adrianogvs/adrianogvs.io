@@ -97,6 +97,7 @@ const translations = {
     'setor.serv_ti': 'Serviços de TI',
     'setor.mob':     'Mobilidade',
     'setor.turismo': 'Turismo',
+    'setor.financas':'Financeiro',
 
     // ── Projetos ──────────────────────────────────────────
     'proj.github':          'Ver no GitHub',
@@ -224,6 +225,7 @@ const translations = {
     'setor.serv_ti': 'IT Services',
     'setor.mob':     'Mobility',
     'setor.turismo': 'Tourism',
+    'setor.financas':'Financial',
 
     'proj.github':          'View on GitHub',
     'proj.airflow.h3':      'Airflow + Databricks Orchestration',
@@ -346,6 +348,7 @@ const translations = {
     'setor.serv_ti': 'Servicios de TI',
     'setor.mob':     'Movilidad',
     'setor.turismo': 'Turismo',
+    'setor.financas':'Financiero',
 
     'proj.github':          'Ver en GitHub',
     'proj.airflow.h3':      'Orquestación Airflow + Databricks',
