@@ -1151,7 +1151,7 @@ body.light .footer-socials a:hover {
   display: flex;
   gap: 32px;
   margin-top: 28px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .hero-stat {
@@ -1172,6 +1172,17 @@ body.light .footer-socials a:hover {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .hero-stats { gap: 20px; }
+  .hstat-n { font-size: 1.25rem; }
+}
+
+@media (max-width: 420px) {
+  .hero-stats { gap: 14px; }
+  .hstat-n { font-size: 1.05rem; }
+  .hstat-l { font-size: 0.6rem; letter-spacing: 0.03em; }
 }
 
 /* ================================
@@ -1208,7 +1219,7 @@ body.light .footer-socials a:hover {
 
 .empresas-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
   gap: 16px;
   margin-top: 16px;
 }
@@ -1216,7 +1227,7 @@ body.light .footer-socials a:hover {
 .empresa-card {
   border: 1px solid rgba(242, 92, 0, 0.2);
   border-radius: 8px;
-  padding: 28px 20px;
+  padding: 20px 16px;
   text-align: center;
   transition: border-color 0.25s, transform 0.2s;
   cursor: default;
@@ -1227,8 +1238,45 @@ body.light .footer-socials a:hover {
   transform: translateY(-3px);
 }
 
+.empresa-logo-wrap {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 8px;
+  overflow: hidden;
+}
+
+body.light .empresa-logo-wrap {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.empresa-logo {
+  max-height: 42px;
+  max-width: 120px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.empresa-initials {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
 .empresa-nome {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: var(--text-light);
 }
@@ -1238,9 +1286,9 @@ body.light .empresa-nome {
 }
 
 .empresa-setor {
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   color: var(--accent);
-  margin-top: 6px;
+  margin-top: 5px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 500;
