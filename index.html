@@ -115,36 +115,15 @@
           >
             <i class="fas fa-download"></i> Download Currículo
           </a>
+          <div class="hero-stats">
+            <div class="hero-stat"><span class="hstat-n">5+</span><span class="hstat-l">Anos</span></div>
+            <div class="hero-stat"><span class="hstat-n">4</span><span class="hstat-l">Certificações</span></div>
+            <div class="hero-stat"><span class="hstat-n">6</span><span class="hstat-l">Empresas</span></div>
+            <div class="hero-stat"><span class="hstat-n">10+</span><span class="hstat-l">Projetos</span></div>
+          </div>
         </div>
         <img src="./assets/images/agvs.png" alt="Adriano Vilela" />
       </section>
-
-      <!-- SEÇÃO: STATS BAR -->
-      <div class="stats-bar">
-        <div class="stats-grid">
-          <div>
-            <span class="stat-number">5+</span>
-            <span class="stat-label">Anos de Experiência</span>
-          </div>
-          <div>
-            <span class="stat-number">4</span>
-            <span class="stat-label">Certificações Azure & Databricks</span>
-          </div>
-          <div>
-            <span class="stat-number">3</span>
-            <span class="stat-label">Grandes Empresas Atendidas</span>
-          </div>
-          <div>
-            <span class="stat-number">10+</span>
-            <span class="stat-label">Projetos Entregues</span>
-          </div>
-          <div>
-            <span class="stat-number">3</span>
-            <span class="stat-label">Plataformas Cloud (Azure · AWS · GCP)</span>
-          </div>
-        </div>
-      </div>
-      <!-- /STATS BAR -->
 
       <!-- SEÇÃO: SOBRE MIM -->
       <section id="sobre" class="container">
@@ -315,7 +294,7 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Engenheiro de Dados — Renner & Apex Brasil</h3>
+              <h3>Engenheiro de Dados | Renner &amp; Apex Brasil</h3>
               <p class="empresa">Compass UOL | jan 2023 - jun 2024</p>
               <p>
                 Alocado em projetos para <strong>Renner</strong> (varejo) e <strong>Apex Brasil</strong> (inteligência de comércio exterior). Na Renner: implementação de <strong>Data Governance</strong> com <strong>Unity Catalog</strong> e <strong>Delta Lake</strong>. Na Apex Brasil: arquitetura de <strong>Data Lakehouse</strong> com Azure Databricks e ADLS Gen2 integrando dados do <strong>ComexStat</strong> e <strong>UN Comtrade</strong>. Modelagem dimensional, pipelines ETL com Python/SQL e visualizações no Power BI.
@@ -391,20 +370,30 @@
       <!-- SEÇÃO: EMPRESAS -->
       <section id="empresas" class="container">
         <h2>Onde Já Entreguei</h2>
-        <div class="marquee-wrapper">
-          <div class="marquee-track">
-            <div class="marquee-item"><span class="m-nome">Petrobras</span><span class="m-setor">Óleo &amp; Gás</span></div>
-            <div class="marquee-item"><span class="m-nome">Renner</span><span class="m-setor">Varejo</span></div>
-            <div class="marquee-item"><span class="m-nome">Apex Brasil</span><span class="m-setor">Comércio Exterior</span></div>
-            <div class="marquee-item"><span class="m-nome">Globalsys</span><span class="m-setor">Tecnologia</span></div>
-            <div class="marquee-item"><span class="m-nome">Grupo Águia Branca</span><span class="m-setor">Transporte</span></div>
-            <div class="marquee-item"><span class="m-nome">Compass UOL</span><span class="m-setor">Serviços de TI</span></div>
-            <div class="marquee-item"><span class="m-nome">Petrobras</span><span class="m-setor">Óleo &amp; Gás</span></div>
-            <div class="marquee-item"><span class="m-nome">Renner</span><span class="m-setor">Varejo</span></div>
-            <div class="marquee-item"><span class="m-nome">Apex Brasil</span><span class="m-setor">Comércio Exterior</span></div>
-            <div class="marquee-item"><span class="m-nome">Globalsys</span><span class="m-setor">Tecnologia</span></div>
-            <div class="marquee-item"><span class="m-nome">Grupo Águia Branca</span><span class="m-setor">Transporte</span></div>
-            <div class="marquee-item"><span class="m-nome">Compass UOL</span><span class="m-setor">Serviços de TI</span></div>
+        <div class="empresas-grid">
+          <div class="empresa-card">
+            <div class="empresa-nome">Petrobras</div>
+            <div class="empresa-setor">Óleo &amp; Gás</div>
+          </div>
+          <div class="empresa-card">
+            <div class="empresa-nome">Renner</div>
+            <div class="empresa-setor">Varejo</div>
+          </div>
+          <div class="empresa-card">
+            <div class="empresa-nome">Apex Brasil</div>
+            <div class="empresa-setor">Comércio Exterior</div>
+          </div>
+          <div class="empresa-card">
+            <div class="empresa-nome">Globalsys</div>
+            <div class="empresa-setor">Tecnologia</div>
+          </div>
+          <div class="empresa-card">
+            <div class="empresa-nome">Grupo Águia Branca</div>
+            <div class="empresa-setor">Transporte</div>
+          </div>
+          <div class="empresa-card">
+            <div class="empresa-nome">Compass UOL</div>
+            <div class="empresa-setor">Serviços de TI</div>
           </div>
         </div>
       </section>
@@ -422,7 +411,7 @@
             <div class="card-bottom">
               <h3>Orquestração Airflow + Databricks</h3>
               <p>
-                Guia completo e implementação prática de DAGs no Apache Airflow para orquestrar jobs no Databricks — tokens, conexões, Docker, agendamento avançado e execução parametrizada.
+                Guia completo e implementação prática de DAGs no Apache Airflow para orquestrar jobs no Databricks: tokens, conexões, Docker, agendamento e execução parametrizada.
               </p>
               <div class="tags">
                 <span>Apache Airflow</span>
