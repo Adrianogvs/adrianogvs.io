@@ -1013,6 +1013,29 @@ body.light .cert-pill {
   50%       { border-color: rgba(0, 120, 212, 0.8); }
 }
 
+/* ================================
+   LINK DE CREDENCIAL NOS CARDS
+   ================================ */
+.cert-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: var(--accent);
+  text-decoration: none;
+  margin-top: 10px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.cert-badge-link:hover {
+  opacity: 1;
+}
+
+.cert-badge-link i {
+  font-size: 0.65rem;
+}
+
 /* ============================
    RESPONSIVIDADE - CERTIFICAÇÕES
    ============================ */
