@@ -1,149 +1,92 @@
-# Portfólio Profissional | Adriano Vilela
-### Engenheiro de Dados
+# adrianogvs.io
 
-<p align="left">
-  <img src="./assets/images/agvs.png" width="200" alt="Capa do Portfólio">
-</p>
+**Senior Data Engineer | Azure Databricks · Microsoft Fabric · Lakehouse Architecture**
 
+[![Live](https://img.shields.io/badge/Live-adrianogvs.com.br-FF5722?style=flat-square&logo=google-chrome&logoColor=white)](https://adrianogvs.com.br)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-adrianogvs-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/adrianogvs/)
+[![GitHub](https://img.shields.io/badge/GitHub-Adrianogvs-181717?style=flat-square&logo=github)](https://github.com/Adrianogvs)
 
-
-## 🧠 Sobre o Projeto
-
-Este portfólio foi desenvolvido com o objetivo de apresentar minha trajetória profissional como **Engenheiro de Dados**, destacando experiências, habilidades técnicas, certificações e projetos relevantes. A proposta é criar uma vitrine digital moderna, responsiva e funcional para facilitar conexões com recrutadores, empresas e comunidades de tecnologia.
-
-O portfólio serve tanto como um currículo visual quanto como uma central de contato e consulta para parceiros e clientes.
+Portfolio profissional de Adriano Vilela — Senior Data Engineer com 5+ anos em Petrobras, Renner e Apex Brasil. Especialista em Azure Databricks, Microsoft Fabric, Delta Lake e Medallion Architecture.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Stack
 
-* **HTML5**: Estruturação semântica da página
-* **CSS3 (Custom Properties)**: Estilização moderna com temas escuros e claros
-* **JavaScript (Vanilla)**: Interatividade, navegação suave e troca de temas
-* **Font Awesome**: Ícones sociais e visuais
-* **Responsividade**: Mobile-first design com media queries
-
----
-
-## 🧑‍💼 Seções do Portfólio
-
-O portfólio está dividido em seções organizadas por âncoras de navegação:
-
-### 🔹 Início
-
-Apresentação breve com uma foto e frase de impacto:
-
-> "Especialista em Engenharia de Dados com experiência em transformar dados complexos em soluções estratégicas."
-
-### 🔹 Sobre
-
-Resumo profissional com mais de 10 anos de experiência em tecnologia, com foco em pipelines de dados, governança e soluções analíticas.
-
-### 🔹 Habilidades
-
-Cards organizados por categorias como:
-
-* Data Engineering (Python, Spark, SQL, Airflow)
-* Cloud (Azure, AWS)
-* DevOps e Orquestração (Docker, Git, CI/CD)
-
-### 🔹 Experiências
-
-Linha do tempo destacando atuações anteriores, empresas parceiras, cargos e tecnologias aplicadas.
-
-### 🔹 Projetos
-
-Apresentação visual de projetos práticos e aplicados no mundo real. Cada card pode ser expandido futuramente com detalhes e repositórios.
-
-### 🔹 Certificações
-
-Exibição das certificações mais relevantes em Engenharia de Dados, Cloud e Análise, como:
-
-* Azure Data Engineer Associate (DP-203)
-* Databricks Certified Data Engineer Associate
-* Engenheiro de IA do Azure (AI-102 )
-* PL-300 (Power BI)
-
-### 🔹 Clientes
-
-Ícones e nomes de empresas com as quais trabalhei ou desenvolvi soluções sob demanda.
-
-### 🔹 Contato
-
-Formulário de contato funcional (demonstração) com links diretos para:
-
-* Email: [dataengineer@adrianogvs.com.br](mailto:dataengineer@adrianogvs.com.br)
-* WhatsApp: [+55 (27) 98807-7337](https://wa.me/5527988077337)
-* LinkedIn: [linkedin.com/in/adrianogvs](https://linkedin.com/in/adrianogvs)
+| | Tecnologia |
+|---|---|
+| Markup | HTML5 semântico |
+| Estilo | CSS3 — custom properties, temas dark/light, responsivo |
+| Script | JavaScript vanilla — menu, scroll suave, troca de tema |
+| Ícones | Font Awesome 6 |
+| Formulário | Formsubmit.co (sem backend) |
+| Deploy | GitHub Pages |
 
 ---
 
-## 🎨 Recursos Visuais
+## Seções
 
-* **Tema Claro/Escuro** com botão de alternância.
-* **Menu Mobile Responsivo** com hamburguer animado.
-* **Scroll suave** para uma experiência fluida entre as seções.
+| Seção | Conteúdo |
+|---|---|
+| Início | Headline, CTA, 4 micro-stats (anos, certificações, empresas, projetos) |
+| Sobre Mim | Bio de alto impacto — empresas, métricas (SLA 99,5%), stack, disponibilidade |
+| Habilidades Técnicas | 8 cards: Data Engineering, Cloud, Programação, Big Data, DW, Orquestração, DataOps, BI |
+| Experiências | Timeline: Petrobras, Renner, Apex Brasil, Globalsys, Águia Branca, TACOM |
+| Onde Já Entreguei | Grid de 6 empresas com hover |
+| Projetos | 6 cards com tags e links para repositórios GitHub |
+| Certificações | 5 certs Associate/Professional + 7 fundamentals e em andamento (pills) |
+| Contato | Email, WhatsApp, LinkedIn + formulário funcional via Formsubmit |
 
 ---
 
-## 🗃️ Estrutura de Arquivos
+## Estrutura
 
 ```
-📁 assets/
- ├📁 images/ → Imagens pessoais e logos
- ├📁 curriculo/ → Currículo em PDF
-
-📁 css/
- └🗋 styles.css → Tema, responsividade e layout
-
-📁 js/
- └🗋 script.js → Navegação, modo noturno, scroll suave
-
-🗋 index.html → Estrutura do portfólio
-🗋 README.md → Documentação do projeto
+adrianogvs.io/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── script.js
+└── assets/
+    ├── images/
+    └── curriculo/
 ```
 
 ---
 
-## 🚀 Instruções de Uso
+## Certificações
 
-1. Clone o repositório:
+**Associate & Professional**
+- Databricks Data Engineer Associate (2025)
+- DP-203: Azure Data Engineer Associate (2025)
+- AI-102: Azure AI Engineer Associate (2025)
+- PL-300: Power BI Data Analyst Associate (2025)
+- DP-600: Fabric Analytics Engineer Associate (2026)
 
-   ```bash
-   git clone https://github.com/adrianogvs/portfolio-dados.git
-   ```
-2. Abra o `index.html` em seu navegador.
-3. Acesse as seções utilizando o menu fixo ou clique nos botões de ação.
+**Fundamentos**
+- AZ-900 · DP-900 · AI-900 · PL-900 · dbt Fundamentals · Airflow Fundamentals
 
----
-
-## 📌 Roadmap Futuro
-
-* [ ] Adicionar animações com `Framer Motion` ou `GSAP`
-* [ ] Integrar formulário real via backend (Node, Python ou Formspree)
-* [ ] Publicar via GitHub Pages, Netlify ou Vercel
-* [ ] Conectar projetos a repositórios públicos no GitHub
-* [ ] Criar versão multilíngue (Português e Inglês)
+**Em andamento**
+- DP-700: Fabric Data Engineer Associate
 
 ---
 
-## 📢 Contato
+## Como rodar localmente
 
-Caso queira conversar sobre dados, projetos, parcerias ou oportunidades:
-
-📧 **Email:** [dataengineer@adrianogvs.com.br](mailto:dataengineer@adrianogvs.com.br)<br>
-📱 **WhatsApp:** [+55 (27) 98807-7337](https://wa.me/5527988077337)<br>
-🔗 **LinkedIn:** [linkedin.com/in/adrianogvs](https://linkedin.com/in/adrianogvs)<br>
-
----
-
-## 🛡️ Licença
-
-Este projeto é de uso pessoal e **não possui licença de código aberto**.  
-**Todos os direitos reservados** © Adriano Vilela.  
-A reprodução, redistribuição, modificação ou uso comercial deste conteúdo é **proibida sem autorização prévia por escrito** do autor.
-
+```bash
+git clone https://github.com/Adrianogvs/adrianogvs.io.git
+cd adrianogvs.io
+# abra index.html no navegador
+```
 
 ---
 
-**Desenvolvido com 💻 + ☕ por Adriano Vilela**
+## Contato
+
+**Email:** dataengineer@adrianogvs.com.br  
+**WhatsApp:** +55 (27) 98807-7337  
+**LinkedIn:** [linkedin.com/in/adrianogvs](https://www.linkedin.com/in/adrianogvs/)
+
+---
+
+© 2026 Adriano Vilela. Todos os direitos reservados.
