@@ -4,10 +4,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adriano Vilela | Senior Data Engineer | Azure Databricks & Microsoft Fabric</title>
+    <title>Adriano Vilela | Senior Data Engineer | Azure Databricks &amp; Microsoft Fabric</title>
     <meta name="description" content="Senior Data Engineer especializado em Azure Databricks, Microsoft Fabric e Lakehouse Architecture. 5+ anos em Petrobras, Renner e Apex Brasil. Certificado DP-203 e Databricks." />
     <meta name="keywords" content="Azure Data Engineer, Databricks, Microsoft Fabric, Delta Lake, PySpark, Lakehouse, Medallion Architecture, Data Engineering, DataOps" />
-    <meta property="og:title" content="Adriano Vilela | Senior Data Engineer | Azure Databricks & Microsoft Fabric" />
+    <meta property="og:title" content="Adriano Vilela | Senior Data Engineer | Azure Databricks &amp; Microsoft Fabric" />
     <meta property="og:description" content="Data Engineer com 5+ anos em Petrobras, Renner e Apex Brasil. Especialista em Azure Databricks, Microsoft Fabric e Medallion Architecture." />
     <meta property="og:url" content="https://adrianogvs.com.br" />
     <meta property="og:type" content="website" />
@@ -35,15 +35,25 @@
         <div class="logo">Adriano</div>
         <nav>
           <ul id="menu">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#experiencias">Experiências</a></li>
-            <li><a href="#empresas">Empresas</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#certificacoes">Certificações</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#sobre" data-i18n="nav.sobre">Sobre</a></li>
+            <li><a href="#habilidades" data-i18n="nav.habilidades">Habilidades</a></li>
+            <li><a href="#experiencias" data-i18n="nav.experiencias">Experiências</a></li>
+            <li><a href="#empresas" data-i18n="nav.empresas">Empresas</a></li>
+            <li><a href="#projetos" data-i18n="nav.projetos">Projetos</a></li>
+            <li><a href="#certificacoes" data-i18n="nav.certs">Certificações</a></li>
+            <li><a href="#contato" data-i18n="nav.contato">Contato</a></li>
           </ul>
         </nav>
+
+        <!-- LANG SWITCHER -->
+        <div class="lang-selector" role="group" aria-label="Language / Idioma">
+          <button class="lang-btn active" data-lang="pt" title="Português">PT</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="en" title="English">EN</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="es" title="Español">ES</button>
+        </div>
+        <!-- /LANG SWITCHER -->
 
         <!-- SEÇÃO: THEME SWITCHER -->
         <div class="theme-selector">
@@ -69,7 +79,7 @@
                 data-theme="light"
                 role="option"
               >
-                <i class="fas fa-sun"></i> Claro
+                <i class="fas fa-sun"></i> <span data-i18n="theme.light">Claro</span>
               </button>
             </li>
             <li role="none">
@@ -79,7 +89,7 @@
                 data-theme="dark"
                 role="option"
               >
-                <i class="fas fa-moon"></i> Escuro
+                <i class="fas fa-moon"></i> <span data-i18n="theme.dark">Escuro</span>
               </button>
             </li>
             <li role="none">
@@ -89,7 +99,7 @@
                 data-theme="system"
                 role="option"
               >
-                <i class="fas fa-adjust"></i> Automático
+                <i class="fas fa-adjust"></i> <span data-i18n="theme.auto">Automático</span>
               </button>
             </li>
           </ul>
@@ -103,26 +113,26 @@
       <section id="inicio" class="container">
         <div class="text">
           <h1>Olá, eu sou <span>Adriano Vilela</span></h1>
-          <p class="hero-tagline">
+          <p class="hero-tagline" data-i18n="hero.tagline">
             Transformando dados em vantagem competitiva através de plataformas modernas, governança e analytics em escala.
           </p>
           <p class="hero-stack">
             Senior Data Engineer | Azure Databricks • Microsoft Fabric • Delta Lake • Data Governance
           </p>
           <a href="#contato" class="btn">
-            <i class="fas fa-envelope"></i> Entre em contato
+            <i class="fas fa-envelope"></i> <span data-i18n="hero.btn.contato">Entre em contato</span>
           </a>
           <a
             href="./assets/curriculo/Adriano Geraldo Vilela Da Silva.pdf"
             class="btn"
           >
-            <i class="fas fa-download"></i> Download Currículo
+            <i class="fas fa-download"></i> <span data-i18n="hero.btn.cv">Download Currículo</span>
           </a>
           <div class="hero-stats">
-            <div class="hero-stat"><span class="hstat-n">5+</span><span class="hstat-l">Anos</span></div>
-            <div class="hero-stat"><span class="hstat-n">10+</span><span class="hstat-l">Certificações</span></div>
-            <div class="hero-stat"><span class="hstat-n">5+</span><span class="hstat-l">Empresas</span></div>
-            <div class="hero-stat"><span class="hstat-n">10+</span><span class="hstat-l">Projetos</span></div>
+            <div class="hero-stat"><span class="hstat-n">5+</span><span class="hstat-l" data-i18n="hero.anos">Anos</span></div>
+            <div class="hero-stat"><span class="hstat-n">10+</span><span class="hstat-l" data-i18n="hero.certs">Certificações</span></div>
+            <div class="hero-stat"><span class="hstat-n">5+</span><span class="hstat-l" data-i18n="hero.empresas">Empresas</span></div>
+            <div class="hero-stat"><span class="hstat-n">10+</span><span class="hstat-l" data-i18n="hero.projetos">Projetos</span></div>
           </div>
         </div>
         <img src="./assets/images/agvs.png" alt="Adriano Vilela" />
@@ -130,20 +140,20 @@
 
       <!-- SEÇÃO: SOBRE MIM -->
       <section id="sobre" class="container">
-        <h2>Sobre Mim</h2>
-        <p class="justificado">
+        <h2 data-i18n="sec.sobre">Sobre Mim</h2>
+        <p class="justificado" data-i18n-html="about.p1">
           <strong>Senior Data Engineer</strong> especializado em arquiteturas de dados em escala enterprise, com foco em <strong>Azure Databricks</strong>, <strong>Microsoft Fabric</strong> e <strong>Medallion Architecture</strong>.
         </p><br>
-        <p class="justificado">
-          Atualmente alocado na <strong>Petrobras</strong> via Compass UOL, onde mantenho SLA de 99,5% em pipelines ETL/ELT críticos, implemento governança com <strong>Delta Lake + Unity Catalog</strong> e entrego dados confiáveis como base para decisões executivas.
+        <p class="justificado" data-i18n-html="about.p2">
+          Atualmente alocado na <strong>Renner</strong> via Compass UOL, desenvolvendo e sustentando pipelines de dados em ambiente <strong>Azure + Databricks</strong>, com foco em escalabilidade, confiabilidade e governança.
         </p><br>
-        <p class="justificado">
+        <p class="justificado" data-i18n-html="about.p3">
           Ao longo da carreira, conduzi iniciativas de alto impacto em organizações de portes e setores distintos: estruturei <strong>Data Governance</strong> na <strong>Renner</strong> e arquitetei o Lakehouse de inteligência de comércio exterior da <strong>Apex Brasil</strong>, integrando <strong>ComexStat</strong> e <strong>UN Comtrade</strong> em um ambiente cloud-native de alta disponibilidade.
         </p><br>
-        <p class="justificado">
+        <p class="justificado" data-i18n-html="about.p4">
           Minha especialidade é transformar dados fragmentados em ativos estratégicos, resolvendo os problemas que mais travam equipes: pipelines frágeis, governança inexistente e dados dispersos que ninguém confia.
         </p><br>
-        <p class="justificado">
+        <p class="justificado" data-i18n="about.p5">
           Disponível para posições remotas no Brasil, Portugal, Europa e EUA.
         </p>
       </section>
@@ -151,7 +161,7 @@
       <!-- SEÇÃO: CARDS DE INFORMAÇÃO -->
       <div class="cards info-cards">
         <div class="card">
-          <h3>Formação</h3>
+          <h3 data-i18n="card.formacao">Formação</h3>
           <p>
             • Pós-Graduação em Engenharia de Dados<br />
             PUC Minas | 2023 – 2024<br /><br />
@@ -161,7 +171,7 @@
             • Bacharel em Engenharia de Software<br />
             Unicesumar | 2017 – 2021<br /><br />
           </p>
-          <h3>Formação Complementar</h3>
+          <h3 data-i18n="card.formacao_comp">Formação Complementar</h3>
           <p>
             • Formação Apache Spark e Databricks <strong>reconhecida pelo MEC</strong>
             (<a href="https://engenhariadadosacademy.com.br/">Engenharia de Dados Academy</a>):<br />
@@ -178,8 +188,8 @@
         </div>
 
         <div class="card">
-          <h3>Habilidades Comportamentais</h3>
-          <p>
+          <h3 data-i18n="card.soft">Habilidades Comportamentais</h3>
+          <p data-i18n-html="card.soft.text">
             • Comunicação eficaz<br />
             • Trabalho em equipe<br />
             • Empatia<br />
@@ -194,15 +204,15 @@
           </p>
           <br />
 
-          <h3>Localização</h3>
-          <p>
+          <h3 data-i18n="card.local">Localização</h3>
+          <p data-i18n-html="card.local.text">
             • Serra – ES, Brasil<br />
             • Disponível para remoto
           </p>
           <br />
 
-          <h3>Idiomas</h3>
-          <p>
+          <h3 data-i18n="card.idiomas">Idiomas</h3>
+          <p data-i18n-html="card.idiomas.text">
             • Português: Nativo<br />
             • Inglês: Técnico
           </p>
@@ -210,8 +220,8 @@
         </div>
 
         <div class="card">
-          <h3>Interesses</h3>
-          <p>
+          <h3 data-i18n="card.interesses">Interesses</h3>
+          <p data-i18n-html="card.interests.text">
             Além da atuação atual em Engenharia de Dados, acompanho e busco me aprofundar continuamente em:<br /><br />
             <strong>Streaming de Dados e Processamento em Tempo Real:</strong> arquiteturas de ingestão contínua com <strong>Apache Kafka</strong>, <strong>Azure Event Hubs</strong> e <strong>Spark Structured Streaming</strong> para pipelines de baixa latência e processamento de eventos em escala.<br /><br />
             <strong>MLOps &amp; LLMOps:</strong> operacionalização de modelos com <strong>MLflow</strong>, ciclo de vida de LLMs em produção e arquiteturas <strong>RAG</strong> para integração de modelos de linguagem com dados corporativos.<br /><br />
@@ -224,13 +234,13 @@
 
       <!-- SEÇÃO: HABILIDADES TÉCNICAS -->
       <section id="habilidades" class="container">
-        <h2>Habilidades Técnicas</h2>
+        <h2 data-i18n="sec.skills">Habilidades Técnicas</h2>
 
         <div class="cards">
           <div class="card">
             <i class="fas fa-database"></i>
-            <h3>Engenharia de Dados</h3>
-            <p>
+            <h3 data-i18n="skill.eng">Engenharia de Dados</h3>
+            <p data-i18n="skill.eng.desc">
               Desenvolvimento de pipelines robustos e escaláveis, ETL/ELT,
               modelagem dimensional (Star/Snowflake), qualidade e governança de
               dados.
@@ -238,53 +248,53 @@
           </div>
           <div class="card">
             <i class="fas fa-cloud"></i>
-            <h3>Cloud Computing</h3>
-            <p>
+            <h3 data-i18n="skill.cloud">Cloud Computing</h3>
+            <p data-i18n="skill.cloud.desc">
               AWS, Azure, Databricks, Infraestrutura como Código (IaC com
               Terraform), arquitetura Serverless.
             </p>
           </div>
           <div class="card">
             <i class="fas fa-code"></i>
-            <h3>Programação</h3>
-            <p>
+            <h3 data-i18n="skill.prog">Programação</h3>
+            <p data-i18n="skill.prog.desc">
               Python, SQL, Apache Spark (PySpark/Spark SQL), Shell Script,
               automação e processamento de dados.
             </p>
           </div>
           <div class="card">
             <i class="fas fa-server"></i>
-            <h3>Big Data</h3>
-            <p>
+            <h3 data-i18n="skill.bigdata">Big Data</h3>
+            <p data-i18n="skill.bigdata.desc">
               Spark, Databricks, Kafka, Hadoop, processamento distribuído,
               análise e tratamento de grandes volumes de dados.
             </p>
           </div>
           <div class="card">
             <i class="fas fa-chart-line"></i>
-            <h3>Data Warehousing</h3>
-            <p>
+            <h3 data-i18n="skill.dw">Data Warehousing</h3>
+            <p data-i18n="skill.dw.desc">
               Databricks, Redshift, Azure Synapse, modelagem dimensional,
               otimização e performance de consultas.
             </p>
           </div>
           <div class="card">
             <i class="fas fa-project-diagram"></i>
-            <h3>Orquestração</h3>
-            <p>Airflow, DBT, Docker, Kubernetes, CI/CD.</p>
+            <h3 data-i18n="skill.orch">Orquestração</h3>
+            <p data-i18n="skill.orch.desc">Airflow, DBT, Docker, Kubernetes, CI/CD.</p>
           </div>
           <div class="card">
             <i class="fas fa-cogs"></i>
-            <h3>DataOps/MLOps</h3>
-            <p>
+            <h3 data-i18n="skill.dataops">DataOps/MLOps</h3>
+            <p data-i18n="skill.dataops.desc">
               Azure DevOps, Jenkins, GitHub Actions, GitLab CI/CD, automação de
               pipelines, versionamento e entrega contínua.
             </p>
           </div>
           <div class="card">
             <i class="fas fa-tachometer-alt"></i>
-            <h3>Dashboards</h3>
-            <p>Power BI, Streamlit, storytelling com dados.</p>
+            <h3 data-i18n="skill.dash">Dashboards</h3>
+            <p data-i18n="skill.dash.desc">Power BI, Streamlit, storytelling com dados.</p>
           </div>
         </div>
       </section>
@@ -292,14 +302,14 @@
 
       <!-- SEÇÃO: EXPERIÊNCIAS -->
       <section id="experiencias" class="container">
-        <h2>Experiências</h2>
+        <h2 data-i18n="sec.exp">Experiências</h2>
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Data Engineer | Renner</h3>
-              <p class="empresa">Compass UOL | jun 2025 - Atualmente</p>
-              <p>
+              <h3 data-i18n="exp.renner.h3">Data Engineer | Renner</h3>
+              <p class="empresa">Compass UOL | jun 2025 - <span data-i18n="exp.now">Atualmente</span></p>
+              <p data-i18n-html="exp.renner.desc">
                 Alocado na <strong>Renner Latam</strong> (uma das maiores varejistas da América Latina), atuo no desenvolvimento e sustentação de <strong>pipelines de dados</strong> em ambiente <strong>Azure + Databricks</strong>, garantindo escalabilidade, confiabilidade e governança com <strong>Delta Lake</strong> e <strong>Unity Catalog</strong>.
               </p>
             </div>
@@ -308,9 +318,9 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Engenheiro de Dados | Apex Brasil</h3>
+              <h3 data-i18n="exp.apex.h3">Engenheiro de Dados | Apex Brasil</h3>
               <p class="empresa">Hyti | dez. 2025 - fev. 2026</p>
-              <p>
+              <p data-i18n-html="exp.apex.desc">
                 Consultoria para a <strong>Apex Brasil</strong> (agência brasileira de promoção de exportações), projetei e implementei uma arquitetura <strong>Lakehouse</strong> completa no <strong>Azure Databricks</strong> com camadas RAW, Bronze, Silver e Gold. Integrei as bases <strong>ComexStat</strong> (18 endpoints, dados de comércio exterior do Brasil via GOV.BR) e <strong>UN Comtrade</strong> (7 objetos, dados internacionais da ONU), com orquestração via <strong>Databricks Jobs/Workflows</strong>, governança pelo <strong>Unity Catalog</strong> e camada analítica no <strong>Power BI</strong>, fornecendo base confiável e rastreável para decisões estratégicas de exportação.
               </p>
             </div>
@@ -319,10 +329,10 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Analytics Engineer | Petrobras</h3>
+              <h3 data-i18n="exp.petro_ae.h3">Analytics Engineer | Petrobras</h3>
               <p class="empresa">Compass UOL | jun 2024 - jul 2025</p>
-              <p>
-                Alocado na <strong>Petrobras</strong> (Óleo & Gás), projetei e operei plataformas de dados de missão crítica com <strong>Azure Databricks</strong>, <strong>Medallion Architecture</strong> (Bronze, Silver e Gold) e <strong>Delta Lake</strong>. Desenvolvi pipelines ETL/ELT com <strong>Azure Data Factory</strong>, implementei governança com <strong>Unity Catalog</strong>, entreguei dashboards com <strong>Power BI</strong> e apliquei práticas de <strong>DataOps</strong> com CI/CD. SLA de 99,5% nos pipelines críticos.
+              <p data-i18n-html="exp.petro_ae.desc">
+                Alocado na <strong>Petrobras</strong> (Óleo &amp; Gás), projetei e operei plataformas de dados de missão crítica com <strong>Azure Databricks</strong>, <strong>Medallion Architecture</strong> (Bronze, Silver e Gold) e <strong>Delta Lake</strong>. Desenvolvi pipelines ETL/ELT com <strong>Azure Data Factory</strong>, implementei governança com <strong>Unity Catalog</strong>, entreguei dashboards com <strong>Power BI</strong> e apliquei práticas de <strong>DataOps</strong> com CI/CD. SLA de 99,5% nos pipelines críticos.
               </p>
             </div>
           </div>
@@ -330,10 +340,10 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Analista de Dados | Petrobras</h3>
+              <h3 data-i18n="exp.petro_da.h3">Analista de Dados | Petrobras</h3>
               <p class="empresa">Compass UOL | jan 2023 - jun 2024</p>
-              <p>
-                Alocado na <strong>Petrobras</strong> (Óleo & Gás), atuei no desenvolvimento de modelos dimensionais, <strong>Data Warehouse</strong> e projetos de BI ponta a ponta. Modelei esquemas <strong>Star Schema</strong> e <strong>Snowflake</strong> com SCD Type 2, construí pipelines <strong>ETL</strong> com SQL, Python e Power Query, e entreguei dashboards no <strong>Power BI</strong> que suportaram KPIs críticos da operação. Automatizei processos com <strong>Power Automate</strong>, liberando 25% do tempo em atividades manuais. Destaque: implantação de DW dimensional no Azure que reduziu em <strong>40%</strong> o tempo de geração de relatórios estratégicos.
+              <p data-i18n-html="exp.petro_da.desc">
+                Alocado na <strong>Petrobras</strong> (Óleo &amp; Gás), atuei no desenvolvimento de modelos dimensionais, <strong>Data Warehouse</strong> e projetos de BI ponta a ponta. Modelei esquemas <strong>Star Schema</strong> e <strong>Snowflake</strong> com SCD Type 2, construí pipelines <strong>ETL</strong> com SQL, Python e Power Query, e entreguei dashboards no <strong>Power BI</strong> que suportaram KPIs críticos da operação. Automatizei processos com <strong>Power Automate</strong>, liberando 25% do tempo em atividades manuais. Destaque: implantação de DW dimensional no Azure que reduziu em <strong>40%</strong> o tempo de geração de relatórios estratégicos.
               </p>
             </div>
           </div>
@@ -341,10 +351,10 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Administrador de Dados | Petrobras</h3>
+              <h3 data-i18n="exp.petro_ad.h3">Administrador de Dados | Petrobras</h3>
               <p class="empresa">Compass UOL | mai 2022 - jan 2023</p>
-              <p>
-                Alocado na <strong>Petrobras</strong> (Óleo & Gás), liderei squads de Engenharia de Dados, projetei esquemas <strong>Star Schema</strong> e <strong>Snowflake</strong> com SCD e versionamento de metadados, e administrei ambientes <strong>Oracle</strong> e <strong>SQL Server</strong> com tuning de queries. Implementei políticas de governança, segurança e auditoria de dados. Destaque: criação de <strong>Data Mart</strong> integrado ao Oracle que reduziu em <strong>50%</strong> o tempo de geração de relatórios de estoque.
+              <p data-i18n-html="exp.petro_ad.desc">
+                Alocado na <strong>Petrobras</strong> (Óleo &amp; Gás), liderei squads de Engenharia de Dados, projetei esquemas <strong>Star Schema</strong> e <strong>Snowflake</strong> com SCD e versionamento de metadados, e administrei ambientes <strong>Oracle</strong> e <strong>SQL Server</strong> com tuning de queries. Implementei políticas de governança, segurança e auditoria de dados. Destaque: criação de <strong>Data Mart</strong> integrado ao Oracle que reduziu em <strong>50%</strong> o tempo de geração de relatórios de estoque.
               </p>
             </div>
           </div>
@@ -352,9 +362,9 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Analista de Dados</h3>
+              <h3 data-i18n="exp.aguia.h3">Analista de Dados</h3>
               <p class="empresa">Grupo Águia Branca | jan 2022 - abr 2022</p>
-              <p>
+              <p data-i18n="exp.aguia.desc">
                 Requisitos detalhados, automação em BI (Jenkins), ETL e Data
                 Warehouses com SQL Server e T-SQL, desenvolvimento de KPIs com
                 Power BI.
@@ -365,9 +375,9 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Analista de Business Intelligence</h3>
+              <h3 data-i18n="exp.globalsys.h3">Analista de Business Intelligence</h3>
               <p class="empresa">Globalsys | mai 2021 - out 2021</p>
-              <p>
+              <p data-i18n="exp.globalsys.desc">
                 Implementação de Data Warehouse e Data Mart (Oracle/PL-SQL/ODI/OBIEE),
                 relatórios interativos web/mobile, pipelines automatizados AWS Glue,
                 Lambda, Redshift e QuickSight.
@@ -378,9 +388,9 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Coordenador de Sistemas Embarcados</h3>
+              <h3 data-i18n="exp.tacom.h3">Coordenador de Sistemas Embarcados</h3>
               <p class="empresa">TACOM | ago 2018 - ago 2021</p>
-              <p>
+              <p data-i18n="exp.tacom.desc">
                 Coordenação de projeto Bilhetagem Eletrônica, gestão Agile,
                 DevOps e interação com órgãos governamentais.
               </p>
@@ -390,9 +400,9 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Analista de Negócios Sênior</h3>
+              <h3 data-i18n="exp.santa.h3">Analista de Negócios Sênior</h3>
               <p class="empresa">Expresso Santa Paula Ltda | nov 2018 - mai 2021</p>
-              <p>
+              <p data-i18n="exp.santa.desc">
                 Gestão infraestrutura TI, implementação relatórios BI (Power BI),
                 coordenação Sistema Bilhetagem Eletrônica, gestão orçamentária e
                 contratos.
@@ -405,7 +415,7 @@
 
       <!-- SEÇÃO: EMPRESAS -->
       <section id="empresas" class="container">
-        <h2>Onde Já Entreguei</h2>
+        <h2 data-i18n="sec.companies">Onde Já Entreguei</h2>
         <div class="empresas-grid">
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
@@ -415,7 +425,7 @@
               <div class="empresa-initials" style="display:none;background:#009B3A">PB</div>
             </div>
             <div class="empresa-nome">Petrobras</div>
-            <div class="empresa-setor">Óleo &amp; Gás</div>
+            <div class="empresa-setor" data-i18n="setor.oleo">Óleo &amp; Gás</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
@@ -425,7 +435,7 @@
               <div class="empresa-initials" style="display:none;background:#CC0000">LR</div>
             </div>
             <div class="empresa-nome">Renner</div>
-            <div class="empresa-setor">Varejo</div>
+            <div class="empresa-setor" data-i18n="setor.varejo">Varejo</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
@@ -435,7 +445,7 @@
               <div class="empresa-initials" style="display:none;background:#003087">AB</div>
             </div>
             <div class="empresa-nome">Apex Brasil</div>
-            <div class="empresa-setor">Comércio Exterior</div>
+            <div class="empresa-setor" data-i18n="setor.comercio">Comércio Exterior</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
@@ -445,7 +455,7 @@
               <div class="empresa-initials" style="display:none;background:#005EB8">GS</div>
             </div>
             <div class="empresa-nome">Globalsys</div>
-            <div class="empresa-setor">Tecnologia</div>
+            <div class="empresa-setor" data-i18n="setor.ti">Tecnologia</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
@@ -455,7 +465,7 @@
               <div class="empresa-initials" style="display:none;background:#004B8D">AB</div>
             </div>
             <div class="empresa-nome">Grupo Águia Branca</div>
-            <div class="empresa-setor">Transporte</div>
+            <div class="empresa-setor" data-i18n="setor.transp">Transporte</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
@@ -465,7 +475,7 @@
               <div class="empresa-initials" style="display:none;background:#7B2D8B">CU</div>
             </div>
             <div class="empresa-nome">Compass UOL</div>
-            <div class="empresa-setor">Serviços de TI</div>
+            <div class="empresa-setor" data-i18n="setor.serv_ti">Serviços de TI</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
@@ -475,7 +485,7 @@
               <div class="empresa-initials" style="display:none;background:#D32730">TC</div>
             </div>
             <div class="empresa-nome">TACOM Engenharia</div>
-            <div class="empresa-setor">Mobilidade</div>
+            <div class="empresa-setor" data-i18n="setor.mob">Mobilidade</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
@@ -485,7 +495,7 @@
               <div class="empresa-initials" style="display:none;background:#E65100">AF</div>
             </div>
             <div class="empresa-nome">Auto Omnibus Floramar</div>
-            <div class="empresa-setor">Transporte</div>
+            <div class="empresa-setor" data-i18n="setor.transp">Transporte</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
@@ -495,7 +505,7 @@
               <div class="empresa-initials" style="display:none;background:#00695C">HT</div>
             </div>
             <div class="empresa-nome">Horizonte Turismo</div>
-            <div class="empresa-setor">Turismo</div>
+            <div class="empresa-setor" data-i18n="setor.turismo">Turismo</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
@@ -505,7 +515,7 @@
               <div class="empresa-initials" style="display:none;background:#C62828">SP</div>
             </div>
             <div class="empresa-nome">Expresso Santa Paula</div>
-            <div class="empresa-setor">Transporte</div>
+            <div class="empresa-setor" data-i18n="setor.transp">Transporte</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap empresa-logo-wrap--dark">
@@ -515,7 +525,7 @@
               <div class="empresa-initials" style="display:none;background:#FE346E">HY</div>
             </div>
             <div class="empresa-nome">Hyti</div>
-            <div class="empresa-setor">Tecnologia</div>
+            <div class="empresa-setor" data-i18n="setor.ti">Tecnologia</div>
           </div>
         </div>
       </section>
@@ -523,16 +533,16 @@
 
       <!-- SEÇÃO: PROJETOS -->
       <section id="projetos" class="container">
-        <h2>Projetos</h2>
+        <h2 data-i18n="sec.projects">Projetos</h2>
         <div class="cards">
-          <!-- Card 1 — airflow-databricks-orchestration (3 stars) -->
+          <!-- Card 1 — airflow-databricks-orchestration -->
           <div class="card">
             <div class="card-top">
               <i class="fas fa-project-diagram"></i>
             </div>
             <div class="card-bottom">
-              <h3>Orquestração Airflow + Databricks</h3>
-              <p>
+              <h3 data-i18n="proj.airflow.h3">Orquestração Airflow + Databricks</h3>
+              <p data-i18n="proj.airflow.desc">
                 Guia completo e implementação prática de DAGs no Apache Airflow para orquestrar jobs no Databricks: tokens, conexões, Docker, agendamento e execução parametrizada.
               </p>
               <div class="tags">
@@ -542,7 +552,7 @@
                 <span>Docker</span>
               </div>
               <a href="https://github.com/Adrianogvs/airflow-databricks-orchestration" target="_blank" class="btn btn-sm">
-                <i class="fab fa-github"></i> Ver no GitHub
+                <i class="fab fa-github"></i> <span data-i18n="proj.github">Ver no GitHub</span>
               </a>
             </div>
           </div>
@@ -553,8 +563,8 @@
               <i class="fas fa-cloud-bolt"></i>
             </div>
             <div class="card-bottom">
-              <h3>Pipeline Real-time na AWS: Dados Climáticos</h3>
-              <p>
+              <h3 data-i18n="proj.aws.h3">Pipeline Real-time na AWS: Dados Climáticos</h3>
+              <p data-i18n-html="proj.aws.desc">
                 Ingere dados da API Tomorrow.io via <strong>Kinesis, Lambda, S3, Glue e Athena</strong>, com alertas automáticos por SMS/email via SNS quando condições críticas são detectadas. Data lake em 3 camadas: raw, gold e analysis.
               </p>
               <div class="tags">
@@ -565,19 +575,19 @@
                 <span>SNS</span>
               </div>
               <a href="https://github.com/Adrianogvs/aws-weather-realtime-etl" target="_blank" class="btn btn-sm">
-                <i class="fab fa-github"></i> Ver no GitHub
+                <i class="fab fa-github"></i> <span data-i18n="proj.github">Ver no GitHub</span>
               </a>
             </div>
           </div>
 
-          <!-- Card 3 — 002_Engenharia_de_Dados_Azure (2 stars) -->
+          <!-- Card 3 — 002_Engenharia_de_Dados_Azure -->
           <div class="card">
             <div class="card-top">
               <i class="fas fa-layer-group"></i>
             </div>
             <div class="card-bottom">
-              <h3>Engenharia de Dados no Azure: 3 Casos Reais</h3>
-              <p>
+              <h3 data-i18n="proj.azure.h3">Engenharia de Dados no Azure: 3 Casos Reais</h3>
+              <p data-i18n="proj.azure.desc">
                 Três projetos práticos: IoT de temperatura para logística frigorífica (Event Hub + Stream Analytics + Power BI), gestão de receitas para plataforma de cursos (ADF + Data Lake) e infraestrutura para banco digital (Synapse + Databricks).
               </p>
               <div class="tags">
@@ -588,7 +598,7 @@
                 <span>Power BI</span>
               </div>
               <a href="https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure" target="_blank" class="btn btn-sm">
-                <i class="fab fa-github"></i> Ver no GitHub
+                <i class="fab fa-github"></i> <span data-i18n="proj.github">Ver no GitHub</span>
               </a>
             </div>
           </div>
@@ -599,8 +609,8 @@
               <i class="fas fa-industry"></i>
             </div>
             <div class="card-bottom">
-              <h3>Pipeline IoT com Azure e Airflow</h3>
-              <p>
+              <h3 data-i18n="proj.iot.h3">Pipeline IoT com Azure e Airflow</h3>
+              <p data-i18n="proj.iot.desc">
                 Simulação de pipeline de dados de sensores IoT em ambiente crítico de óleo e gás no Azure, com orquestração via Apache Airflow, armazenamento NoSQL e containerização Docker.
               </p>
               <div class="tags">
@@ -611,7 +621,7 @@
                 <span>Python</span>
               </div>
               <a href="https://github.com/Adrianogvs/projeto-nosql-iot-azure" target="_blank" class="btn btn-sm">
-                <i class="fab fa-github"></i> Ver no GitHub
+                <i class="fab fa-github"></i> <span data-i18n="proj.github">Ver no GitHub</span>
               </a>
             </div>
           </div>
@@ -622,8 +632,8 @@
               <i class="fas fa-briefcase"></i>
             </div>
             <div class="card-bottom">
-              <h3>Data Lakehouse Medallion na Petrobras</h3>
-              <p>
+              <h3 data-i18n="proj.petro.h3">Data Lakehouse Medallion na Petrobras</h3>
+              <p data-i18n-html="proj.petro.desc">
                 Redesenho de plataforma de dados para Medallion Architecture (camadas Bronze, Silver e Gold) com <strong>Azure Databricks</strong>, <strong>Delta Lake</strong> e <strong>Unity Catalog</strong>. SLA de 99,5% e redução de 60% no tempo de ingestão em ambiente enterprise.
               </p>
               <div class="tags">
@@ -641,8 +651,8 @@
               <i class="fas fa-chart-line"></i>
             </div>
             <div class="card-bottom">
-              <h3>Extração e Análise de Dados Financeiros</h3>
-              <p>
+              <h3 data-i18n="proj.financial.h3">Extração e Análise de Dados Financeiros</h3>
+              <p data-i18n="proj.financial.desc">
                 Pipeline Python para extração de dados estruturados de PDFs de relatórios de mercado financeiro, com análise e visualização via Jupyter Notebooks.
               </p>
               <div class="tags">
@@ -652,7 +662,7 @@
                 <span>Pandas</span>
               </div>
               <a href="https://github.com/Adrianogvs/007_CM_Capital" target="_blank" class="btn btn-sm">
-                <i class="fab fa-github"></i> Ver no GitHub
+                <i class="fab fa-github"></i> <span data-i18n="proj.github">Ver no GitHub</span>
               </a>
             </div>
           </div>
@@ -662,90 +672,90 @@
 
       <!-- SEÇÃO: CERTIFICAÇÕES -->
       <section id="certificacoes" class="container">
-        <h2>Certificações</h2>
+        <h2 data-i18n="sec.certs">Certificações</h2>
         <div class="cards">
           <div class="card">
             <div class="card-icon"><i class="fas fa-award" style="color:#FF3621"></i></div>
             <h3>Databricks Data Engineer Associate</h3>
             <p class="issuer">Databricks Academy</p>
             <p class="year">2025 · Verificado via Databricks</p>
-            <a href="https://credentials.databricks.com/9f4d5ea6-2895-4d0e-904c-892b0d0db811#acc.huflvYty" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> Ver credencial</a>
+            <a href="https://credentials.databricks.com/9f4d5ea6-2895-4d0e-904c-892b0d0db811#acc.huflvYty" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="cert.view">Ver credencial</span></a>
           </div>
           <div class="card">
             <div class="card-icon"><i class="fas fa-award" style="color:#0078D4"></i></div>
             <h3>DP-203: Azure Data Engineer Associate</h3>
             <p class="issuer">Microsoft</p>
             <p class="year">2025 · Verificado via Credly</p>
-            <a href="https://learn.microsoft.com/pt-br/users/adrianogvs/credentials/certification/azure-data-engineer?tab=credentials-tab" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> Ver credencial</a>
+            <a href="https://learn.microsoft.com/pt-br/users/adrianogvs/credentials/certification/azure-data-engineer?tab=credentials-tab" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="cert.view">Ver credencial</span></a>
           </div>
           <div class="card">
             <div class="card-icon"><i class="fas fa-award" style="color:#0078D4"></i></div>
             <h3>AI-102: Azure AI Engineer Associate</h3>
             <p class="issuer">Microsoft</p>
             <p class="year">2025 · Verificado via Credly</p>
-            <a href="https://learn.microsoft.com/pt-br/users/adrianogvs/credentials/certification/azure-ai-engineer?tab=credentials-tab" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> Ver credencial</a>
+            <a href="https://learn.microsoft.com/pt-br/users/adrianogvs/credentials/certification/azure-ai-engineer?tab=credentials-tab" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="cert.view">Ver credencial</span></a>
           </div>
           <div class="card">
             <div class="card-icon"><i class="fas fa-award" style="color:#F2C811"></i></div>
             <h3>PL-300: Power BI Data Analyst Associate</h3>
             <p class="issuer">Microsoft</p>
             <p class="year">2025 · Verificado via Credly</p>
-            <a href="https://learn.microsoft.com/pt-br/users/adrianogvs/credentials/certification/data-analyst-associate?tab=credentials-tab" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> Ver credencial</a>
+            <a href="https://learn.microsoft.com/pt-br/users/adrianogvs/credentials/certification/data-analyst-associate?tab=credentials-tab" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="cert.view">Ver credencial</span></a>
           </div>
           <div class="card">
             <div class="card-icon"><i class="fas fa-award" style="color:#742774"></i></div>
             <h3>DP-600: Fabric Analytics Engineer Associate</h3>
             <p class="issuer">Microsoft</p>
             <p class="year">2026 · Verificado via Credly</p>
-            <a href="https://learn.microsoft.com/pt-br/users/adrianogvs/credentials/certification/fabric-analytics-engineer-associate?tab=credentials-tab" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> Ver credencial</a>
+            <a href="https://learn.microsoft.com/pt-br/users/adrianogvs/credentials/certification/fabric-analytics-engineer-associate?tab=credentials-tab" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="cert.view">Ver credencial</span></a>
           </div>
           <div class="card">
             <div class="card-icon"><i class="fas fa-award" style="color:#0078D4"></i></div>
             <h3>DP-900: Azure Data Fundamentals</h3>
             <p class="issuer">Microsoft</p>
             <p class="year">2025 · Verificado via Credly</p>
-            <a href="https://learn.microsoft.com/pt-br/users/adrianogvs/credentials/certification/azure-data-fundamentals?tab=credentials-tab" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> Ver credencial</a>
+            <a href="https://learn.microsoft.com/pt-br/users/adrianogvs/credentials/certification/azure-data-fundamentals?tab=credentials-tab" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="cert.view">Ver credencial</span></a>
           </div>
           <div class="card">
             <div class="card-icon"><i class="fas fa-award" style="color:#0078D4"></i></div>
             <h3>AI-900: Azure AI Fundamentals</h3>
             <p class="issuer">Microsoft</p>
             <p class="year">2025 · Verificado via Credly</p>
-            <a href="https://learn.microsoft.com/pt-br/users/adrianogvs/credentials/certification/azure-ai-fundamentals?tab=credentials-tab" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> Ver credencial</a>
+            <a href="https://learn.microsoft.com/pt-br/users/adrianogvs/credentials/certification/azure-ai-fundamentals?tab=credentials-tab" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="cert.view">Ver credencial</span></a>
           </div>
           <div class="card">
             <div class="card-icon"><i class="fas fa-award" style="color:#742774"></i></div>
             <h3>PL-900: Power Platform Fundamentals</h3>
             <p class="issuer">Microsoft</p>
             <p class="year">2025 · Verificado via Credly</p>
-            <a href="https://learn.microsoft.com/pt-br/users/adrianogvs/credentials/certification/power-platform-fundamentals?tab=credentials-tab" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> Ver credencial</a>
+            <a href="https://learn.microsoft.com/pt-br/users/adrianogvs/credentials/certification/power-platform-fundamentals?tab=credentials-tab" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="cert.view">Ver credencial</span></a>
           </div>
           <div class="card">
             <div class="card-icon"><i class="fas fa-award" style="color:#00B294"></i></div>
             <h3>SC-900: Security, Compliance &amp; Identity</h3>
             <p class="issuer">Microsoft</p>
             <p class="year">2025 · Verificado via Credly</p>
-            <a href="https://learn.microsoft.com/pt-br/users/adrianogvs/credentials/certification/security-compliance-and-identity-fundamentals?tab=credentials-tab" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> Ver credencial</a>
+            <a href="https://learn.microsoft.com/pt-br/users/adrianogvs/credentials/certification/security-compliance-and-identity-fundamentals?tab=credentials-tab" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="cert.view">Ver credencial</span></a>
           </div>
           <div class="card">
             <div class="card-icon"><i class="fas fa-award" style="color:#FF694B"></i></div>
             <h3>dbt Fundamentals</h3>
             <p class="issuer">dbt Labs</p>
             <p class="year">2024 · Verificado via dbt</p>
-            <a href="https://credentials.getdbt.com/e4a1b0fd-540e-4759-b815-69b80c328c38#acc.xoIJXRFU" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> Ver credencial</a>
+            <a href="https://credentials.getdbt.com/e4a1b0fd-540e-4759-b815-69b80c328c38#acc.xoIJXRFU" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="cert.view">Ver credencial</span></a>
           </div>
           <div class="card">
             <div class="card-icon"><i class="fas fa-award" style="color:#017CEE"></i></div>
             <h3>Apache Airflow Fundamentals</h3>
             <p class="issuer">Astronomer</p>
             <p class="year">2023 · Verificado via Credly</p>
-            <a href="https://www.credly.com/badges/eb611e5b-8370-4ce5-8b02-96829481a0f6" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> Ver credencial</a>
+            <a href="https://www.credly.com/badges/eb611e5b-8370-4ce5-8b02-96829481a0f6" target="_blank" rel="noopener" class="cert-badge-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="cert.view">Ver credencial</span></a>
           </div>
           <div class="card">
             <div class="card-icon"><i class="fas fa-hourglass-half" style="color:#60a5fa"></i></div>
             <h3>DP-700: Fabric Data Engineer Associate</h3>
             <p class="issuer">Microsoft</p>
-            <p class="year cert-in-progress">Em andamento · 2026</p>
+            <p class="year cert-in-progress" data-i18n="cert.in_progress">Em andamento · 2026</p>
           </div>
         </div>
       </section>
@@ -753,8 +763,8 @@
 
       <!-- SEÇÃO: CONTATO -->
       <section id="contato" class="container">
-        <h2>Contato</h2>
-        <p class="contact-intro">
+        <h2 data-i18n="sec.contact">Contato</h2>
+        <p class="contact-intro" data-i18n="contact.intro">
           Estou disponível para novos projetos, consultorias e oportunidades.
           Entre em contato para discutirmos como posso ajudar a transformar
           seus dados em valor.
@@ -796,14 +806,14 @@
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_next" value="https://adrianogvs.com.br" />
                 <input type="hidden" name="_template" value="table" />
-                <label for="nome">Nome</label>
-                <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="Seu email" required />
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como posso ajudar?" required></textarea>
+                <label for="nome" data-i18n="form.nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Seu nome" data-i18n-ph="form.nome.ph" required />
+                <label for="email" data-i18n="form.email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Seu email" data-i18n-ph="form.email.ph" required />
+                <label for="mensagem" data-i18n="form.msg">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como posso ajudar?" data-i18n-ph="form.msg.ph" required></textarea>
                 <button type="submit">
-                  <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                  <i class="fas fa-paper-plane"></i> <span data-i18n="form.submit">Enviar Mensagem</span>
                 </button>
               </form>
             </div>
@@ -815,13 +825,10 @@
 
 <footer class="site-footer">
   <div class="footer-container">
-    <!-- Lado esquerdo: nome + cargo -->
     <div class="footer-info">
       <h4>Adriano Vilela</h4>
       <span>Senior Data Engineer | Azure Databricks · Microsoft Fabric</span>
     </div>
-
-    <!-- Lado direito: ícones sociais com links -->
     <div class="footer-socials">
       <a href="https://github.com/Adrianogvs" target="_blank" aria-label="GitHub">
         <i class="fab fa-github"></i>
@@ -837,16 +844,12 @@
       </a>
     </div>
   </div>
-
-  <!-- Linha de copyright -->
   <div class="footer-copy">
-    <small>&copy; 2026 Adriano Vilela. Todos os direitos reservados.</small>
+    <small data-i18n="footer.copy">&copy; 2026 Adriano Vilela. Todos os direitos reservados.</small>
   </div>
 </footer>
-    <!-- Colocamos o canvas ANTES do script.js -->
     <canvas id="cursor-glow"></canvas>
-    <!-- SEÇÃO: RODAPÉ -->   
     <script src="js/script.js"></script>
-
+    <script src="js/i18n.js"></script>
   </body>
 </html>

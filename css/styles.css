@@ -411,7 +411,8 @@ body.light .form-card form textarea {
   }
 
   .logo,
-  .theme-selector {
+  .theme-selector,
+  .lang-selector {
     position: static;             /* remove posicionamentos absolutos */
   }
 }
@@ -424,9 +425,15 @@ body.light .form-card form textarea {
     display: none;                /* esconde menu padrão */
   }
 
+  .lang-selector {
+    display: flex;
+    order: 3;
+    margin-left: 8px;
+  }
+
   .theme-selector {
     display: flex;                /* mantém theme-switcher visível */
-    order: 3;                     /* depois do menu-toggle e da logo */
+    order: 4;                     /* depois do lang-selector */
   }
 
   .nav-container {
@@ -563,6 +570,55 @@ section {
 
 #sobre p:last-child {
   margin-bottom: 0;    /* Remove margem extra no último parágrafo */
+}
+
+/* ================================
+   LANG SWITCHER
+   ================================ */
+.lang-selector {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 16px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 3px 5px;
+  border-radius: 4px;
+  color: var(--text-light);
+  opacity: 0.5;
+  transition: opacity 0.15s, color 0.15s;
+  line-height: 1;
+}
+
+body.light .lang-btn {
+  color: var(--text-dark);
+}
+
+.lang-btn:hover {
+  opacity: 0.85;
+}
+
+.lang-btn.active {
+  color: var(--accent);
+  opacity: 1;
+}
+
+.lang-sep {
+  font-size: 0.65rem;
+  opacity: 0.3;
+  color: var(--text-light);
+  user-select: none;
+}
+
+body.light .lang-sep {
+  color: var(--text-dark);
 }
 
 /* ================================
