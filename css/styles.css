@@ -1118,38 +1118,64 @@ body.light .footer-socials a:hover {
    STATS BAR
    ================================ */
 .stats-bar {
-  background: var(--card-bg-dark);
-  padding: 40px 20px;
-  border-top: 3px solid var(--accent);
+  padding: 50px 20px;
+  background: transparent;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
 }
 
 body.light .stats-bar {
-  background: var(--card-bg-light);
+  border-top: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 .stats-grid {
   max-width: var(--container-max);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
+}
+
+.stats-grid > div {
+  padding: 16px 40px;
+  border-right: 1px solid rgba(255,255,255,0.07);
+}
+
+.stats-grid > div:last-child {
+  border-right: none;
+}
+
+body.light .stats-grid > div {
+  border-right: 1px solid rgba(0,0,0,0.08);
 }
 
 .stat-number {
   display: block;
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 700;
   color: var(--accent);
   line-height: 1;
 }
 
 .stat-label {
   display: block;
-  font-size: 0.85rem;
-  opacity: 0.75;
+  font-size: 0.78rem;
+  opacity: 0.55;
   margin-top: 6px;
   line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 768px) {
+  .stats-grid > div {
+    padding: 16px 20px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .stats-grid > div:last-child { border-bottom: none; }
 }
 
 /* ================================
@@ -1178,58 +1204,90 @@ body.light .stats-bar {
 }
 
 /* ================================
-   SEÇÃO EMPRESAS
+   SEÇÃO EMPRESAS — MARQUEE
    ================================ */
 #empresas {
   padding: 80px 20px;
   scroll-margin-top: 60px;
+  overflow: hidden;
 }
 
-.empresas-grid {
+.marquee-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.marquee-wrapper::before,
+.marquee-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marquee-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-dark), transparent);
+}
+
+.marquee-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-dark), transparent);
+}
+
+body.light .marquee-wrapper::before {
+  background: linear-gradient(to right, var(--bg-light), transparent);
+}
+
+body.light .marquee-wrapper::after {
+  background: linear-gradient(to left, var(--bg-light), transparent);
+}
+
+.marquee-track {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  max-width: var(--container-max);
-  margin: 0 auto;
+  width: max-content;
+  animation: marquee-scroll 28s linear infinite;
 }
 
-.empresa-card {
-  background: var(--card-bg-dark);
-  border-radius: 8px;
-  padding: 24px 32px;
-  min-width: 200px;
-  text-align: center;
-  border-top: 4px solid var(--accent);
-  transition: transform 0.2s, box-shadow 0.2s;
+.marquee-track:hover {
+  animation-play-state: paused;
 }
 
-body.light .empresa-card {
-  background: var(--card-bg-light);
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
-.empresa-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+.marquee-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px 52px;
+  border-right: 1px solid rgba(242, 92, 0, 0.18);
+  min-width: 190px;
 }
 
-.empresa-card .empresa-nome {
-  display: block;
-  font-size: 1.15rem;
-  font-weight: bold;
+.marquee-item .m-nome {
+  font-size: 1.05rem;
+  font-weight: 700;
   color: var(--text-light);
+  white-space: nowrap;
 }
 
-body.light .empresa-card .empresa-nome {
+body.light .marquee-item .m-nome {
   color: var(--text-dark);
 }
 
-.empresa-card .empresa-setor {
-  display: block;
-  font-size: 0.8rem;
+.marquee-item .m-setor {
+  font-size: 0.75rem;
   color: var(--accent);
-  margin-top: 4px;
+  margin-top: 5px;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 /* ================================
