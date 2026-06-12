@@ -573,6 +573,225 @@ section {
 }
 
 /* ================================
+   ABAS DE INFORMAÇÃO (INFO TABS)
+   ================================ */
+.info-tabs-wrap {
+  max-width: var(--container-max);
+  margin: 0 auto 0;
+  padding: 0 20px 60px;
+}
+
+/* Barra de abas */
+.info-tabs-nav {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid rgba(255,255,255,0.08);
+  margin-bottom: 0;
+}
+
+body.light .info-tabs-nav {
+  border-bottom-color: rgba(0,0,0,0.1);
+}
+
+.itab-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  padding: 12px 24px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-light);
+  opacity: 0.45;
+  cursor: pointer;
+  transition: opacity 0.2s, border-color 0.2s, color 0.2s;
+  letter-spacing: 0.03em;
+}
+
+body.light .itab-btn {
+  color: var(--text-dark);
+}
+
+.itab-btn:hover {
+  opacity: 0.75;
+}
+
+.itab-btn.active {
+  opacity: 1;
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* Painel de conteúdo */
+.info-tabs-body {
+  background: var(--card-bg-dark);
+  border-radius: 0 8px 8px 8px;
+  padding: 32px;
+  position: relative;
+  min-height: 220px;
+}
+
+body.light .info-tabs-body {
+  background: var(--card-bg-light);
+}
+
+.itab-panel {
+  display: none;
+  animation: itab-fade 0.25s ease;
+}
+
+.itab-panel.active {
+  display: block;
+}
+
+@keyframes itab-fade {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Layout de colunas dentro do painel */
+.itab-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.itab-cols--single {
+  grid-template-columns: 1fr;
+}
+
+.itab-col h4 {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+/* Lista de itens */
+.itab-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.itab-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.itab-list li strong {
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.itab-list li span {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.itab-list li a {
+  color: var(--accent);
+  text-decoration: none;
+  opacity: 1;
+}
+
+.itab-list li a:hover {
+  text-decoration: underline;
+}
+
+.itab-tags {
+  font-size: 0.72rem !important;
+  opacity: 0.5 !important;
+  font-style: italic;
+}
+
+/* Pills para soft skills */
+.itab-list--pills {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.itab-list--pills li {
+  flex-direction: row;
+  border: 1px solid rgba(242,92,0,0.3);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: border-color 0.2s;
+}
+
+.itab-list--pills li:hover {
+  border-color: var(--accent);
+}
+
+/* Grid de interesses */
+.itab-intro {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 20px;
+  line-height: 1.55;
+}
+
+.itab-interests-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.itab-interest-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.itab-interest-item i {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.itab-interest-item strong {
+  display: block;
+  font-size: 0.88rem;
+  margin-bottom: 4px;
+}
+
+.itab-interest-item p {
+  font-size: 0.82rem;
+  opacity: 0.7;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .itab-cols {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .itab-interests-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-tabs-body {
+    padding: 20px 16px;
+  }
+
+  .itab-btn {
+    padding: 10px 14px;
+    font-size: 0.78rem;
+  }
+}
+
+/* ================================
    LANG SWITCHER
    ================================ */
 .lang-selector {

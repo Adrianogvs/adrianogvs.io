@@ -178,4 +178,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
+  // ================================
+  // ABAS DE INFORMAÇÃO (INFO TABS)
+  // ================================
+  document.querySelectorAll('.itab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tab = btn.dataset.tab;
+
+      document.querySelectorAll('.itab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.itab-panel').forEach(p => p.classList.remove('active'));
+
+      btn.classList.add('active');
+      const panel = document.getElementById('itab-' + tab);
+      if (panel) panel.classList.add('active');
+    });
+  });
+
 }); // fim do DOMContentLoaded

@@ -158,79 +158,133 @@
         </p>
       </section>
 
-      <!-- SEÇÃO: CARDS DE INFORMAÇÃO -->
-      <div class="cards info-cards">
-        <div class="card">
-          <h3 data-i18n="card.formacao">Formação</h3>
-          <p>
-            • Pós-Graduação em Engenharia de Dados<br />
-            PUC Minas | 2023 – 2024<br /><br />
-            • MBA em Tecnologia para Negócios<br />
-            (IA, Big Data, Data Science)<br />
-            Faculdade Única | 2021 – 2022<br /><br />
-            • Bacharel em Engenharia de Software<br />
-            Unicesumar | 2017 – 2021<br /><br />
-          </p>
-          <h3 data-i18n="card.formacao_comp">Formação Complementar</h3>
-          <p>
-            • Formação Apache Spark e Databricks <strong>reconhecida pelo MEC</strong>
-            (<a href="https://engenhariadadosacademy.com.br/">Engenharia de Dados Academy</a>):<br />
-            Databricks, Apache Spark, Kubernetes, Docker, Git, GitHub, Azure, AWS, GCP, <b>[Em Andamento]</b><br /><br />
-
-            • Engenharia de Dados
-            (<a href="https://suajornadadedados.com.br/">Jornada de Dados</a>):<br />
-            Azure, AWS, Databricks, Python, DBT, Airflow, Docker, Kafka, Terraform, Kubernetes.<br /><br />
-
-            • BI Academy Pro
-            (<a href="https://projetosreais.com.br/">Rafael Piton</a>):<br />
-            BI Academy, Power BI, Oracle, OBIEE, ODI, SQL, PostgreSQL, PDI, Linux, Metodologias Ágeis.<br /><br />
-          </p>
+      <!-- SEÇÃO: ABAS DE INFORMAÇÃO -->
+      <div class="info-tabs-wrap">
+        <div class="info-tabs-nav">
+          <button class="itab-btn active" data-tab="formacao" data-i18n="card.formacao">Formação</button>
+          <button class="itab-btn" data-tab="habilidades" data-i18n="card.soft">Habilidades</button>
+          <button class="itab-btn" data-tab="interesses" data-i18n="card.interesses">Interesses</button>
         </div>
 
-        <div class="card">
-          <h3 data-i18n="card.soft">Habilidades Comportamentais</h3>
-          <p data-i18n-html="card.soft.text">
-            • Comunicação eficaz<br />
-            • Trabalho em equipe<br />
-            • Empatia<br />
-            • Resiliência<br />
-            • Pensamento crítico<br />
-            • Proatividade<br />
-            • Gestão eficiente do tempo<br />
-            • Flexibilidade<br />
-            • Inteligência emocional<br />
-            • Liderança<br />
-            • Adaptabilidade
-          </p>
-          <br />
+        <div class="info-tabs-body">
 
-          <h3 data-i18n="card.local">Localização</h3>
-          <p data-i18n-html="card.local.text">
-            • Serra – ES, Brasil<br />
-            • Disponível para remoto
-          </p>
-          <br />
+          <!-- Aba: Formação -->
+          <div class="itab-panel active" id="itab-formacao">
+            <div class="itab-cols">
+              <div class="itab-col">
+                <h4 data-i18n="card.formacao">Formação</h4>
+                <ul class="itab-list">
+                  <li>
+                    <strong>Pós-Graduação em Engenharia de Dados</strong>
+                    <span>PUC Minas · 2023 – 2024</span>
+                  </li>
+                  <li>
+                    <strong>MBA em Tecnologia para Negócios</strong>
+                    <span>Faculdade Única · 2021 – 2022</span>
+                  </li>
+                  <li>
+                    <strong>Bacharel em Engenharia de Software</strong>
+                    <span>Unicesumar · 2017 – 2021</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="itab-col">
+                <h4 data-i18n="card.formacao_comp">Formação Complementar</h4>
+                <ul class="itab-list">
+                  <li>
+                    <strong>Apache Spark e Databricks <em data-i18n="card.mec">(reconhecida pelo MEC)</em></strong>
+                    <span><a href="https://engenhariadadosacademy.com.br/" target="_blank">Engenharia de Dados Academy</a> · <b>[Em Andamento]</b></span>
+                    <span class="itab-tags">Databricks · Spark · Kubernetes · Docker · Azure · AWS · GCP</span>
+                  </li>
+                  <li>
+                    <strong>Engenharia de Dados</strong>
+                    <span><a href="https://suajornadadedados.com.br/" target="_blank">Jornada de Dados</a></span>
+                    <span class="itab-tags">Azure · Databricks · Python · dbt · Airflow · Kafka · Terraform</span>
+                  </li>
+                  <li>
+                    <strong>BI Academy Pro</strong>
+                    <span><a href="https://projetosreais.com.br/" target="_blank">Rafael Piton</a></span>
+                    <span class="itab-tags">Power BI · Oracle · OBIEE · SQL · PostgreSQL · Linux</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-          <h3 data-i18n="card.idiomas">Idiomas</h3>
-          <p data-i18n-html="card.idiomas.text">
-            • Português: Nativo<br />
-            • Inglês: Técnico
-          </p>
-          <br />
-        </div>
+          <!-- Aba: Habilidades -->
+          <div class="itab-panel" id="itab-habilidades">
+            <div class="itab-cols">
+              <div class="itab-col">
+                <h4 data-i18n="card.soft">Habilidades Comportamentais</h4>
+                <ul class="itab-list itab-list--pills" data-i18n-html="card.soft.text">
+                  <li>Comunicação eficaz</li>
+                  <li>Trabalho em equipe</li>
+                  <li>Empatia</li>
+                  <li>Resiliência</li>
+                  <li>Pensamento crítico</li>
+                  <li>Proatividade</li>
+                  <li>Gestão do tempo</li>
+                  <li>Flexibilidade</li>
+                  <li>Inteligência emocional</li>
+                  <li>Liderança</li>
+                  <li>Adaptabilidade</li>
+                </ul>
+              </div>
+              <div class="itab-col">
+                <h4 data-i18n="card.local">Localização</h4>
+                <ul class="itab-list">
+                  <li><span>Serra – ES, Brasil</span></li>
+                  <li><span data-i18n="card.remoto">Disponível para remoto</span></li>
+                </ul>
+                <h4 style="margin-top:24px" data-i18n="card.idiomas">Idiomas</h4>
+                <ul class="itab-list">
+                  <li><strong>Português</strong><span data-i18n="card.pt.nivel">Nativo</span></li>
+                  <li><strong>Inglês</strong><span data-i18n="card.en.nivel">Técnico</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-        <div class="card">
-          <h3 data-i18n="card.interesses">Interesses</h3>
-          <p data-i18n-html="card.interests.text">
-            Além da atuação atual em Engenharia de Dados, acompanho e busco me aprofundar continuamente em:<br /><br />
-            <strong>Streaming de Dados e Processamento em Tempo Real:</strong> arquiteturas de ingestão contínua com <strong>Apache Kafka</strong>, <strong>Azure Event Hubs</strong> e <strong>Spark Structured Streaming</strong> para pipelines de baixa latência e processamento de eventos em escala.<br /><br />
-            <strong>MLOps &amp; LLMOps:</strong> operacionalização de modelos com <strong>MLflow</strong>, ciclo de vida de LLMs em produção e arquiteturas <strong>RAG</strong> para integração de modelos de linguagem com dados corporativos.<br /><br />
-            <strong>Inteligência Artificial aplicada a dados:</strong> como plataformas como <strong>Azure Databricks</strong> e <strong>Microsoft Fabric</strong> habilitam soluções de IA Generativa e Machine Learning em escala enterprise.<br /><br />
-            <strong>IaC &amp; Orquestração de Infraestrutura:</strong> Infrastructure as Code com <strong>Terraform</strong>, containerização com <strong>Docker</strong> e orquestração com <strong>Kubernetes</strong> aplicados a ambientes de dados em cloud.
-          </p>
+          <!-- Aba: Interesses -->
+          <div class="itab-panel" id="itab-interesses">
+            <div class="itab-cols itab-cols--single">
+              <p class="itab-intro" data-i18n="card.interests.intro">Além da atuação atual em Engenharia de Dados, acompanho e busco me aprofundar continuamente em:</p>
+              <div class="itab-interests-grid">
+                <div class="itab-interest-item">
+                  <i class="fas fa-stream"></i>
+                  <div>
+                    <strong data-i18n="card.interests.t1">Streaming &amp; Real-time</strong>
+                    <p data-i18n="card.interests.d1">Apache Kafka, Azure Event Hubs e Spark Structured Streaming para pipelines de baixa latência.</p>
+                  </div>
+                </div>
+                <div class="itab-interest-item">
+                  <i class="fas fa-robot"></i>
+                  <div>
+                    <strong data-i18n="card.interests.t2">MLOps &amp; LLMOps</strong>
+                    <p data-i18n="card.interests.d2">Operacionalização de modelos com MLflow, ciclo de vida de LLMs e arquiteturas RAG.</p>
+                  </div>
+                </div>
+                <div class="itab-interest-item">
+                  <i class="fas fa-brain"></i>
+                  <div>
+                    <strong data-i18n="card.interests.t3">IA aplicada a dados</strong>
+                    <p data-i18n="card.interests.d3">Azure Databricks e Microsoft Fabric para IA Generativa e Machine Learning em escala enterprise.</p>
+                  </div>
+                </div>
+                <div class="itab-interest-item">
+                  <i class="fas fa-cubes"></i>
+                  <div>
+                    <strong data-i18n="card.interests.t4">IaC &amp; Orquestração</strong>
+                    <p data-i18n="card.interests.d4">Terraform, Docker e Kubernetes aplicados a ambientes de dados em cloud.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-      <!-- /CARDS DE INFORMAÇÃO -->
+      <!-- /ABAS DE INFORMAÇÃO -->
 
       <!-- SEÇÃO: HABILIDADES TÉCNICAS -->
       <section id="habilidades" class="container">
