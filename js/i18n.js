@@ -33,7 +33,7 @@ const translations = {
     // ── Sobre ─────────────────────────────────────────────
     'about.p1': '<strong>Senior Data Engineer</strong> especializado em arquiteturas de dados em escala enterprise, com foco em <strong>Azure Databricks</strong>, <strong>Microsoft Fabric</strong> e <strong>Medallion Architecture</strong>.',
     'about.p2': 'Atualmente alocado na <strong>Renner</strong> via Compass UOL, desenvolvendo e sustentando pipelines de dados em ambiente <strong>Azure + Databricks</strong>, com foco em escalabilidade, confiabilidade e governança.',
-    'about.p3': 'Ao longo da carreira, conduzi iniciativas de alto impacto em organizações de portes e setores distintos: estruturei <strong>Data Governance</strong> na <strong>Renner</strong> e arquitetei o Lakehouse de inteligência de comércio exterior da <strong>Apex Brasil</strong>, integrando <strong>ComexStat</strong> e <strong>UN Comtrade</strong> em um ambiente cloud-native de alta disponibilidade.',
+    'about.p3': 'Ao longo da carreira, conduzi iniciativas de alto impacto em organizações de portes e setores distintos: operei plataformas de dados de missão crítica na <strong>Petrobras</strong>, estruturei <strong>Data Governance</strong> na <strong>Renner</strong> e arquitetei o Lakehouse de inteligência de comércio exterior da <strong>Apex Brasil</strong>, integrando <strong>ComexStat</strong> e <strong>UN Comtrade</strong> em um ambiente cloud-native de alta disponibilidade.',
     'about.p4': 'Minha especialidade é transformar dados fragmentados em ativos estratégicos, resolvendo os problemas que mais travam equipes: pipelines frágeis, governança inexistente e dados dispersos que ninguém confia.',
     'about.p5': 'Disponível para posições remotas no Brasil, Portugal, Europa e EUA.',
 
@@ -165,7 +165,7 @@ const translations = {
 
     'about.p1': '<strong>Senior Data Engineer</strong> specialized in enterprise-scale data architectures, focused on <strong>Azure Databricks</strong>, <strong>Microsoft Fabric</strong> and <strong>Medallion Architecture</strong>.',
     'about.p2': 'Currently placed at <strong>Renner</strong> via Compass UOL, developing and maintaining data pipelines on <strong>Azure + Databricks</strong>, with focus on scalability, reliability and governance.',
-    'about.p3': "Throughout my career, I've led high-impact initiatives across organizations of different sizes and sectors: structured <strong>Data Governance</strong> at <strong>Renner</strong> and architected the foreign trade intelligence Lakehouse at <strong>Apex Brasil</strong>, integrating <strong>ComexStat</strong> and <strong>UN Comtrade</strong> in a cloud-native high-availability environment.",
+    'about.p3': "Throughout my career, I've led high-impact initiatives across organizations of different sizes and sectors: operated mission-critical data platforms at <strong>Petrobras</strong>, structured <strong>Data Governance</strong> at <strong>Renner</strong> and architected the foreign trade intelligence Lakehouse at <strong>Apex Brasil</strong>, integrating <strong>ComexStat</strong> and <strong>UN Comtrade</strong> in a cloud-native high-availability environment.",
     'about.p4': 'My specialty is turning fragmented data into strategic assets, solving the problems that hold teams back most: fragile pipelines, absent governance and scattered data that no one trusts.',
     'about.p5': 'Available for remote positions in Brazil, Portugal, Europe and the USA.',
 
@@ -288,7 +288,7 @@ const translations = {
 
     'about.p1': '<strong>Senior Data Engineer</strong> especializado en arquitecturas de datos a escala empresarial, con foco en <strong>Azure Databricks</strong>, <strong>Microsoft Fabric</strong> y <strong>Medallion Architecture</strong>.',
     'about.p2': 'Actualmente asignado en <strong>Renner</strong> vía Compass UOL, desarrollando y manteniendo pipelines de datos en entorno <strong>Azure + Databricks</strong>, con foco en escalabilidad, confiabilidad y gobernanza.',
-    'about.p3': 'A lo largo de mi carrera, lideré iniciativas de alto impacto en organizaciones de distintos tamaños y sectores: estructuré <strong>Data Governance</strong> en <strong>Renner</strong> y diseñé el Lakehouse de inteligencia de comercio exterior de <strong>Apex Brasil</strong>, integrando <strong>ComexStat</strong> y <strong>UN Comtrade</strong> en un entorno cloud-native de alta disponibilidad.',
+    'about.p3': 'A lo largo de mi carrera, lideré iniciativas de alto impacto en organizaciones de distintos tamaños y sectores: operé plataformas de datos de misión crítica en <strong>Petrobras</strong>, estructuré <strong>Data Governance</strong> en <strong>Renner</strong> y diseñé el Lakehouse de inteligencia de comercio exterior de <strong>Apex Brasil</strong>, integrando <strong>ComexStat</strong> y <strong>UN Comtrade</strong> en un entorno cloud-native de alta disponibilidad.',
     'about.p4': 'Mi especialidad es transformar datos fragmentados en activos estratégicos, resolviendo los problemas que más frenan a los equipos: pipelines frágiles, gobernanza inexistente y datos dispersos en los que nadie confía.',
     'about.p5': 'Disponible para posiciones remotas en Brasil, Portugal, Europa y EE.UU.',
 
