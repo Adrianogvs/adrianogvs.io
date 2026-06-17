@@ -109,7 +109,7 @@ const translations = {
     'proj.azure.desc':      'Três projetos práticos: IoT de temperatura (Event Hub + Stream Analytics + Power BI), gestão de receitas (ADF + Data Lake) e infraestrutura para banco digital (Synapse + Databricks).',
     'proj.iot.h3':          'Pipeline IoT com Azure e Airflow',
     'proj.iot.desc':        'Simulação de pipeline de sensores IoT em ambiente de óleo e gás no Azure, com orquestração via Apache Airflow, armazenamento NoSQL e Docker.',
-    'proj.petro.h3':        'Pipeline de Acidentes ANTT — Microsoft Fabric',
+    'proj.petro.h3':        'Pipeline de Acidentes ANTT Microsoft Fabric',
     'proj.petro.desc':      'Pipeline end-to-end no <strong>Microsoft Fabric</strong> seguindo <strong>Medallion Architecture</strong> (Bronze → Silver → Gold) para 1 milhão de registros de acidentes em rodovias federais (35 concessionárias, 2007–2025). Constellation Schema e relatórios em <strong>Power BI</strong> modo Direct Lake.',
     'proj.financial.h3':    'Extração e Análise de Dados Financeiros',
     'proj.financial.desc':  'Pipeline Python para extração de dados de PDFs de relatórios financeiros, com análise e visualização via Jupyter Notebooks.',
