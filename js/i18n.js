@@ -109,8 +109,8 @@ const translations = {
     'proj.azure.desc':      'Três projetos práticos: IoT de temperatura (Event Hub + Stream Analytics + Power BI), gestão de receitas (ADF + Data Lake) e infraestrutura para banco digital (Synapse + Databricks).',
     'proj.iot.h3':          'Pipeline IoT com Azure e Airflow',
     'proj.iot.desc':        'Simulação de pipeline de sensores IoT em ambiente de óleo e gás no Azure, com orquestração via Apache Airflow, armazenamento NoSQL e Docker.',
-    'proj.petro.h3':        'Data Lakehouse Medallion na Petrobras',
-    'proj.petro.desc':      'Redesenho para Medallion Architecture com <strong>Azure Databricks</strong>, <strong>Delta Lake</strong> e <strong>Unity Catalog</strong>. SLA 99,5% e redução de 60% no tempo de ingestão.',
+    'proj.petro.h3':        'Pipeline de Acidentes ANTT — Microsoft Fabric',
+    'proj.petro.desc':      'Pipeline end-to-end no <strong>Microsoft Fabric</strong> seguindo <strong>Medallion Architecture</strong> (Bronze → Silver → Gold) para 1 milhão de registros de acidentes em rodovias federais (35 concessionárias, 2007–2025). Constellation Schema e relatórios em <strong>Power BI</strong> modo Direct Lake.',
     'proj.financial.h3':    'Extração e Análise de Dados Financeiros',
     'proj.financial.desc':  'Pipeline Python para extração de dados de PDFs de relatórios financeiros, com análise e visualização via Jupyter Notebooks.',
 
@@ -237,8 +237,8 @@ const translations = {
     'proj.azure.desc':      'Three hands-on projects: temperature IoT for cold chain logistics (Event Hub + Stream Analytics + Power BI), revenue management (ADF + Data Lake) and digital bank infrastructure (Synapse + Databricks).',
     'proj.iot.h3':          'IoT Pipeline with Azure and Airflow',
     'proj.iot.desc':        'Simulation of an IoT sensor data pipeline in a critical oil and gas environment on Azure, with orchestration via Apache Airflow, NoSQL storage and Docker.',
-    'proj.petro.h3':        'Medallion Data Lakehouse at Petrobras',
-    'proj.petro.desc':      'Platform redesign to Medallion Architecture with <strong>Azure Databricks</strong>, <strong>Delta Lake</strong> and <strong>Unity Catalog</strong>. 99.5% SLA and 60% reduction in ingestion time.',
+    'proj.petro.h3':        'ANTT Accident Pipeline — Microsoft Fabric',
+    'proj.petro.desc':      'End-to-end pipeline on <strong>Microsoft Fabric</strong> following <strong>Medallion Architecture</strong> (Bronze → Silver → Gold) for 1 million accident records on federal highways (35 concessionaires, 2007–2025). Constellation Schema and <strong>Power BI</strong> Direct Lake reports.',
     'proj.financial.h3':    'Financial Data Extraction & Analysis',
     'proj.financial.desc':  'Python pipeline for extracting structured data from financial report PDFs, with analysis and visualization via Jupyter Notebooks.',
 
@@ -361,8 +361,8 @@ const translations = {
     'proj.azure.desc':      'Tres proyectos prácticos: IoT de temperatura (Event Hub + Stream Analytics + Power BI), gestión de ingresos (ADF + Data Lake) e infraestructura para banco digital (Synapse + Databricks).',
     'proj.iot.h3':          'Pipeline IoT con Azure y Airflow',
     'proj.iot.desc':        'Simulación de pipeline de sensores IoT en entorno crítico de petróleo y gas en Azure, con Apache Airflow, NoSQL y Docker.',
-    'proj.petro.h3':        'Data Lakehouse Medallion en Petrobras',
-    'proj.petro.desc':      'Rediseño a Medallion Architecture con <strong>Azure Databricks</strong>, <strong>Delta Lake</strong> y <strong>Unity Catalog</strong>. SLA 99,5% y reducción del 60% en tiempo de ingestión.',
+    'proj.petro.h3':        'Pipeline de Accidentes ANTT — Microsoft Fabric',
+    'proj.petro.desc':      'Pipeline end-to-end en <strong>Microsoft Fabric</strong> siguiendo <strong>Medallion Architecture</strong> (Bronze → Silver → Gold) para 1 millón de registros de accidentes en carreteras federales (35 concesionarias, 2007–2025). Constellation Schema e informes en <strong>Power BI</strong> modo Direct Lake.',
     'proj.financial.h3':    'Extracción y Análisis de Datos Financieros',
     'proj.financial.desc':  'Pipeline Python para extracción de datos de PDFs de informes financieros, con análisis y visualización vía Jupyter Notebooks.',
 
