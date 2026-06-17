@@ -195,3 +195,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 }); // fim do DOMContentLoaded
+
+// ================================
+// CONTADOR DE VISITAS
+// ================================
+(async () => {
+  try {
+    const res = await fetch('https://api.counterapi.dev/v1/adrianogvs-portfolio/hits/up');
+    const { count } = await res.json();
+    const el = document.getElementById('visit-count');
+    if (el && count != null) el.textContent = Number(count).toLocaleString('pt-BR');
+  } catch {}
+})();

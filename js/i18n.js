@@ -134,7 +134,8 @@ const translations = {
     'theme.auto':  'Automático',
 
     // ── Footer ────────────────────────────────────────────
-    'footer.copy': '© 2026 Adriano Vilela. Todos os direitos reservados.',
+    'footer.copy':   '© 2026 Adriano Vilela. Todos os direitos reservados.',
+    'footer.visits': 'visitas',
   },
 
   // ══════════════════════════════════════════════════════
@@ -257,7 +258,8 @@ const translations = {
     'theme.dark':  'Dark',
     'theme.auto':  'Auto',
 
-    'footer.copy': '© 2026 Adriano Vilela. All rights reserved.',
+    'footer.copy':   '© 2026 Adriano Vilela. All rights reserved.',
+    'footer.visits': 'visits',
   },
 
   // ══════════════════════════════════════════════════════
@@ -380,7 +382,8 @@ const translations = {
     'theme.dark':  'Oscuro',
     'theme.auto':  'Automático',
 
-    'footer.copy': '© 2026 Adriano Vilela. Todos los derechos reservados.',
+    'footer.copy':   '© 2026 Adriano Vilela. Todos los derechos reservados.',
+    'footer.visits': 'visitas',
   }
 };
 
