@@ -32,7 +32,7 @@ const translations = {
 
     // ── Sobre ─────────────────────────────────────────────
     'about.p1': '<strong>Senior Data Engineer</strong> especializado em arquiteturas de dados em escala enterprise, com foco em <strong>Azure Databricks</strong>, <strong>Microsoft Fabric</strong> e <strong>Medallion Architecture</strong>.',
-    'about.p2': 'Atualmente alocado na <strong>SEFAZ-ES</strong> via G4F, atuando como Engenheiro de Dados Sênior com foco em arquitetura, governança e qualidade de dados em <strong>Azure Databricks</strong> e <strong>Microsoft Fabric</strong>.',
+    'about.p2': 'Atualmente alocado na <strong>SEFAZ-ES</strong> via G4F, atuando como Senior Data Engineer com foco em arquitetura, governança e qualidade de dados em <strong>Azure Databricks</strong> e <strong>Microsoft Fabric</strong>.',
     'about.p3': 'Ao longo da carreira, conduzi iniciativas de alto impacto em organizações de portes e setores distintos: operei plataformas de dados de missão crítica na <strong>Petrobras</strong>, estruturei <strong>Data Governance</strong> na <strong>Renner</strong> e arquitetei o Lakehouse de inteligência de comércio exterior da <strong>Apex Brasil</strong>, integrando <strong>ComexStat</strong> e <strong>UN Comtrade</strong> em um ambiente cloud-native de alta disponibilidade.',
     'about.p4': 'Minha especialidade é transformar dados fragmentados em ativos estratégicos, resolvendo os problemas que mais travam equipes: pipelines frágeis, governança inexistente e dados dispersos que ninguém confia.',
     'about.p5': 'Disponível para posições remotas no Brasil, Portugal, Europa e EUA.',
@@ -69,18 +69,20 @@ const translations = {
 
     // ── Experiências ──────────────────────────────────────
     'exp.now':              'Atualmente',
-    'exp.sefaz.h3':         'Engenheiro de Dados Sênior | SEFAZ-ES',
-    'exp.air.h3':           'Engenheiro de Dados Sênior | BDMG',
+    'exp.pj':               'PJ, em paralelo',
+    'months': ['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'],
+    'exp.sefaz.h3':         'Senior Data Engineer | SEFAZ-ES',
+    'exp.air.h3':           'Senior Data Engineer | BDMG',
     'exp.renner.h3':        'Data Engineer | Renner',
-    'exp.apex.h3':          'Engenheiro de Dados | Apex Brasil',
+    'exp.apex.h3':          'Data Engineer | Apex Brasil',
     'exp.petro_ae.h3':      'Analytics Engineer | Petrobras',
-    'exp.petro_da.h3':      'Analista de Dados | Petrobras',
-    'exp.petro_ad.h3':      'Administrador de Dados | Petrobras',
-    'exp.aguia.h3':         'Analista de Dados',
-    'exp.globalsys.h3':     'Analista de Business Intelligence',
-    'exp.tacom.h3':         'Coordenador de Sistemas Embarcados',
-    'exp.santa.h3':         'Analista de Negócios Sênior',
-    'exp.sefaz.desc':       'Atuando em outsourcing para a <strong>G4F</strong> como Engenheiro de Dados Sênior na <strong>SEFAZ-ES</strong> (Secretaria de Estado da Fazenda do Espírito Santo), com foco em arquitetura, governança e qualidade de dados em <strong>Azure Databricks</strong> e <strong>Microsoft Fabric</strong>, dando suporte a iniciativas de Ciência de Dados para geração de inteligência estratégica do estado.',
+    'exp.petro_da.h3':      'Data Analyst | Petrobras',
+    'exp.petro_ad.h3':      'Data Administrator | Petrobras',
+    'exp.aguia.h3':         'Data Analyst',
+    'exp.globalsys.h3':     'Business Intelligence Analyst',
+    'exp.tacom.h3':         'Embedded Systems Coordinator',
+    'exp.santa.h3':         'Senior Business Analyst',
+    'exp.sefaz.desc':       'Atuando em outsourcing para a <strong>G4F</strong> como Senior Data Engineer na <strong>SEFAZ-ES</strong> (Secretaria de Estado da Fazenda do Espírito Santo), com foco em arquitetura, governança e qualidade de dados em <strong>Azure Databricks</strong> e <strong>Microsoft Fabric</strong>, dando suporte a iniciativas de Ciência de Dados para geração de inteligência estratégica do estado.',
     'exp.air.desc':         'Atuando em outsourcing para o <strong>BDMG</strong> (Banco de Desenvolvimento de Minas Gerais) via <strong>AI/R Invillia</strong>, liderei a migração da plataforma de dados legada (SQL Server + SSIS) para o <strong>Microsoft Fabric</strong>. Projetei arquitetura <strong>Medallion</strong> (RAW → Bronze → Silver → Gold) em <strong>Delta Lake</strong>, migrando múltiplas bases SQL Server para modelo dimensional em <strong>Direct Lake</strong>, com notebooks <strong>PySpark</strong>/SQL replicando a lógica dos pacotes SSIS legados (SCD Type 1/2, deduplicação e quarentena de dados). Implementei framework de qualidade/observabilidade, orquestração config-driven no <strong>Data Factory</strong> e governança com <strong>Microsoft Purview</strong>, aplicando <strong>DataOps</strong>/CI-CD no <strong>Azure DevOps</strong>.',
     'exp.renner.desc':      'Alocado na <strong>Renner Latam</strong> (uma das maiores varejistas da América Latina), atuo no desenvolvimento e sustentação de <strong>pipelines de dados</strong> em ambiente <strong>Azure + Databricks</strong>, garantindo escalabilidade, confiabilidade e governança com <strong>Delta Lake</strong> e <strong>Unity Catalog</strong>.',
     'exp.apex.desc':        'Consultoria para a <strong>Apex Brasil</strong> (agência brasileira de promoção de exportações), projetei e implementei uma arquitetura <strong>Lakehouse</strong> completa no <strong>Azure Databricks</strong> com camadas RAW, Bronze, Silver e Gold, integrando bases como <strong>ComexStat</strong>, <strong>UN Comtrade</strong>, CRM (Dynamics) e RH. Desenvolvi também um pipeline end-to-end no <strong>Azure Data Factory</strong> para ingestão de licitações públicas europeias, com tradução automática de títulos multilíngues via Databricks + Azure Translator. Orquestração via <strong>Databricks Jobs/Workflows</strong>, governança pelo <strong>Unity Catalog</strong> e camada analítica no <strong>Power BI</strong>.',
@@ -204,6 +206,8 @@ const translations = {
     'skill.dash.desc':   'Power BI, Streamlit, data storytelling.',
 
     'exp.now':              'Present',
+    'exp.pj':               'Contractor, concurrent',
+    'months': ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
     'exp.sefaz.h3':         'Senior Data Engineer | SEFAZ-ES',
     'exp.air.h3':           'Senior Data Engineer | BDMG',
     'exp.renner.h3':        'Data Engineer | Renner',
@@ -299,7 +303,7 @@ const translations = {
     'sec.contact':      'Contacto',
 
     'about.p1': '<strong>Senior Data Engineer</strong> especializado en arquitecturas de datos a escala empresarial, con foco en <strong>Azure Databricks</strong>, <strong>Microsoft Fabric</strong> y <strong>Medallion Architecture</strong>.',
-    'about.p2': 'Actualmente asignado en <strong>SEFAZ-ES</strong> vía G4F, actuando como Ingeniero de Datos Senior con foco en arquitectura, gobernanza y calidad de datos en <strong>Azure Databricks</strong> y <strong>Microsoft Fabric</strong>.',
+    'about.p2': 'Actualmente asignado en <strong>SEFAZ-ES</strong> vía G4F, actuando como Senior Data Engineer con foco en arquitectura, gobernanza y calidad de datos en <strong>Azure Databricks</strong> y <strong>Microsoft Fabric</strong>.',
     'about.p3': 'A lo largo de mi carrera, lideré iniciativas de alto impacto en organizaciones de distintos tamaños y sectores: operé plataformas de datos de misión crítica en <strong>Petrobras</strong>, estructuré <strong>Data Governance</strong> en <strong>Renner</strong> y diseñé el Lakehouse de inteligencia de comercio exterior de <strong>Apex Brasil</strong>, integrando <strong>ComexStat</strong> y <strong>UN Comtrade</strong> en un entorno cloud-native de alta disponibilidad.',
     'about.p4': 'Mi especialidad es transformar datos fragmentados en activos estratégicos, resolviendo los problemas que más frenan a los equipos: pipelines frágiles, gobernanza inexistente y datos dispersos en los que nadie confía.',
     'about.p5': 'Disponible para posiciones remotas en Brasil, Portugal, Europa y EE.UU.',
@@ -333,18 +337,20 @@ const translations = {
     'skill.dash.desc':   'Power BI, Streamlit, storytelling con datos.',
 
     'exp.now':              'Actualmente',
-    'exp.sefaz.h3':         'Ingeniero de Datos Senior | SEFAZ-ES',
-    'exp.air.h3':           'Ingeniero de Datos Senior | BDMG',
+    'exp.pj':               'Contratista, en paralelo',
+    'months': ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'],
+    'exp.sefaz.h3':         'Senior Data Engineer | SEFAZ-ES',
+    'exp.air.h3':           'Senior Data Engineer | BDMG',
     'exp.renner.h3':        'Data Engineer | Renner',
-    'exp.apex.h3':          'Ingeniero de Datos | Apex Brasil',
+    'exp.apex.h3':          'Data Engineer | Apex Brasil',
     'exp.petro_ae.h3':      'Analytics Engineer | Petrobras',
-    'exp.petro_da.h3':      'Analista de Datos | Petrobras',
-    'exp.petro_ad.h3':      'Administrador de Datos | Petrobras',
-    'exp.aguia.h3':         'Analista de Datos',
-    'exp.globalsys.h3':     'Analista de Business Intelligence',
-    'exp.tacom.h3':         'Coordinador de Sistemas Embebidos',
-    'exp.santa.h3':         'Analista de Negocios Senior',
-    'exp.sefaz.desc':       'Actuando a través de <strong>G4F</strong> como Ingeniero de Datos Senior en <strong>SEFAZ-ES</strong> (Secretaría de Hacienda del Estado de Espírito Santo), con foco en arquitectura, gobernanza y calidad de datos en <strong>Azure Databricks</strong> y <strong>Microsoft Fabric</strong>, apoyando también iniciativas de Ciencia de Datos para la inteligencia estratégica del estado.',
+    'exp.petro_da.h3':      'Data Analyst | Petrobras',
+    'exp.petro_ad.h3':      'Data Administrator | Petrobras',
+    'exp.aguia.h3':         'Data Analyst',
+    'exp.globalsys.h3':     'Business Intelligence Analyst',
+    'exp.tacom.h3':         'Embedded Systems Coordinator',
+    'exp.santa.h3':         'Senior Business Analyst',
+    'exp.sefaz.desc':       'Actuando a través de <strong>G4F</strong> como Senior Data Engineer en <strong>SEFAZ-ES</strong> (Secretaría de Hacienda del Estado de Espírito Santo), con foco en arquitectura, gobernanza y calidad de datos en <strong>Azure Databricks</strong> y <strong>Microsoft Fabric</strong>, apoyando también iniciativas de Ciencia de Datos para la inteligencia estratégica del estado.',
     'exp.air.desc':         'Actuando a través de <strong>AI/R Invillia</strong> para el <strong>BDMG</strong> (Banco de Desarrollo de Minas Gerais), lideré la migración de la plataforma de datos legada (SQL Server + SSIS) a <strong>Microsoft Fabric</strong>. Diseñé una arquitectura <strong>Medallion</strong> (RAW → Bronze → Silver → Gold) en <strong>Delta Lake</strong>, migrando múltiples bases SQL Server a un modelo dimensional en <strong>Direct Lake</strong>, con notebooks <strong>PySpark</strong>/SQL replicando la lógica de los paquetes SSIS legados (SCD Type 1/2, deduplicación y cuarentena de datos). Implementé un framework de calidad/observabilidad, orquestación config-driven en <strong>Data Factory</strong> y gobernanza con <strong>Microsoft Purview</strong>, aplicando <strong>DataOps</strong>/CI-CD en <strong>Azure DevOps</strong>.',
     'exp.renner.desc':      'Asignado en <strong>Renner Latam</strong> (una de las mayores minoristas de América Latina), desarrollo y mantengo <strong>pipelines de datos</strong> en entorno <strong>Azure + Databricks</strong>, garantizando escalabilidad, confiabilidad y gobernanza con <strong>Delta Lake</strong> y <strong>Unity Catalog</strong>.',
     'exp.apex.desc':        'Consultoría para <strong>Apex Brasil</strong> (agencia brasileña de promoción de exportaciones): diseñé e implementé una arquitectura <strong>Lakehouse</strong> completa en <strong>Azure Databricks</strong> con capas RAW, Bronze, Silver y Gold, integrando fuentes como <strong>ComexStat</strong>, <strong>UN Comtrade</strong>, CRM (Dynamics) y RR. HH. También desarrollé un pipeline end-to-end en <strong>Azure Data Factory</strong> para la ingesta de licitaciones públicas europeas, con traducción automática de títulos multilingües vía Databricks + Azure Translator. Orquestación vía <strong>Databricks Jobs/Workflows</strong>, gobernanza mediante <strong>Unity Catalog</strong> y capa analítica en <strong>Power BI</strong>.',
@@ -424,6 +430,16 @@ function applyLang(lang) {
   document.querySelectorAll('[data-i18n-ph]').forEach(el => {
     const v = t[el.dataset.i18nPh];
     if (v !== undefined) el.setAttribute('placeholder', v);
+  });
+
+  // períodos das experiências (mês/ano traduzidos)
+  document.querySelectorAll('.exp-period').forEach(el => {
+    const fmt = ym => {
+      if (ym === 'now') return t['exp.now'];
+      const [y, m] = ym.split('-');
+      return `${t.months[Number(m) - 1]} ${y}`;
+    };
+    el.textContent = `${fmt(el.dataset.start)} – ${fmt(el.dataset.end)}`;
   });
 
   // active button highlight

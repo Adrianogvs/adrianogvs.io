@@ -6,7 +6,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-adrianogvs-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/adrianogvs/)
 [![GitHub](https://img.shields.io/badge/GitHub-Adrianogvs-181717?style=flat-square&logo=github)](https://github.com/Adrianogvs)
 
-Portfolio profissional de Adriano Vilela, Senior Data Engineer com 5+ anos em Petrobras, Renner e Apex Brasil. Especialista em Azure Databricks, Microsoft Fabric, Delta Lake e Medallion Architecture.
+Portfolio profissional de Adriano Vilela, Senior Data Engineer com 10+ anos de experiência, com passagens por Petrobras, Renner e Apex Brasil. Especialista em Azure Databricks, Microsoft Fabric, Delta Lake e Medallion Architecture.
 
 ---
 
