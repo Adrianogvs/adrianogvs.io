@@ -170,7 +170,7 @@
       <div class="info-tabs-wrap">
         <div class="info-tabs-nav">
           <button class="itab-btn active" data-tab="formacao" data-i18n="card.formacao">Formação</button>
-          <button class="itab-btn" data-tab="habilidades" data-i18n="card.soft">Habilidades</button>
+          <button class="itab-btn" data-tab="habilidades" data-i18n="card.profile">Perfil</button>
           <button class="itab-btn" data-tab="interesses" data-i18n="card.interesses">Interesses</button>
         </div>
 
@@ -222,22 +222,16 @@
           <!-- Aba: Habilidades -->
           <div class="itab-panel" id="itab-habilidades">
             <div class="itab-cols">
+              <!--
+                CONQUISTAS: substitua este comentário por 2–3 conquistas concretas.
+                Exemplo de estrutura (crie as chaves card.achv.* nas 3 línguas em js/i18n.js):
               <div class="itab-col">
-                <h4 data-i18n="card.soft">Habilidades Comportamentais</h4>
-                <ul class="itab-list itab-list--pills" data-i18n-html="card.soft.text">
-                  <li>Comunicação eficaz</li>
-                  <li>Trabalho em equipe</li>
-                  <li>Empatia</li>
-                  <li>Resiliência</li>
-                  <li>Pensamento crítico</li>
-                  <li>Proatividade</li>
-                  <li>Gestão do tempo</li>
-                  <li>Flexibilidade</li>
-                  <li>Inteligência emocional</li>
-                  <li>Liderança</li>
-                  <li>Adaptabilidade</li>
+                <h4 data-i18n="card.achv">Conquistas</h4>
+                <ul class="itab-list">
+                  <li><strong>Resultado mensurável</strong><span>Contexto curto: onde, como e impacto</span></li>
                 </ul>
               </div>
+              -->
               <div class="itab-col">
                 <h4 data-i18n="card.local">Localização</h4>
                 <ul class="itab-list">
@@ -429,9 +423,13 @@
               <p data-i18n-html="exp.petro_ae.desc">
                 Alocado na <strong>Petrobras</strong> (Óleo &amp; Gás), projetei e operei plataformas de dados de missão crítica com <strong>Azure Databricks</strong>, <strong>Medallion Architecture</strong> (Bronze, Silver e Gold) e <strong>Delta Lake</strong>. Desenvolvi pipelines ETL/ELT com <strong>Azure Data Factory</strong>, implementei governança com <strong>Unity Catalog</strong>, entreguei dashboards com <strong>Power BI</strong> e apliquei práticas de <strong>DataOps</strong> com CI/CD. SLA de 99,5% nos pipelines críticos.
               </p>
+              <ul class="exp-metrics">
+                <li><strong data-i18n="metric.sla.v">99,5%</strong> <span data-i18n="metric.sla">SLA nos pipelines críticos</span></li>
+              </ul>
             </div>
           </div>
 
+          <div class="timeline-more" id="exp-mais" hidden>
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
@@ -440,6 +438,10 @@
               <p data-i18n-html="exp.petro_da.desc">
                 Alocado na <strong>Petrobras</strong> (Óleo &amp; Gás), atuei no desenvolvimento de modelos dimensionais, <strong>Data Warehouse</strong> e projetos de BI ponta a ponta. Modelei esquemas <strong>Star Schema</strong> e <strong>Snowflake</strong> com SCD Type 2, construí pipelines <strong>ETL</strong> com SQL, Python e Power Query, e entreguei dashboards no <strong>Power BI</strong> que suportaram KPIs críticos da operação. Automatizei processos com <strong>Power Automate</strong>, liberando 25% do tempo em atividades manuais. Destaque: implantação de DW dimensional no Azure que reduziu em <strong>40%</strong> o tempo de geração de relatórios estratégicos.
               </p>
+              <ul class="exp-metrics">
+                <li><strong>−40%</strong> <span data-i18n="metric.rel_estrat">tempo de relatórios estratégicos</span></li>
+                <li><strong>25%</strong> <span data-i18n="metric.tempo_lib">do tempo liberado de tarefas manuais</span></li>
+              </ul>
             </div>
           </div>
 
@@ -451,6 +453,9 @@
               <p data-i18n-html="exp.petro_ad.desc">
                 Alocado na <strong>Petrobras</strong> (Óleo &amp; Gás), liderei squads de Engenharia de Dados, projetei esquemas <strong>Star Schema</strong> e <strong>Snowflake</strong> com SCD e versionamento de metadados, e administrei ambientes <strong>Oracle</strong> e <strong>SQL Server</strong> com tuning de queries. Implementei políticas de governança, segurança e auditoria de dados. Destaque: criação de <strong>Data Mart</strong> integrado ao Oracle que reduziu em <strong>50%</strong> o tempo de geração de relatórios de estoque.
               </p>
+              <ul class="exp-metrics">
+                <li><strong>−50%</strong> <span data-i18n="metric.rel_estoque">tempo de relatórios de estoque</span></li>
+              </ul>
             </div>
           </div>
 
@@ -515,7 +520,11 @@
               </p>
             </div>
           </div>
+          </div>
         </div>
+        <button type="button" class="exp-toggle" aria-expanded="false" aria-controls="exp-mais">
+          <span data-i18n="exp.more">Ver trajetória completa</span>
+        </button>
       </section>
       <!-- /EXPERIÊNCIAS -->
 
@@ -528,7 +537,7 @@
               <img src="assets/images/empresas/petrobras.png"
                    alt="Petrobras" class="empresa-logo" loading="lazy"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#009B3A">PB</div>
+              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#007A2E">PB</div>
             </div>
             <div class="empresa-nome">Petrobras</div>
             <div class="empresa-setor" data-i18n="setor.oleo">Óleo &amp; Gás</div>
@@ -628,7 +637,7 @@
               <img src="assets/images/empresas/hyti.svg"
                    alt="Hyti" class="empresa-logo" loading="lazy"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#FE346E">HY</div>
+              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#C8104A">HY</div>
             </div>
             <div class="empresa-nome">Hyti</div>
             <div class="empresa-setor" data-i18n="setor.ti">Tecnologia</div>
@@ -684,9 +693,11 @@
           <!-- Card 1 — airflow-databricks-orchestration -->
           <div class="card">
             <div class="card-top">
+              <!-- Imagem opcional: <img class="card-media" src="assets/images/projetos/NOME.png" alt="Diagrama de arquitetura do projeto" loading="lazy" /> (substitui o ícone) -->
               <i class="fas fa-project-diagram"></i>
             </div>
             <div class="card-bottom">
+              <!-- Resultado opcional: <p class="card-result" data-i18n="proj.CHAVE.result">Métrica real do projeto</p> -->
               <h3 data-i18n="proj.airflow.h3">Orquestração Airflow + Databricks</h3>
               <p data-i18n="proj.airflow.desc">
                 Guia completo e implementação prática de DAGs no Apache Airflow para orquestrar jobs no Databricks: tokens, conexões, Docker, agendamento e execução parametrizada.
@@ -706,9 +717,11 @@
           <!-- Card 2 — aws-weather-realtime-etl -->
           <div class="card">
             <div class="card-top">
+              <!-- Imagem opcional: <img class="card-media" src="assets/images/projetos/NOME.png" alt="Diagrama de arquitetura do projeto" loading="lazy" /> (substitui o ícone) -->
               <i class="fas fa-cloud-bolt"></i>
             </div>
             <div class="card-bottom">
+              <!-- Resultado opcional: <p class="card-result" data-i18n="proj.CHAVE.result">Métrica real do projeto</p> -->
               <h3 data-i18n="proj.aws.h3">Pipeline Real-time na AWS: Dados Climáticos</h3>
               <p data-i18n-html="proj.aws.desc">
                 Ingere dados da API Tomorrow.io via <strong>Kinesis, Lambda, S3, Glue e Athena</strong>, com alertas automáticos por SMS/email via SNS quando condições críticas são detectadas. Data lake em 3 camadas: raw, gold e analysis.
@@ -729,9 +742,11 @@
           <!-- Card 3 — 002_Engenharia_de_Dados_Azure -->
           <div class="card">
             <div class="card-top">
+              <!-- Imagem opcional: <img class="card-media" src="assets/images/projetos/NOME.png" alt="Diagrama de arquitetura do projeto" loading="lazy" /> (substitui o ícone) -->
               <i class="fas fa-layer-group"></i>
             </div>
             <div class="card-bottom">
+              <!-- Resultado opcional: <p class="card-result" data-i18n="proj.CHAVE.result">Métrica real do projeto</p> -->
               <h3 data-i18n="proj.azure.h3">Engenharia de Dados no Azure: 3 Casos Reais</h3>
               <p data-i18n="proj.azure.desc">
                 Três projetos práticos: IoT de temperatura para logística frigorífica (Event Hub + Stream Analytics + Power BI), gestão de receitas para plataforma de cursos (ADF + Data Lake) e infraestrutura para banco digital (Synapse + Databricks).
@@ -752,9 +767,11 @@
           <!-- Card 4 — projeto-nosql-iot-azure -->
           <div class="card">
             <div class="card-top">
+              <!-- Imagem opcional: <img class="card-media" src="assets/images/projetos/NOME.png" alt="Diagrama de arquitetura do projeto" loading="lazy" /> (substitui o ícone) -->
               <i class="fas fa-industry"></i>
             </div>
             <div class="card-bottom">
+              <!-- Resultado opcional: <p class="card-result" data-i18n="proj.CHAVE.result">Métrica real do projeto</p> -->
               <h3 data-i18n="proj.iot.h3">Pipeline IoT com Azure e Airflow</h3>
               <p data-i18n="proj.iot.desc">
                 Simulação de pipeline de dados de sensores IoT em ambiente crítico de óleo e gás no Azure, com orquestração via Apache Airflow, armazenamento NoSQL e containerização Docker.
@@ -775,9 +792,11 @@
           <!-- Card 5 — projeto_fabric_antt -->
           <div class="card">
             <div class="card-top">
+              <!-- Imagem opcional: <img class="card-media" src="assets/images/projetos/NOME.png" alt="Diagrama de arquitetura do projeto" loading="lazy" /> (substitui o ícone) -->
               <i class="fas fa-road"></i>
             </div>
             <div class="card-bottom">
+              <p class="card-result" data-i18n="proj.petro.result">1 milhão de registros · 35 concessionárias · 2007–2025</p>
               <h3 data-i18n="proj.petro.h3">Pipeline de Acidentes ANTT Microsoft Fabric</h3>
               <p data-i18n-html="proj.petro.desc">
                 Pipeline end-to-end no <strong>Microsoft Fabric</strong> seguindo <strong>Medallion Architecture</strong> (Bronze → Silver → Gold) para 1 milhão de registros de acidentes em rodovias federais (35 concessionárias, 2007–2025). Constellation Schema e relatórios em <strong>Power BI</strong> modo Direct Lake.
@@ -797,9 +816,11 @@
           <!-- Card 6 — 007_CM_Capital -->
           <div class="card">
             <div class="card-top">
+              <!-- Imagem opcional: <img class="card-media" src="assets/images/projetos/NOME.png" alt="Diagrama de arquitetura do projeto" loading="lazy" /> (substitui o ícone) -->
               <i class="fas fa-chart-line"></i>
             </div>
             <div class="card-bottom">
+              <!-- Resultado opcional: <p class="card-result" data-i18n="proj.CHAVE.result">Métrica real do projeto</p> -->
               <h3 data-i18n="proj.financial.h3">Extração e Análise de Dados Financeiros</h3>
               <p data-i18n="proj.financial.desc">
                 Pipeline Python para extração de dados estruturados de PDFs de relatórios de mercado financeiro, com análise e visualização via Jupyter Notebooks.

@@ -210,4 +210,23 @@ document.addEventListener('DOMContentLoaded', () => {
     history.replaceState(null, '', window.location.pathname + '#contato');
   }
 
+  // ================================
+  // EXPERIÊNCIAS: MOSTRAR TRAJETÓRIA COMPLETA
+  // ================================
+  const expToggle = document.querySelector('.exp-toggle');
+  const expMore   = document.getElementById('exp-mais');
+  if (expToggle && expMore) {
+    expToggle.addEventListener('click', () => {
+      const open = expToggle.getAttribute('aria-expanded') === 'true';
+      expMore.hidden = open;
+      expToggle.setAttribute('aria-expanded', String(!open));
+      const label = expToggle.querySelector('span');
+      label.dataset.i18n = open ? 'exp.more' : 'exp.less';
+      if (typeof applyLang === 'function') applyLang(localStorage.getItem('lang') || 'pt');
+      if (!open) expMore.querySelector('h3')?.setAttribute('tabindex', '-1');
+      if (!open) expMore.querySelector('h3')?.focus({ preventScroll: true });
+      if (open) expToggle.scrollIntoView({ block: 'nearest' });
+    });
+  }
+
 }); // fim do DOMContentLoaded
