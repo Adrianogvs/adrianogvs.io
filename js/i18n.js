@@ -45,7 +45,7 @@ const translations = {
     'card.local':         'Localização',
     'card.idiomas':       'Idiomas',
     'card.interesses':    'Interesses',
-    'card.local.text':    '• Serra – ES, Brasil<br>• Disponível para remoto',
+    'card.local.text':    '• Vitória – ES, Brasil<br>• Disponível para remoto',
     'card.idiomas.text':  '• Português: Nativo<br>• Inglês: Técnico',
     'card.interests.text':'Além da atuação atual em Engenharia de Dados, acompanho e busco me aprofundar continuamente em:<br><br><strong>Streaming de Dados e Processamento em Tempo Real:</strong> arquiteturas de ingestão contínua com <strong>Apache Kafka</strong>, <strong>Azure Event Hubs</strong> e <strong>Spark Structured Streaming</strong>.<br><br><strong>MLOps &amp; LLMOps:</strong> operacionalização de modelos com <strong>MLflow</strong>, ciclo de vida de LLMs e arquiteturas <strong>RAG</strong>.<br><br><strong>IA aplicada a dados:</strong> <strong>Azure Databricks</strong> e <strong>Microsoft Fabric</strong> para IA Generativa e Machine Learning em escala enterprise.<br><br><strong>IaC &amp; Orquestração:</strong> <strong>Terraform</strong>, <strong>Docker</strong> e <strong>Kubernetes</strong> aplicados a ambientes de dados em cloud.',
 
@@ -196,7 +196,7 @@ const translations = {
     'card.local':         'Location',
     'card.idiomas':       'Languages',
     'card.interesses':    'Interests',
-    'card.local.text':    '• Serra – ES, Brazil<br>• Available for remote work',
+    'card.local.text':    '• Vitória – ES, Brazil<br>• Available for remote work',
     'card.idiomas.text':  '• Portuguese: Native<br>• English: Technical',
     'card.interests.text':'Beyond my current work in Data Engineering, I continuously follow and deepen my knowledge in:<br><br><strong>Data Streaming & Real-Time Processing:</strong> continuous ingestion architectures with <strong>Apache Kafka</strong>, <strong>Azure Event Hubs</strong> and <strong>Spark Structured Streaming</strong>.<br><br><strong>MLOps & LLMOps:</strong> model operationalization with <strong>MLflow</strong>, LLM lifecycle in production and <strong>RAG</strong> architectures.<br><br><strong>AI applied to data:</strong> <strong>Azure Databricks</strong> and <strong>Microsoft Fabric</strong> for Generative AI and enterprise-scale Machine Learning.<br><br><strong>IaC & Orchestration:</strong> <strong>Terraform</strong>, <strong>Docker</strong> and <strong>Kubernetes</strong> applied to cloud data environments.',
 
@@ -339,7 +339,7 @@ const translations = {
     'card.local':         'Ubicación',
     'card.idiomas':       'Idiomas',
     'card.interesses':    'Intereses',
-    'card.local.text':    '• Serra – ES, Brasil<br>• Disponible para trabajo remoto',
+    'card.local.text':    '• Vitória – ES, Brasil<br>• Disponible para trabajo remoto',
     'card.idiomas.text':  '• Portugués: Nativo<br>• Inglés: Técnico',
     'card.interests.text':'Más allá de mi trabajo actual en Ingeniería de Datos, sigo y profundizo continuamente en:<br><br><strong>Streaming de Datos y Procesamiento en Tiempo Real:</strong> arquitecturas de ingestión continua con <strong>Apache Kafka</strong>, <strong>Azure Event Hubs</strong> y <strong>Spark Structured Streaming</strong>.<br><br><strong>MLOps & LLMOps:</strong> operacionalización de modelos con <strong>MLflow</strong>, ciclo de vida de LLMs y arquitecturas <strong>RAG</strong>.<br><br><strong>IA aplicada a datos:</strong> <strong>Azure Databricks</strong> y <strong>Microsoft Fabric</strong> para IA Generativa y Machine Learning a escala empresarial.<br><br><strong>IaC & Orquestación:</strong> <strong>Terraform</strong>, <strong>Docker</strong> y <strong>Kubernetes</strong> aplicados a entornos de datos en cloud.',
 
