@@ -90,3 +90,11 @@ cd adrianogvs.io
 ---
 
 © 2026 Adriano Vilela. Todos os direitos reservados.
+
+## Logos das empresas
+
+Os logos ficam em `assets/images/empresas/`. Para baixar os que vinham de sites externos, rode uma vez na raiz do repositório:
+
+```bash
+./scripts/baixar-logos.sh
+```

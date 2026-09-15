@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav      = document.querySelector('nav');
   const menu     = document.querySelector('#menu');
   const logo     = document.querySelector('.logo');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // THEME SWITCHER (SELETOR DE TEMA)
   const themeBtn  = document.getElementById('theme-toggle-button');
@@ -57,11 +58,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const target       = section.querySelector('h2') || section;
     const topPos       = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
 
-    window.scrollTo({ top: topPos, behavior: 'smooth' });
+    window.scrollTo({ top: topPos, behavior: reduceMotion ? 'auto' : 'smooth' });
 
     // Fecha menu mobile caso esteja aberto
     if (toggle.classList.contains('open')) {
       toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
       nav.classList.remove('open');
       menu.classList.remove('open');
     }
@@ -71,12 +73,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // EVENTO: CLIQUE NO LOGO (VOLTA AO INÍCIO)
   // ================================
   logo.addEventListener('click', () => scrollToSection('#inicio'));
+  logo.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); scrollToSection('#inicio'); }
+  });
 
   // ================================
   // EVENTO: ABRIR/FECHAR MENU MOBILE (HAMBURGER)
   // ================================
   toggle.addEventListener('click', () => {
-    toggle.classList.toggle('open');
+    const isOpen = toggle.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
     nav.classList.toggle('open');
     menu.classList.toggle('open');
   });
@@ -116,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==================================================
   (function() {
     const canvas = document.getElementById('cursor-glow');
-    if (!canvas) return; // se não existir, sai
+    if (!canvas || reduceMotion) return; // sem canvas ou movimento reduzido, sai
 
     const ctx = canvas.getContext('2d');
     let w = window.innerWidth, h = window.innerHeight;
@@ -194,16 +200,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-}); // fim do DOMContentLoaded
+  // ================================
+  // FORMULÁRIO: CONFIRMAÇÃO APÓS ENVIO (FormSubmit redireciona com ?enviado=1)
+  // ================================
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('enviado') === '1') {
+    const ok = document.querySelector('.form-success');
+    if (ok) ok.hidden = false;
+    history.replaceState(null, '', window.location.pathname + '#contato');
+  }
 
-// ================================
-// CONTADOR DE VISITAS
-// ================================
-(async () => {
-  try {
-    const res = await fetch('https://api.counterapi.dev/v1/adrianogvs-portfolio/hits/up');
-    const { count } = await res.json();
-    const el = document.getElementById('visit-count');
-    if (el && count != null) el.textContent = Number(count).toLocaleString('pt-BR');
-  } catch {}
-})();
+}); // fim do DOMContentLoaded

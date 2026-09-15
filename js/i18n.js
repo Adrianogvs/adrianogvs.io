@@ -11,6 +11,7 @@ const translations = {
     'nav.projetos':     'Projetos',
     'nav.certs':        'Certificações',
     'nav.contato':      'Contato',
+    'nav.menu':         'Abrir menu',
 
     // ── Hero ─────────────────────────────────────────────
     'hero.tagline':     'Transformando dados em vantagem competitiva através de plataformas modernas, governança e analytics em escala.',
@@ -137,6 +138,7 @@ const translations = {
     'form.nome.ph':     'Seu nome',
     'form.email.ph':    'Seu email',
     'form.msg.ph':      'Como posso ajudar?',
+    'form.success':     'Mensagem enviada! Retorno em breve.',
     'form.submit':      'Enviar Mensagem',
 
     // ── Tema ──────────────────────────────────────────────
@@ -146,7 +148,6 @@ const translations = {
 
     // ── Footer ────────────────────────────────────────────
     'footer.copy':   '© 2026 Adriano Vilela. Todos os direitos reservados.',
-    'footer.visits': 'visitas',
   },
 
   // ══════════════════════════════════════════════════════
@@ -158,6 +159,7 @@ const translations = {
     'nav.projetos':     'Projects',
     'nav.certs':        'Certifications',
     'nav.contato':      'Contact',
+    'nav.menu':         'Open menu',
 
     'hero.tagline':     'Turning data into competitive advantage through modern platforms, governance and analytics at scale.',
     'hero.btn.contato': 'Get in touch',
@@ -274,6 +276,7 @@ const translations = {
     'form.nome.ph':     'Your name',
     'form.email.ph':    'Your email',
     'form.msg.ph':      'How can I help?',
+    'form.success':     'Message sent! I\'ll get back to you soon.',
     'form.submit':      'Send Message',
 
     'theme.light': 'Light',
@@ -281,7 +284,6 @@ const translations = {
     'theme.auto':  'Auto',
 
     'footer.copy':   '© 2026 Adriano Vilela. All rights reserved.',
-    'footer.visits': 'visits',
   },
 
   // ══════════════════════════════════════════════════════
@@ -293,6 +295,7 @@ const translations = {
     'nav.projetos':     'Proyectos',
     'nav.certs':        'Certificaciones',
     'nav.contato':      'Contacto',
+    'nav.menu':         'Abrir menú',
 
     'hero.tagline':     'Convirtiendo datos en ventaja competitiva a través de plataformas modernas, gobernanza y analytics a escala.',
     'hero.btn.contato': 'Contáctame',
@@ -409,6 +412,7 @@ const translations = {
     'form.nome.ph':     'Tu nombre',
     'form.email.ph':    'Tu email',
     'form.msg.ph':      '¿Cómo puedo ayudarte?',
+    'form.success':     '¡Mensaje enviado! Te respondo pronto.',
     'form.submit':      'Enviar Mensaje',
 
     'theme.light': 'Claro',
@@ -416,7 +420,6 @@ const translations = {
     'theme.auto':  'Automático',
 
     'footer.copy':   '© 2026 Adriano Vilela. Todos los derechos reservados.',
-    'footer.visits': 'visitas',
   }
 };
 
@@ -436,6 +439,12 @@ function applyLang(lang) {
   document.querySelectorAll('[data-i18n-html]').forEach(el => {
     const v = t[el.dataset.i18nHtml];
     if (v !== undefined) el.innerHTML = v;
+  });
+
+  // aria-label swap
+  document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+    const v = t[el.dataset.i18nAria];
+    if (v !== undefined) el.setAttribute('aria-label', v);
   });
 
   // placeholder swap

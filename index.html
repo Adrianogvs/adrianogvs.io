@@ -11,13 +11,18 @@
     <meta property="og:description" content="Data Engineer com 10+ anos de experiência, com passagens por Petrobras, Renner e Apex Brasil. Especialista em Azure Databricks, Microsoft Fabric e Medallion Architecture." />
     <meta property="og:url" content="https://adrianogvs.com.br" />
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://adrianogvs.com.br/assets/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Adriano Vilela, Senior Data Engineer" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Adriano Vilela | Senior Data Engineer" />
+    <meta name="twitter:image" content="https://adrianogvs.com.br/assets/images/og-image.png" />
     <meta name="twitter:description" content="Data Engineer especializado em Azure Databricks, Microsoft Fabric e Lakehouse Architecture." />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-..."
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -27,12 +32,12 @@
     <!-- SEÇÃO: HEADER E NAVEGAÇÃO -->
     <header>
       <div class="nav-container">
-        <div class="menu-toggle">
+        <button type="button" class="menu-toggle" aria-label="Abrir menu" data-i18n-aria="nav.menu" aria-expanded="false" aria-controls="menu">
           <span></span>
           <span></span>
           <span></span>
-        </div>
-        <div class="logo">Adriano</div>
+        </button>
+        <div class="logo" role="link" tabindex="0" aria-label="Voltar ao início">Adriano</div>
         <nav>
           <ul id="menu">
             <li><a href="#sobre" data-i18n="nav.sobre">Sobre</a></li>
@@ -123,7 +128,7 @@
             <i class="fas fa-envelope"></i> <span data-i18n="hero.btn.contato">Entre em contato</span>
           </a>
           <a
-            href="./assets/curriculo/Adriano Geraldo Vilela Da Silva.pdf"
+            href="./assets/curriculo/adriano-vilela-cv.pdf"
             class="btn"
           >
             <i class="fas fa-download"></i> <span data-i18n="hero.btn.cv">Download Currículo</span>
@@ -135,7 +140,10 @@
             <div class="hero-stat"><span class="hstat-n">6+</span><span class="hstat-l" data-i18n="hero.projetos">Projetos</span></div>
           </div>
         </div>
-        <img src="./assets/images/agvs.png" alt="Adriano Vilela" />
+        <picture>
+          <source srcset="./assets/images/agvs.webp" type="image/webp" />
+          <img src="./assets/images/agvs.png" alt="Foto de Adriano Vilela" width="1056" height="992" />
+        </picture>
       </section>
 
       <!-- SEÇÃO: SOBRE MIM -->
@@ -193,17 +201,17 @@
                 <ul class="itab-list">
                   <li>
                     <strong>Apache Spark e Databricks <em data-i18n="card.mec">(reconhecida pelo MEC)</em></strong>
-                    <span><a href="https://engenhariadadosacademy.com.br/" target="_blank">Engenharia de Dados Academy</a> · <b>[Em Andamento]</b></span>
+                    <span><a href="https://engenhariadadosacademy.com.br/" target="_blank" rel="noopener noreferrer">Engenharia de Dados Academy</a> · <b>[Em Andamento]</b></span>
                     <span class="itab-tags">Databricks · Spark · Kubernetes · Docker · Azure · AWS · GCP</span>
                   </li>
                   <li>
                     <strong>Engenharia de Dados</strong>
-                    <span><a href="https://suajornadadedados.com.br/" target="_blank">Jornada de Dados</a></span>
+                    <span><a href="https://suajornadadedados.com.br/" target="_blank" rel="noopener noreferrer">Jornada de Dados</a></span>
                     <span class="itab-tags">Azure · Databricks · Python · dbt · Airflow · Kafka · Terraform</span>
                   </li>
                   <li>
                     <strong>BI Academy Pro</strong>
-                    <span><a href="https://projetosreais.com.br/" target="_blank">Rafael Piton</a></span>
+                    <span><a href="https://projetosreais.com.br/" target="_blank" rel="noopener noreferrer">Rafael Piton</a></span>
                     <span class="itab-tags">Power BI · Oracle · OBIEE · SQL · PostgreSQL · Linux</span>
                   </li>
                 </ul>
@@ -517,30 +525,30 @@
         <div class="empresas-grid">
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Petrobras_horizontal_logo.svg/250px-Petrobras_horizontal_logo.svg.png"
+              <img src="assets/images/empresas/petrobras.png"
                    alt="Petrobras" class="empresa-logo" loading="lazy"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="empresa-initials" style="display:none;background:#009B3A">PB</div>
+              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#009B3A">PB</div>
             </div>
             <div class="empresa-nome">Petrobras</div>
             <div class="empresa-setor" data-i18n="setor.oleo">Óleo &amp; Gás</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Logotipo_das_Lojas_Renner.svg/250px-Logotipo_das_Lojas_Renner.svg.png"
+              <img src="assets/images/empresas/renner.png"
                    alt="Lojas Renner" class="empresa-logo" loading="lazy"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="empresa-initials" style="display:none;background:#CC0000">LR</div>
+              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#CC0000">LR</div>
             </div>
             <div class="empresa-nome">Renner</div>
             <div class="empresa-setor" data-i18n="setor.varejo">Varejo</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
-              <img src="https://apexbrasil.com.br/content/dam/apexbrasil/icons/log-apex-header.png"
+              <img src="assets/images/empresas/apex-brasil.png"
                    alt="Apex Brasil" class="empresa-logo" loading="lazy"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="empresa-initials" style="display:none;background:#003087">AB</div>
+              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#003087">AB</div>
             </div>
             <div class="empresa-nome">Apex Brasil</div>
             <div class="empresa-setor" data-i18n="setor.comercio">Comércio Exterior</div>
@@ -550,37 +558,37 @@
               <img src="assets/images/empresas/globalsys.svg"
                    alt="Globalsys" class="empresa-logo" loading="lazy"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="empresa-initials" style="display:none;background:#005EB8">GS</div>
+              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#005EB8">GS</div>
             </div>
             <div class="empresa-nome">Globalsys</div>
             <div class="empresa-setor" data-i18n="setor.ti">Tecnologia</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Logo_Grupo_%C3%81guia_Branca.jpg/250px-Logo_Grupo_%C3%81guia_Branca.jpg"
+              <img src="assets/images/empresas/aguia-branca.jpg"
                    alt="Grupo Águia Branca" class="empresa-logo" loading="lazy"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="empresa-initials" style="display:none;background:#004B8D">AB</div>
+              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#004B8D">GAB</div>
             </div>
             <div class="empresa-nome">Grupo Águia Branca</div>
             <div class="empresa-setor" data-i18n="setor.transp">Transporte</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/LogoCompasso-positivo.png/250px-LogoCompasso-positivo.png"
+              <img src="assets/images/empresas/compass-uol.png"
                    alt="Compass UOL" class="empresa-logo" loading="lazy"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="empresa-initials" style="display:none;background:#7B2D8B">CU</div>
+              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#7B2D8B">CU</div>
             </div>
             <div class="empresa-nome">Compass UOL</div>
             <div class="empresa-setor" data-i18n="setor.serv_ti">Serviços de TI</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
-              <img src="https://www.tacom.com.br/app/images/tacom.svg"
+              <img src="assets/images/empresas/tacom.svg"
                    alt="TACOM Engenharia" class="empresa-logo" loading="lazy"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="empresa-initials" style="display:none;background:#D32730">TC</div>
+              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#D32730">TC</div>
             </div>
             <div class="empresa-nome">TACOM Engenharia</div>
             <div class="empresa-setor" data-i18n="setor.mob">Mobilidade</div>
@@ -590,37 +598,37 @@
               <img src="assets/images/empresas/floramar.png"
                    alt="Auto Omnibus Floramar" class="empresa-logo" loading="lazy"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="empresa-initials" style="display:none;background:#E65100">AF</div>
+              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#E65100">AF</div>
             </div>
             <div class="empresa-nome">Auto Omnibus Floramar</div>
             <div class="empresa-setor" data-i18n="setor.transp">Transporte</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
-              <img src="https://www.abavmg.com.br/assets/img/associados/logos/1237.jpg"
+              <img src="assets/images/empresas/horizonte-turismo.jpg"
                    alt="Horizonte Turismo" class="empresa-logo" loading="lazy"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="empresa-initials" style="display:none;background:#00695C">HT</div>
+              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#00695C">HT</div>
             </div>
             <div class="empresa-nome">Horizonte Turismo</div>
             <div class="empresa-setor" data-i18n="setor.turismo">Turismo</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap">
-              <img src="https://storage.googleapis.com/ecdt-logos/02875301000194/expresso_santa_paula_ltda_02875301.webp"
+              <img src="assets/images/empresas/expresso-santa-paula.webp"
                    alt="Expresso Santa Paula" class="empresa-logo" loading="lazy"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="empresa-initials" style="display:none;background:#C62828">SP</div>
+              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#C62828">SP</div>
             </div>
             <div class="empresa-nome">Expresso Santa Paula</div>
             <div class="empresa-setor" data-i18n="setor.transp">Transporte</div>
           </div>
           <div class="empresa-card">
             <div class="empresa-logo-wrap empresa-logo-wrap--dark">
-              <img src="https://hyti.com.br/assets/hyti-logo-branca-MvKbK_Rf.svg"
+              <img src="assets/images/empresas/hyti.svg"
                    alt="Hyti" class="empresa-logo" loading="lazy"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="empresa-initials" style="display:none;background:#FE346E">HY</div>
+              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#FE346E">HY</div>
             </div>
             <div class="empresa-nome">Hyti</div>
             <div class="empresa-setor" data-i18n="setor.ti">Tecnologia</div>
@@ -630,7 +638,7 @@
               <img src="assets/images/empresas/bdmg.svg"
                    alt="Banco BDMG" class="empresa-logo" loading="lazy"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="empresa-initials" style="display:none;background:#D22828">BD</div>
+              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#D22828">BD</div>
             </div>
             <div class="empresa-nome">Banco BDMG</div>
             <div class="empresa-setor" data-i18n="setor.financas">Financeiro</div>
@@ -640,7 +648,7 @@
               <img src="assets/images/empresas/sefaz-es.jpg"
                    alt="SEFAZ-ES" class="empresa-logo" loading="lazy"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="empresa-initials" style="display:none;background:#1A237E">SF</div>
+              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#1A237E">SF</div>
             </div>
             <div class="empresa-nome">SEFAZ-ES</div>
             <div class="empresa-setor" data-i18n="setor.publico">Setor Público</div>
@@ -650,7 +658,7 @@
               <img src="assets/images/empresas/g4f.png"
                    alt="G4F" class="empresa-logo" loading="lazy"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="empresa-initials" style="display:none;background:#37474F">G4</div>
+              <div class="empresa-initials" aria-hidden="true" style="display:none;background:#37474F">G4</div>
             </div>
             <div class="empresa-nome">G4F</div>
             <div class="empresa-setor" data-i18n="setor.serv_ti">Serviços de TI</div>
@@ -679,7 +687,7 @@
                 <span>Python</span>
                 <span>Docker</span>
               </div>
-              <a href="https://github.com/Adrianogvs/airflow-databricks-orchestration" target="_blank" class="btn btn-sm">
+              <a href="https://github.com/Adrianogvs/airflow-databricks-orchestration" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
                 <i class="fab fa-github"></i> <span data-i18n="proj.github">Ver no GitHub</span>
               </a>
             </div>
@@ -702,7 +710,7 @@
                 <span>Athena</span>
                 <span>SNS</span>
               </div>
-              <a href="https://github.com/Adrianogvs/aws-weather-realtime-etl" target="_blank" class="btn btn-sm">
+              <a href="https://github.com/Adrianogvs/aws-weather-realtime-etl" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
                 <i class="fab fa-github"></i> <span data-i18n="proj.github">Ver no GitHub</span>
               </a>
             </div>
@@ -725,7 +733,7 @@
                 <span>Databricks</span>
                 <span>Power BI</span>
               </div>
-              <a href="https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure" target="_blank" class="btn btn-sm">
+              <a href="https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
                 <i class="fab fa-github"></i> <span data-i18n="proj.github">Ver no GitHub</span>
               </a>
             </div>
@@ -748,7 +756,7 @@
                 <span>Docker</span>
                 <span>Python</span>
               </div>
-              <a href="https://github.com/Adrianogvs/projeto-nosql-iot-azure" target="_blank" class="btn btn-sm">
+              <a href="https://github.com/Adrianogvs/projeto-nosql-iot-azure" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
                 <i class="fab fa-github"></i> <span data-i18n="proj.github">Ver no GitHub</span>
               </a>
             </div>
@@ -770,7 +778,7 @@
                 <span>Delta Lake</span>
                 <span>Power BI</span>
               </div>
-              <a href="https://github.com/Adrianogvs/projeto_fabric_antt" target="_blank" class="btn btn-sm">
+              <a href="https://github.com/Adrianogvs/projeto_fabric_antt" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
                 <i class="fab fa-github"></i> <span data-i18n="proj.github">Ver no GitHub</span>
               </a>
             </div>
@@ -792,7 +800,7 @@
                 <span>Jupyter</span>
                 <span>Pandas</span>
               </div>
-              <a href="https://github.com/Adrianogvs/007_CM_Capital" target="_blank" class="btn btn-sm">
+              <a href="https://github.com/Adrianogvs/007_CM_Capital" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
                 <i class="fab fa-github"></i> <span data-i18n="proj.github">Ver no GitHub</span>
               </a>
             </div>
@@ -922,7 +930,7 @@
               <i class="fab fa-whatsapp"></i>
               <div>
                 <h4>WhatsApp</h4>
-                <a href="https://wa.me/5527988077337" target="_blank"
+                <a href="https://wa.me/5527988077337" target="_blank" rel="noopener noreferrer"
                   >+55 (27) 98807-7337</a
                 >
               </div>
@@ -931,7 +939,7 @@
               <i class="fab fa-linkedin"></i>
               <div>
                 <h4>LinkedIn</h4>
-                <a href="https://linkedin.com/in/adrianogvs" target="_blank"
+                <a href="https://linkedin.com/in/adrianogvs" target="_blank" rel="noopener noreferrer"
                   >linkedin.com/in/adrianogvs</a
                 >
               </div>
@@ -941,8 +949,9 @@
             <div class="form-card">
               <form action="https://formsubmit.co/dataengineer@adrianogvs.com.br" method="POST">
                 <input type="hidden" name="_subject" value="Novo contato pelo portfolio | adrianogvs.com.br" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_next" value="https://adrianogvs.com.br" />
+                <input type="hidden" name="_captcha" value="true" />
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <input type="hidden" name="_next" value="https://adrianogvs.com.br/?enviado=1#contato" />
                 <input type="hidden" name="_template" value="table" />
                 <label for="nome" data-i18n="form.nome">Nome</label>
                 <input id="nome" name="nome" type="text" placeholder="Seu nome" data-i18n-ph="form.nome.ph" required />
@@ -954,6 +963,7 @@
                   <i class="fas fa-paper-plane"></i> <span data-i18n="form.submit">Enviar Mensagem</span>
                 </button>
               </form>
+              <p class="form-success" role="status" data-i18n="form.success" hidden>Mensagem enviada! Retorno em breve.</p>
             </div>
           </div>
         </div>
@@ -968,24 +978,19 @@
       <span>Senior Data Engineer | Azure Databricks · Microsoft Fabric</span>
     </div>
     <div class="footer-socials">
-      <a href="https://github.com/Adrianogvs" target="_blank" aria-label="GitHub">
+      <a href="https://github.com/Adrianogvs" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <i class="fab fa-github"></i>
       </a>
-      <a href="https://www.linkedin.com/in/adrianogvs/" target="_blank" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/adrianogvs/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="https://adrianogvs.blogspot.com/" target="_blank" aria-label="Blogspot">
+      <a href="https://adrianogvs.blogspot.com/" target="_blank" rel="noopener noreferrer" aria-label="Blogspot">
         <i class="fab fa-blogger"></i>
       </a>
-      <a href="https://gitlab.com/Adriano.gvs" target="_blank" aria-label="GitLab">
+      <a href="https://gitlab.com/Adriano.gvs" target="_blank" rel="noopener noreferrer" aria-label="GitLab">
         <i class="fab fa-gitlab"></i>
       </a>
     </div>
-  </div>
-  <div class="footer-counter">
-    <i class="fas fa-eye"></i>
-    <span id="visit-count">—</span>
-    <span data-i18n="footer.visits">visitas</span>
   </div>
   <div class="footer-copy">
     <small data-i18n="footer.copy">&copy; 2026 Adriano Vilela. Todos os direitos reservados.</small>
