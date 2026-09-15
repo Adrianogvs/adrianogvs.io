@@ -9,6 +9,7 @@
   --text-dark: #1c1c1c;
   --text-light: #f5f5f5;
   --accent: #f25c00;
+  --accent-text: #ff7a33;      /* laranja para texto no tema escuro (WCAG AA) */
   --card-bg-dark: #2a2a2a;     /* Leve contraste com o fundo fosco */
   --card-bg-light: #f9f9f9;
   --container-max: 1200px;
@@ -35,6 +36,7 @@ body {
 }
 
 body.light {
+  --accent-text: #b84600;      /* laranja para texto no tema claro (WCAG AA) */
   background-color: var(--bg-light);
   color: var(--text-dark);
 }
@@ -77,11 +79,11 @@ body.light header {
   font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
-  color: var(--accent); /* Aplica laranja em ambos os temas */
+  color: var(--accent-text); /* Aplica laranja em ambos os temas */
 }
 
 body.light .logo {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .theme-btn {
@@ -119,7 +121,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 /* ============================
@@ -194,7 +196,7 @@ main {
 }
 
 #inicio h1 span {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 #inicio p {
@@ -213,7 +215,7 @@ main {
 
 #inicio .hero-stack {
   font-size: clamp(0.75rem, 1.5vw, 0.85rem);
-  color: var(--accent);
+  color: var(--accent-text);
   letter-spacing: 0.03em;
   margin-bottom: 1.5rem;
   opacity: 0.9;
@@ -245,7 +247,7 @@ body.light #inicio .hero-stack {
   height: 48px;
   line-height: 48px;
   background: var(--accent);
-  color: #fff;
+  color: #1c1c1c;
   text-decoration: none;
   font-weight: 600;
   text-align: center;
@@ -318,7 +320,7 @@ h2::after {
 
 .info-item i {
   font-size: 1.2rem;
-  color: var(--accent);
+  color: var(--accent-text);
   margin-right: 12px;
   margin-top: 4px;
 }
@@ -381,7 +383,7 @@ body.light .form-card form textarea {
   padding: 14px;
   background: var(--accent);
   border: none;
-  color: #fff;
+  color: #1c1c1c;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 4px;
@@ -605,7 +607,7 @@ body.light .info-tabs-nav {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--text-light);
-  opacity: 0.45;
+  opacity: 0.7;
   cursor: pointer;
   transition: opacity 0.2s, border-color 0.2s, color 0.2s;
   letter-spacing: 0.03em;
@@ -621,7 +623,7 @@ body.light .itab-btn {
 
 .itab-btn.active {
   opacity: 1;
-  color: var(--accent);
+  color: var(--accent-text);
   border-bottom-color: var(--accent);
 }
 
@@ -668,7 +670,7 @@ body.light .info-tabs-body {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-text);
   margin-bottom: 16px;
 }
 
@@ -693,11 +695,15 @@ body.light .info-tabs-body {
 
 .itab-list li span {
   font-size: 0.8rem;
-  opacity: 0.6;
+  opacity: 0.8;
+}
+
+.itab-list li span:has(a) {
+  opacity: 1;
 }
 
 .itab-list li a {
-  color: var(--accent);
+  color: var(--accent-text);
   text-decoration: none;
   opacity: 1;
 }
@@ -708,7 +714,7 @@ body.light .info-tabs-body {
 
 .itab-tags {
   font-size: 0.72rem !important;
-  opacity: 0.5 !important;
+  opacity: 0.8 !important;
   font-style: italic;
 }
 
@@ -755,7 +761,7 @@ body.light .info-tabs-body {
 
 .itab-interest-item i {
   font-size: 1.1rem;
-  color: var(--accent);
+  color: var(--accent-text);
   margin-top: 2px;
   flex-shrink: 0;
 }
@@ -814,7 +820,7 @@ body.light .info-tabs-body {
   padding: 3px 5px;
   border-radius: 4px;
   color: var(--text-light);
-  opacity: 0.5;
+  opacity: 0.75;
   transition: opacity 0.15s, color 0.15s;
   line-height: 1;
 }
@@ -828,7 +834,7 @@ body.light .lang-btn {
 }
 
 .lang-btn.active {
-  color: var(--accent);
+  color: var(--accent-text);
   opacity: 1;
 }
 
@@ -941,7 +947,7 @@ body.light #habilidades .cards .card {
 
 #habilidades .cards .card i {
   font-size: 1.8rem;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 #habilidades .cards .card h3 {
@@ -1018,7 +1024,7 @@ body.light #habilidades .cards .card p {
 
 /* Nome da empresa e período sempre em laranja */
 .timeline-content .empresa {
-  color: var(--accent) !important;
+  color: var(--accent-text) !important;
   font-weight: 500;
 }
 
@@ -1038,7 +1044,7 @@ body.light .timeline-content p {
 /* Empresa/período sempre laranja e negrito */
 body:not(.light) .timeline-content .empresa,
 body.light .timeline-content .empresa {
-  color: var(--accent) !important;
+  color: var(--accent-text) !important;
   font-weight: bold !important;
 }
 
@@ -1091,7 +1097,7 @@ body.light .timeline-content .empresa {
 
 #projetos .card-top i {
   font-size: 2.5rem;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 /* Corpo do card: fundo escuro / claro conforme tema */
@@ -1146,7 +1152,7 @@ body.light #projetos h2 {
 #projetos .tags span {
   display: inline-block;
   background-color: var(--card-bg-light);
-  color: var(--accent);
+  color: #b84600; /* fundo claro no tema escuro */
   font-size: 0.75rem;
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
@@ -1155,7 +1161,7 @@ body.light #projetos h2 {
 
 body.light #projetos .tags span {
   background-color: var(--card-bg-dark);
-  /* mantém o texto laranja em ambos os temas */
+  color: #ff7a33; /* fundo escuro no tema claro */
 }
 
 /* ============================
@@ -1233,7 +1239,7 @@ body.light #certificacoes .card {
 
 /* Ícone no canto superior-left do card de certificação */
 #certificacoes .card-icon i {
-  color: var(--accent);
+  color: var(--accent-text);
   font-size: 1.5rem;
   margin-bottom: 12px;
 }
@@ -1263,7 +1269,7 @@ body.light #certificacoes .card .issuer {
 /* Ano da certificação */
 #certificacoes .card .year {
   font-size: 0.85rem;
-  color: var(--accent);
+  color: var(--accent-text);
   font-weight: 500;
 }
 
@@ -1274,6 +1280,10 @@ body.light #certificacoes .card .issuer {
   color: #60a5fa !important;
 }
 
+body.light .cert-in-progress {
+  color: #1d4ed8 !important;
+}
+
 /* ================================
    LINK DE CREDENCIAL NOS CARDS
    ================================ */
@@ -1282,10 +1292,10 @@ body.light #certificacoes .card .issuer {
   align-items: center;
   gap: 5px;
   font-size: 0.78rem;
-  color: var(--accent);
+  color: var(--accent-text);
   text-decoration: none;
   margin-top: 10px;
-  opacity: 0.7;
+  opacity: 1;
   transition: opacity 0.2s;
 }
 
@@ -1356,11 +1366,11 @@ body.light .site-footer {
   margin: 0;
   font-size: 1.25rem;
   font-weight: bold;
-  color: var(--accent); /* mantêm o nome em laranja */
+  color: var(--accent-text); /* mantêm o nome em laranja */
 }
 
 body.light .footer-info h4 {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .footer-info span {
@@ -1383,7 +1393,7 @@ body.light .footer-info h4 {
 }
 
 .footer-socials a:hover {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 body.light .footer-socials a {
@@ -1391,7 +1401,7 @@ body.light .footer-socials a {
 }
 
 body.light .footer-socials a:hover {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 
@@ -1431,7 +1441,7 @@ body.light .footer-copy small {
 .footer-socials a {
   margin-left: 16px;
   font-size: 1.4rem;
-  color: var(--accent);
+  color: var(--accent-text);
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -1448,7 +1458,7 @@ body.light .footer-copy small {
 
 /* No tema claro, mantém laranja por padrão */
 body.light .footer-socials a {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 /* Hover no tema claro: ícone fica preto */
@@ -1474,13 +1484,13 @@ body.light .footer-socials a:hover {
 .hstat-n {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--accent-text);
   line-height: 1;
 }
 
 .hstat-l {
   font-size: 0.68rem;
-  opacity: 0.5;
+  opacity: 0.8;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-top: 4px;
@@ -1604,7 +1614,7 @@ body.light .empresa-nome {
 
 .empresa-setor {
   font-size: 0.68rem;
-  color: var(--accent);
+  color: var(--accent-text);
   margin-top: 5px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -1621,7 +1631,7 @@ body.light .empresa-nome {
   line-height: normal !important;
   padding: 8px 14px;
   background: var(--accent);
-  color: #fff;
+  color: #1c1c1c;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.82rem;

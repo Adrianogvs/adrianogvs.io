@@ -13,4 +13,7 @@ curl -fsSL -A "$UA" -o tacom.svg "https://www.tacom.com.br/app/images/tacom.svg"
 curl -fsSL -A "$UA" -o horizonte-turismo.jpg "https://www.abavmg.com.br/assets/img/associados/logos/1237.jpg" && echo "ok  horizonte-turismo.jpg" || { echo "FALHOU horizonte-turismo.jpg"; fail=1; }
 curl -fsSL -A "$UA" -o expresso-santa-paula.webp "https://storage.googleapis.com/ecdt-logos/02875301000194/expresso_santa_paula_ltda_02875301.webp" && echo "ok  expresso-santa-paula.webp" || { echo "FALHOU expresso-santa-paula.webp"; fail=1; }
 curl -fsSL -A "$UA" -o hyti.svg "https://hyti.com.br/assets/hyti-logo-branca-MvKbK_Rf.svg" && echo "ok  hyti.svg" || { echo "FALHOU hyti.svg"; fail=1; }
+# AI/R Invillia: o site oficial (invillia.ai) carrega o logo via JavaScript, sem URL estável.
+# Salve o logo manualmente como assets/images/empresas/air-invillia.svg (ou .png e ajuste o index.html).
+[ -f air-invillia.svg ] || echo "PENDENTE air-invillia.svg (adicionar manualmente)"
 exit $fail
